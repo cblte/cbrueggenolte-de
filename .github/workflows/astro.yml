@@ -82,24 +82,19 @@ jobs:
     name: Deploy
     steps:
       - name: Download build artifact
-        uses: actions/download-artifact@v4
+        uses: actions/download-artifact@v3
         with:
           name: astro-build
           path: ./dist
       
-      - name: Install SSH key
-        uses: shimataro/ssh-key-action@v2
+      # Uses the easingthemes/ssh-deploy action instead of manual rsync
+      - name: Deploy to server
+        uses: easingthemes/ssh-deploy@main
         with:
-          key: ${{ secrets.SSH_PRIVATE_KEY }}
-          known_hosts: ${{ secrets.KNOWN_HOSTS }}
-          if_key_exists: fail # replace to 'ignore' if you want to ignore duplicated keys
-      
-      - name: Deploy with rsync
-        run: |
-          rsync -avz --delete \
-            -e "ssh -p ${{ env.REMOTE_PORT }}" \
-            ./dist/ \
-            ${{ env.REMOTE_USER }}@${{ env.REMOTE_HOST }}:${{ env.REMOTE_PATH }}
-      
-      - name: Deployment status
-        run: echo "🚀 Deployed successfully to ${{ env.REMOTE_HOST }}:${{ env.REMOTE_PATH }}"
+          SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
+          ARGS: "-avz --delete"
+          SOURCE: "dist/"
+          REMOTE_HOST: ${{ secrets.REMOTE_HOST }}
+          REMOTE_USER: ${{ secrets.REMOTE_USER }}
+          TARGET: ${{ secrets.REMOTE_PATH }}
+          REMOTE_PORT: ${{ secrets.REMOTE_PORT || '22' }}
