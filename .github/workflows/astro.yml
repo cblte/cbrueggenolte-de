@@ -70,7 +70,7 @@ jobs:
         working-directory: ${{ env.BUILD_PATH }}
       
       - name: Upload build artifact
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-pages-artifact@v3
         with:
           name: astro-build
           path: ${{ env.BUILD_PATH }}/dist
