@@ -4,12 +4,44 @@ title: "About"
 date: 2025-03-31
 ---
 
+<div class="profile-section">
+  <div class="profile-content">
+  <img src="/images/about-me.jpg" alt="This is me. In Simpson style" class="rounded-image">
+</div>
+
+<style>
+.profile-section {
+  position: relative;
+
+}
+
+.profile-content {
+  float: right;
+  margin: 0 0 0 2rem;
+}
+
+.rounded-image {
+  border-radius: 20%;
+  border: 1px solid var(--color-zinc-200);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 240px;
+  height: auto;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.rounded-image:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  border-color: #8a8a8a;
+}
+</style>
+
 Hello! I'm Carsten, and welcome to my personal corner of the internet.
 
 This website has evolved over the years.
 Today, it's a space where I transparently share my thoughts, notes, and ideas on topics I'm passionate about.
 I firmly believe in open, direct communication
-(no beating aruond the bushes),
+(no beating around the bushes),
 so expect honesty—
 and maybe an occasional typo
 
