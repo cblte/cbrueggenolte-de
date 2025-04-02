@@ -20,16 +20,18 @@ const { frontmatter, headings } = Astro.props;
       frontmatter.toc == true && headings.length > 0 && (
         <div
           id="toc"
-          class="sticky -top-1 pt-2 mb-6 pb-4 bg-zinc-100 dark:bg-slate-900">
+          class="sticky -top-1 pt-2 mb-6 pb-4 bg-zinc-100 dark:bg-slate-900 z-40">
           <div class="font-medium text-lg mb-2">Table Of Contents</div>
-          <ul class="flex flex-row gap-2 not-prose flex-wrap pb-4">
+          <ul class="flex items-center gap-x-2 not-prose flex-wrap pb-4">
             {headings.map((heading: { slug: string; text: string }) => (
               <li class="toc-item">
-                <a href={`#${heading.slug}`} class="anchor-link">
-                  {heading.text}
-                </a>
+                <a href={`#${heading.slug}`}>{heading.text}</a>
               </li>
+              <li>&vert;</li>
             ))}
+            <li class="toc-item">
+              <a href="#top">Back To Top</a>
+            </li>
           </ul>
         </div>
       )
