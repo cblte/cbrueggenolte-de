@@ -1,0 +1,46 @@
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  darkMode: "class",
+  theme: {
+    extend: {
+      typography: () => ({
+        DEFAULT: {
+          css: {
+            "--tw-prose-body": "var(--color-slate-900)",
+            "--tw-prose-headings": "var(--color-slate-900)",
+            "--tw-prose-lead": "var(--color-slate-700)",
+            "--tw-prose-links": "var(--color-slate-900)",
+            "--tw-prose-bold": "var(--color-slate-900)",
+            "--tw-prose-counters": "var(--color-slate-600)",
+            "--tw-prose-bullets": "var(--color-slate-400)",
+            "--tw-prose-hr": "var(--color-slate-300)",
+            "--tw-prose-quotes": "var(--color-slate-900)",
+            "--tw-prose-quote-borders": "var(--color-slate-300)",
+            "--tw-prose-captions": "var(--color-slate-700)",
+            "--tw-prose-code": "var(--color-slate-900)",
+            "--tw-prose-pre-code": "var(--color-slate-100)",
+            "--tw-prose-pre-bg": "var(--color-slate-900)",
+            "--tw-prose-th-borders": "var(--color-slate-300)",
+            "--tw-prose-td-borders": "var(--color-slate-200)",
+            "--tw-prose-invert-body": "var(--color-zinc-100)",
+            "--tw-prose-invert-headings": "var(--color-white)",
+            "--tw-prose-invert-lead": "var(--color-slate-300)",
+            "--tw-prose-invert-links": "var(--color-white)",
+            "--tw-prose-invert-bold": "var(--color-white)",
+            "--tw-prose-invert-counters": "var(--color-zinc-400)",
+            "--tw-prose-invert-bullets": "var(--color-zinc-600)",
+            "--tw-prose-invert-hr": "var(--color-zinc-700)",
+            "--tw-prose-invert-quotes": "var(--color-zinc-100)",
+            "--tw-prose-invert-quote-borders": "var(--color-zinc-700)",
+            "--tw-prose-invert-captions": "var(--color-zinc-400)",
+            "--tw-prose-invert-code": "var(--color-white)",
+            "--tw-prose-invert-pre-code": "var(--color-zinc-300)",
+            "--tw-prose-invert-pre-bg": "rgb(0 0 0 / 50%)",
+            "--tw-prose-invert-th-borders": "var(--color-zinc-600)",
+            "--tw-prose-invert-td-borders": "var(--color-zinc-700)",
+          },
+        },
+      }),
+    },
+  },
+};

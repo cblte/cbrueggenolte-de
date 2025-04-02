@@ -1,0 +1,67 @@
+---
+import "../styles/global.css";
+import Footer from "@components/Footer.astro";
+import Header from "@components/Header.astro";
+import { createSlug } from "@utils/utils";
+
+const { title, postdata } = Astro.props;
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    {
+      postdata?.description && (
+        <meta name="description" content=`${postdata.description}` />
+      )
+    }
+    <meta name="robots" content="index, follow" />
+    {
+      title && (
+        <link
+          rel="canonical"
+          href={`https://cbrueggenolte.de/${createSlug(title)}`}
+        />
+      )
+    }
+
+    <title>{title} | cbrueggenolte.de</title>
+  </head>
+  <body class="bg-zinc-100 text-slate-900 dark:bg-slate-900 dark:text-zinc-100 font-normal">
+    <div class="container max-w-2xl mx-auto px-4 pt-4">
+      <Header />
+
+      <main class="mt-8 text-lg">
+        <slot />
+      </main>
+
+      <Footer />
+    </div>
+  </body>
+</html>
+
+<style is:global>
+  main a {
+    color: var(--color-red-500);
+    text-decoration: underline;
+    font-weight: var(--font-weight-normal);
+  }
+  main a:hover {
+    background-color: var(--color-red-500);
+    color: var(--color-zinc-100);
+  }
+
+  .dark main a {
+    color: var(--color-green-500);
+    text-decoration: underline;
+    font-weight: var(--font-weight-normal);
+  }
+   .dark main a:hover {
+      background-color: var(--color-green-500);
+      color: var(--color-slate-900);
+  }
+
+</style>

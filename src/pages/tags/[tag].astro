@@ -1,0 +1,52 @@
+---
+import { getCollection } from "astro:content";
+import Layout from "@layouts/Layout.astro";
+
+export async function getStaticPaths() {
+    const posts = await getCollection("posts");
+
+    // Extract unique tags from posts
+    const tags = [...new Set(posts.flatMap((post) => post.data.tags || []))];
+
+    return tags.map((tag) => ({
+        params: { tag },
+    }));
+}
+
+export function createSlug(title: string) {
+    // Create a slug from the title
+    const slug = title
+        .toLowerCase()
+        .replace(/[^a-z0-9\s-]/g, "") // Remove special characters
+        .trim()
+        .replace(/\s+/g, "-") // Replace spaces with hyphens
+        .replace(/-+/g, "-"); // Replace multiple hyphens with a single hyphen
+
+    return slug;
+}
+
+const { tag } = Astro.params;
+const posts = await getCollection("posts");
+const filteredPosts = posts.filter((post) => post.data.tags?.includes(tag));
+---
+
+<Layout title={`Posts tagged with "${tag}"`}>
+    <section id={`tag_${tag}`} class="prose dark:prose-invert">
+        <h1>Posts tagged with #{tag}</h1>
+        {
+            filteredPosts.length > 0 ? (
+                <ul>
+                    {filteredPosts.map((post) => (
+                        <li>
+                            <a href={`/blog/${createSlug(post.data.title)}`}>
+                                {post.data.title}
+                            </a>
+                        </li>
+                    ))}
+                </ul>
+            ) : (
+                <p>No posts found for this tag.</p>
+            )
+        }
+    </section>
+</Layout>

@@ -1,0 +1,36 @@
+---
+import { getCollection, render } from "astro:content";
+
+import Layout from "@layouts/Layout.astro";
+import PostMetaData from "@components/PostMetaData.astro";
+import { createSlug } from "@utils/utils";
+
+export async function getStaticPaths() {
+  const posts = await getCollection("posts");
+
+  return posts.map((post) => ({
+    params: { slug: createSlug(post.data.title) },
+    props: { post },
+  }));
+}
+
+const { post } = Astro.props;
+const { Content } = await render(post);
+---
+
+<Layout title={post.data.title} postdata={post.data}>
+  <section
+    id="content"
+    class="prose dark:prose-invert prose-p:text-lg prose-h1:mb-2 prose-h2:mb-4 prose-h3:mb-4 prose-p:mb-5 prose-p:mt-0">
+    <h1>{post.data.title}</h1>
+    <PostMetaData post={post} />
+    <Content />
+  </section>
+
+  <style>
+    :global(img) {
+      border: 1px solid var(--color-zinc-200);
+      border-radius: 0.5rem;
+    }
+  </style>
+</Layout>
