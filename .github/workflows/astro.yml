@@ -1,4 +1,4 @@
-# Workflow for building an Astro site and deploying to a custom server via rsync
+# Simple workflow for building an Astro site and deploying to a custom server via SSH
 name: Deploy Astro site to Custom Server
 
 on:
@@ -20,81 +20,84 @@ concurrency:
 
 env:
   BUILD_PATH: "." # default value when not using subfolders
-  # BUILD_PATH: subfolder
-  # Remote server details - replace these with your own
-  REMOTE_HOST: ${{ secrets.REMOTE_HOST }}
-  REMOTE_USER: ${{ secrets.REMOTE_USER }}
-  REMOTE_PORT: ${{ secrets.REMOTE_PORT || '22' }}
-  REMOTE_PATH: ${{ secrets.REMOTE_PATH }}
 
 jobs:
-  build:
-    name: Build
+  build-and-deploy:
+    name: Build and Deploy
     runs-on: ubuntu-latest
+    environment:
+      name: production
+      url: ${{ vars.DEPLOYMENT_URL || '' }}
+    
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-      
-      - name: Detect package manager
-        id: detect-package-manager
-        run: |
-          if [ -f "${{ github.workspace }}/yarn.lock" ]; then
-            echo "manager=yarn" >> $GITHUB_OUTPUT
-            echo "command=install" >> $GITHUB_OUTPUT
-            echo "runner=yarn" >> $GITHUB_OUTPUT
-            exit 0
-          elif [ -f "${{ github.workspace }}/package.json" ]; then
-            echo "manager=npm" >> $GITHUB_OUTPUT
-            echo "command=ci" >> $GITHUB_OUTPUT
-            echo "runner=npx --no-install" >> $GITHUB_OUTPUT
-            exit 0
-          else
-            echo "Unable to determine package manager"
-            exit 1
-          fi
       
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
           node-version: "20"
-          cache: ${{ steps.detect-package-manager.outputs.manager }}
-          cache-dependency-path: ${{ env.BUILD_PATH }}/package-lock.json
+          cache: 'npm'
       
       - name: Install dependencies
-        run: ${{ steps.detect-package-manager.outputs.manager }} ${{ steps.detect-package-manager.outputs.command }}
+        run: npm ci
         working-directory: ${{ env.BUILD_PATH }}
       
       - name: Build with Astro
-        run: |
-          ${{ steps.detect-package-manager.outputs.runner }} astro build
+        run: npm run build
         working-directory: ${{ env.BUILD_PATH }}
       
-      - name: Upload build artifact
-        uses: actions/upload-pages-artifact@v3
-        with:
-          name: astro-build
-          path: ${{ env.BUILD_PATH }}/dist
-          retention-days: 1
-
-  deploy:
-    needs: build
-    runs-on: ubuntu-latest
-    name: Deploy
-    steps:
-      - name: Download build artifact
-        uses: actions/download-artifact@v4
-        with:
-          name: astro-build
-          path: ./dist
+      - name: Verify required secrets
+        run: |
+          echo "Running pre-flight checks for deployment..."
+          
+          if [ -z "${{ secrets.SSH_PRIVATE_KEY }}" ]; then
+            echo "::error::SSH_PRIVATE_KEY is empty or not set in the production environment"
+            echo "Please go to Settings > Environments > production > Add secret"
+            exit 1
+          fi
+          
+          if [ -z "${{ secrets.REMOTE_HOST }}" ]; then
+            echo "::error::REMOTE_HOST is empty or not set in the production environment"
+            echo "Please go to Settings > Environments > production > Add secret"
+            exit 1
+          fi
+          
+          if [ -z "${{ secrets.REMOTE_USER }}" ]; then
+            echo "::error::REMOTE_USER is empty or not set in the production environment" 
+            echo "Please go to Settings > Environments > production > Add secret"
+            exit 1
+          fi
+          
+          if [ -z "${{ secrets.REMOTE_PATH }}" ]; then
+            echo "::error::REMOTE_PATH is empty or not set in the production environment"
+            echo "Please go to Settings > Environments > production > Add secret"
+            exit 1
+          fi
+          
+          echo "✅ All required secrets are properly set"
       
-      # Uses the easingthemes/ssh-deploy action instead of manual rsync
-      - name: Deploy to server
-        uses: easingthemes/ssh-deploy@main
-        with:
-          SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
-          ARGS: "-avz --delete"
-          SOURCE: "dist/"
-          REMOTE_HOST: ${{ secrets.REMOTE_HOST }}
-          REMOTE_USER: ${{ secrets.REMOTE_USER }}
-          TARGET: ${{ secrets.REMOTE_PATH }}
-          REMOTE_PORT: ${{ secrets.REMOTE_PORT || '22' }}
+      - name: Setup SSH
+        run: |
+          # Create SSH directory
+          mkdir -p ~/.ssh
+          
+          # Save private key to file
+          echo "${{ secrets.SSH_PRIVATE_KEY }}" > ~/.ssh/deploy_key
+          chmod 600 ~/.ssh/deploy_key
+          
+          # Add host to known hosts to prevent prompts
+          echo "${{ secrets.REMOTE_HOST }} $(ssh-keyscan -t rsa ${{ secrets.REMOTE_HOST }} 2>/dev/null | cut -d ' ' -f 2-)" >> ~/.ssh/known_hosts
+      
+      - name: Deploy with rsync
+        run: |
+          # Print debug info (with secrets masked)
+          echo "Deploying to ${{ secrets.REMOTE_HOST }}:${{ secrets.REMOTE_PATH }}"
+          echo "Using port: ${{ secrets.REMOTE_PORT || '22' }}"
+          
+          # Use rsync to deploy
+          rsync -avz --delete -e "ssh -i ~/.ssh/deploy_key -p ${{ secrets.REMOTE_PORT || '22' }}" \
+            ${{ env.BUILD_PATH }}/dist/ \
+            ${{ secrets.REMOTE_USER }}@${{ secrets.REMOTE_HOST }}:${{ secrets.REMOTE_PATH }}
+          
+          echo "🚀 Deployment completed successfully!"
