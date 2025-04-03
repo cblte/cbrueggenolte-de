@@ -20,8 +20,8 @@ const { frontmatter, headings } = Astro.props;
       frontmatter.toc == true && headings.length > 0 && (
         <div
           id="toc"
-          class="sticky -top-1 pt-2 mb-6 pb-4 bg-zinc-100 dark:bg-slate-900 z-40">
-          <div class="font-medium text-lg mb-2">Table Of Contents</div>
+          class="sticky -top-1 pt-2 mb-6 pb-4 bg-zinc-100 dark:bg-slate-900 z-40 text-sm">
+          <div class="font-medium mb-2">Table Of Contents</div>
           <ul class="flex items-center gap-x-2 not-prose flex-wrap pb-4">
             {headings.map((heading: { slug: string; text: string }) => (
               <li class="toc-item">
