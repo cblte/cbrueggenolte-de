@@ -4,7 +4,9 @@ title: "Now"
 date: 2025-03-31
 ---
 
-This is my [/now](https://nownownow.com) page and is something I got inspired
+![/now Cover -Photo by Alireza Parpaei on Unsplash](/images/now-cover.jpg "/now cover - Photo by Alireza Parpaei on Unsplash")
+
+This is my [/now/](https://nownownow.com) page and is something I got inspired
 from [Derek Sivers](https://sive.rs/now). The idea is to write something short,
 something “you’d tell a friend you hadn’t seen in a year.”
 

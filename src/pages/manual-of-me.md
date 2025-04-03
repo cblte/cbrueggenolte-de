@@ -4,11 +4,13 @@ title: "Manual Of Me"
 date: 2025-03-31
 ---
 
-## Introduction & Caveats
+![Manual Of Me Cover - Photo by Karan Suthar on Unsplash](/images/manual-cover.jpg "Manual Of Me - Photo by Karan Suthar on Unsplash")
 
-Welcome to this friendly guide on how to collaborate effectively with me—Carsten.
+Welcome to this friendly guide on how to collaborate effectively with me — Carsten.
 While it's comprehensive, it's not exhaustive—
 I'm always open to discussion and adaptation.
+
+## Introduction & Caveats
 
 Think of it as a user-friendly guide for understanding how I work best.
 Remember, everyone is unique, so while these tips apply well to me,
