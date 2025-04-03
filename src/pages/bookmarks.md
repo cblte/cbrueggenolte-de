@@ -177,6 +177,7 @@ Some CSS frameworks which are worth knowing.
 - [new.css](https://newcss.net/demo/)
 - [Pico.css](https://picocss.com/)
 - [Simple.css](https://simplecss.org/)
+- [TailwindCSS](https://tailwindcss.com)
 - [Tiny.css](https://ihsan6133.github.io/tinycss/)
 - [Tufte](https://edwardtufte.github.io/tufte-css/)
 - [Water.css](https://watercss.kognise.dev/)
