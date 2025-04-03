@@ -14,7 +14,7 @@ export default defineConfig({
     },
   },
 
-  trailingSlash: "never",
+  trailingSlash: "always",
   site: "https://cbrueggenolte.de",
   integrations: [sitemap()],
 });
