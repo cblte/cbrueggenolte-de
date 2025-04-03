@@ -33,10 +33,12 @@ development team to keep them happy.
 
 ## Getting fit
 
-Since last September, we have a Running Pad at home and I am doing well in terms
-of fitness. As well as trying to run at least 20 km each week, I can fold it and
-also move it under my desk and walk while I work. It was one of the best
-decisions we made at the end of last year.
+Since last September,
+I've been focusing on staying active
+and improving my fitness.
+I try to walk regularly and incorporate movement into my workday,
+making the most of flexible workout options at home.
+It has definitely been one of the best decisions I've made recently.
 
 ## What I am reading
 
