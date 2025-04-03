@@ -77,13 +77,11 @@ tags: []
 // Check if title was provided as command line argument
 if (process.argv.length < 3) {
   console.error("Error: Please provide a title for the blog post");
-  console.log(
-    'Usage: node blog-post-creator.js "My Blog Post Title" [editor-command]'
-  );
+  console.log('Usage: node new-post.js "My Blog Post Title" [editor-command]');
   console.log("Examples:");
-  console.log('  node blog-post-creator.js "My Blog Post Title" code');
-  console.log('  node blog-post-creator.js "My Blog Post Title" vim');
-  console.log('  node blog-post-creator.js "My Blog Post Title" "sublime"');
+  console.log('  node new-post.js "My Blog Post Title" code');
+  console.log('  node new-post.js "My Blog Post Title" vim');
+  console.log('  node new-post.js "My Blog Post Title" "sublime"');
   process.exit(1);
 }
 
