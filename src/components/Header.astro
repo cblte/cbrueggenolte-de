@@ -3,15 +3,15 @@ import ThemeIcon from "@components/ThemeIcon.astro";
 
 const menu = [
   { name: "Home", href: "/" },
-  { name: "About", href: "/about" },
-  { name: "Now", href: "/now" },
-  { name: "Blog", href: "/blog" },
-  { name: "Politics", href: "/politics" },
-  { name: "Manual of Me", href: "/manual-of-me" },
-  { name: "Uses", href: "/uses" },
-  { name: "Bookmarks", href: "/bookmarks" },
-  { name: "Gallery", href: "/gallery" },
-  { name: "Contact", href: "/contact" },
+  { name: "About", href: "/about/" },
+  { name: "Now", href: "/now/" },
+  { name: "Blog", href: "/blog/" },
+  { name: "Politics", href: "/politics/" },
+  { name: "Manual of Me", href: "/manual-of-me/" },
+  { name: "Uses", href: "/uses/" },
+  { name: "Bookmarks", href: "/bookmarks/" },
+  { name: "Gallery", href: "/gallery/" },
+  { name: "Contact", href: "/contact/" },
 ];
 
 // Normalize URL path by removing trailing slash (except for root path)
@@ -22,7 +22,8 @@ const activePage = normalizeUrl(Astro.url.pathname);
 
 <header class="flex flex-wrap items-center gap-4 justify-between mb-12">
   <div
-    class="text-3xl/7 font-bold -tracking-[3px] flex justify-between items-center w-full">
+    class="text-3xl/7 font-bold -tracking-[3px] flex justify-between items-center w-full"
+  >
     <div class="flex-1">
       <a
         href="/"
@@ -41,7 +42,8 @@ const activePage = normalizeUrl(Astro.url.pathname);
             <a
               href={item.href}
               target="_self"
-              class={`${activePage === item.href ? "text-slate-900 dark:text-zinc-100 underline font-semibold" : ""} hover:underline inline-block py-0 px-2 -mr-1 text-red-500 dark:text-green-500`}>
+              class={`${activePage === item.href ? "text-slate-900 dark:text-zinc-100 underline font-semibold" : ""} hover:underline inline-block py-0 px-2 -mr-1 text-red-500 dark:text-green-500`}
+            >
               {item.name}
             </a>
             {item !== menu[menu.length - 1] ? "|" : ""}
