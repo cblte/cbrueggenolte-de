@@ -54,11 +54,10 @@ surrounded by friends and nature taught me valuable life lessons—
 like knowing milk doesn't actually originate from supermarket shelves.
 
 These days,
-I live in the beautiful city of The Hague in the Netherlands
-with my wonderful wife Sarah,
-who graciously tolerates my collection of cables,
-adapters,
-and questionable tech purchases 😊.
+I live in the north-west of the Netherlands,
+sharing my space with loved ones
+who graciously tolerate my collection of cables,
+adapters, and questionable tech purchases 😊.
 
 I hope you'll find something useful or inspiring here—
 and maybe even chuckle at my occasional dry humor.
@@ -89,9 +88,10 @@ This prepared me for professional roles
 in software development and network management.
 
 Currently,
-I work primarily as a Java developer
-and part-time DevSecOps specialist,
-exploring a variety of programming languages and technologies.
+I work in software engineering,
+specializing in secure development practices,
+cloud infrastructure
+and exploring a variety of programming languages and technologies.
 At home, I maintain a small-but-growing homelab,
 mostly as an elaborate justification for having too many servers and blinking lights.
 I've gained hands-on experience with
