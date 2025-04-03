@@ -43,7 +43,7 @@ Please note that this overview of my toolbox
 isn't meant as a recommendation for what others should use,
 but rather a record of what has met my specific needs over time.
 
-- **MacBook Air 2025 (15.3-inch, M4, 32 GB RAM)** -
+- **MacBook Air 2025** -
   My new primary workstation,
   offering exceptional battery life,
   silent fanless operation,
@@ -51,8 +51,6 @@ but rather a record of what has met my specific needs over time.
 - **Logitech Anywhere MX** -
   Versatile travel mouse with seamless three-device connectivity.
   Wish it was a little bit bigger.
-- **Ugreen 7-in-1 USB-C Adapter** -
-  Compact and reliable USB-C hub for connecting peripherals to my MacBook Air.
 - **LG 32GK650F** -
   Premium 32" QHD display with versatile inputs for all my devices.
 - **Minisforum i5** -
