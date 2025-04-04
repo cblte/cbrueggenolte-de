@@ -2,54 +2,55 @@
 import ThemeIcon from "@components/ThemeIcon.astro";
 
 const menu = [
-  { name: "Home", href: "/" },
-  { name: "About", href: "/about/" },
-  { name: "Now", href: "/now/" },
-  { name: "Blog", href: "/blog/" },
-  { name: "Politics", href: "/politics/" },
-  { name: "Manual of Me", href: "/manual-of-me/" },
-  { name: "Uses", href: "/uses/" },
-  { name: "Bookmarks", href: "/bookmarks/" },
-  { name: "Gallery", href: "/gallery/" },
-  { name: "Contact", href: "/contact/" },
+    { name: "Home", href: "/" },
+    { name: "About", href: "/about/" },
+    { name: "Now", href: "/now/" },
+    { name: "Blog", href: "/blog/" },
+    { name: "Politics", href: "/politics/" },
+    { name: "Manual of Me", href: "/manual-of-me/" },
+    { name: "Uses", href: "/uses/" },
+    { name: "A.I.", href: "/ai/" },
+    { name: "Bookmarks", href: "/bookmarks/" },
+    { name: "Gallery", href: "/gallery/" },
+    { name: "Contact", href: "/contact/" },
 ];
 
 // Normalize URL path by removing trailing slash (except for root path)
 const normalizeUrl = (url: string) =>
-  url === "/" ? "/" : url.replace(/\/$/, "");
+    url === "/" ? "/" : url.replace(/\/$/, "");
 const activePage = normalizeUrl(Astro.url.pathname);
 ---
 
 <header class="flex flex-wrap items-center gap-4 justify-between mb-12">
-  <div
-    class="text-3xl/7 font-bold -tracking-[3px] flex justify-between items-center w-full"
-  >
-    <div class="flex-1">
-      <a
-        href="/"
-        target="_self"
-        class="inline-block w-min border-b-3 hover:text-red-500 dark:hover:text-green-500 border-red-500 hover:border-slate-900 dark:border-green-500 dark:hover:border-zinc-100 pr-2.5 pl-2 transition transition-colors duration-300"
-        >CB</a
-      >
-    </div>
-    <div class="flex-1 text-right"><ThemeIcon /></div>
-  </div>
-  <nav class="font-normal">
-    <ul class="flex flex-wrap text-[1.25rem] -mr-2 -ml-2">
-      {
-        menu.map((item) => (
-          <li class="inline-block">
+    <div
+        class="text-3xl/7 font-bold -tracking-[3px] flex justify-between items-center w-full"
+    >
+        <div class="flex-1">
             <a
-              href={item.href}
-              target="_self"
-              class={`${activePage === item.href ? "text-slate-900 dark:text-zinc-100 underline font-semibold" : ""} hover:underline inline-block py-0 px-2 -mr-1 text-red-500 dark:text-green-500`}
+                href="/"
+                target="_self"
+                class="inline-block w-min border-b-3 hover:text-red-500 dark:hover:text-green-500 border-red-500 hover:border-slate-900 dark:border-green-500 dark:hover:border-zinc-100 pr-2.5 pl-2 transition transition-colors duration-300"
+                >CB</a
             >
-              {item.name}
-            </a>
-            {item !== menu[menu.length - 1] ? "|" : ""}
-          </li>
-        ))
-      }
-    </ul>
-  </nav>
+        </div>
+        <div class="flex-1 text-right"><ThemeIcon /></div>
+    </div>
+    <nav class="font-normal">
+        <ul class="flex flex-wrap text-[1.25rem] -mr-2 -ml-2">
+            {
+                menu.map((item) => (
+                    <li class="inline-block">
+                        <a
+                            href={item.href}
+                            target="_self"
+                            class={`${activePage === item.href ? "text-slate-900 dark:text-zinc-100 underline font-semibold" : ""} hover:underline inline-block py-0 px-2 -mr-1 text-red-500 dark:text-green-500`}
+                        >
+                            {item.name}
+                        </a>
+                        {item !== menu[menu.length - 1] ? "|" : ""}
+                    </li>
+                ))
+            }
+        </ul>
+    </nav>
 </header>
