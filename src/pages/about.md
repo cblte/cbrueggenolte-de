@@ -6,7 +6,7 @@ date: 2025-03-31
 
 <div class="profile-section">
   <div class="profile-content">
-  <img src="/images/about-me.jpg" alt="This is me. In Simpson style" class="rounded-image">
+      <img src="/images/about-me.jpg" alt="This is me. In Simpson style. Image generate with the help of ChatGPT." class="rounded-image" title="This is me. In Simpson style. Image generate with the help of ChatGPT.">
 </div>
 
 <style>
