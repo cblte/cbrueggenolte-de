@@ -18,6 +18,9 @@ links,
 comments,
 or anything too short—or not yet ready—for a full post.
 
+If you see something like "RT 20230405"
+you can use the following format to jump directly to the entry: "[#20250401](#20250401)".
+
 ### A Note
 
 Entries from my previous blog project,
@@ -26,12 +29,11 @@ will be added over time.
 Whether or not they make it depends on how relevant the topic is to me these days
 and if I can find the time to move them over.
 
-If you see something like "RT 20230405"
-you can use the following format to jump directly to the entry: "[#20250401](#20250401)".
+This might move at some point to a subdomain.
 
 ---
 
-## 20250404
+### 20250404
 
 I still find it amazing
 how people can survive while staring at their smartphones and texting,
@@ -39,7 +41,16 @@ wearing headphones and walking down the street.
 
 Finishing my text on [A.I.](/ai/).
 
-## 20250401
+### 20250403
+
+The new Nintendo Switch 2 has been unveiled.
+At 470 euros, it's definitely more expensive than I expected.
+Looks like a lot of us are in for a pricey Christmas this year.
+If you're looking to pre-order,
+[JPGames.de](https://jpgames.de/2025/04/die-nintendo-switch-2-vorbestellen-die-ersten-haendler-in-deutschland-legen-los/)
+has a list of popular german electronics retail stores accepting pre-orders.
+
+### 20250401
 
 This is the random thoughts document.
 I restarted it in 20250401 with the redesign of my website.
