@@ -6,9 +6,9 @@ date: 2025-03-31
 
 ![Uses Cover Image](/images/uses-cover.jpg "Uses Cover Image - Photo by ")
 
-This is my [/uses/](https://uses.tech) page which I got inspired by [Wes
-Bos uses](https://wesbos.com/uses/) page, whose resource I found incredibly
-helpful.
+_This is my [/uses/](https://uses.tech) page which I got inspired by [Wes
+Bos' uses](https://wesbos.com/uses/) page._
+The idea is to document which developer setup, gear, software, and configurations I use.
 
 **Last updated on 30th March 2025.**
 
