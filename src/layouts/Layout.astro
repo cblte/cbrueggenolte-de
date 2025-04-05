@@ -2,7 +2,8 @@
 import "../styles/global.css";
 import Footer from "@components/Footer.astro";
 import Header from "@components/Header.astro";
-import { ViewTransitions } from 'astro:transitions'
+import HeaderScript from "@components/HeaderScript.astro";
+import { ClientRouter } from 'astro:transitions'
 
 import { createSlug } from "@utils/utils";
 
@@ -29,10 +30,11 @@ const { title, postdata } = Astro.props;
         />
       )
     }
-
     <title>{title} | cbrueggenolte.de</title>
-    <ViewTransitions />
+    <ClientRouter />
+    <HeaderScript />
   </head>
+
   <body class="bg-zinc-100 text-slate-900 dark:bg-slate-900 dark:text-zinc-100 font-normal">
     <div id="top"></div>
     <div class="container max-w-2xl mx-auto px-4 pt-4">
@@ -52,6 +54,7 @@ const { title, postdata } = Astro.props;
     color: var(--color-red-500);
     text-decoration: underline;
     font-weight: var(--font-weight-normal);
+    transition-duration: 300ms;
   }
   main a:hover {
     background-color: var(--color-red-500);
@@ -62,6 +65,7 @@ const { title, postdata } = Astro.props;
     color: var(--color-green-500);
     text-decoration: underline;
     font-weight: var(--font-weight-normal);
+    transition-duration: 300ms;
   }
    .dark main a:hover {
       background-color: var(--color-green-500);
