@@ -1,0 +1,42 @@
+# Microblog.txt file
+
+@2025-04-05
+    :attr: Implementing Dark Mode in Astro 4.0 with ViewTransitions
+    :source: https://jklakus.co.uk/blogs/astro-darktheme/
+Implemented [View Transitions](https://docs.astro.build/en/reference/modules/astro-transitions/)
+with the fix that keeps the light/dark mode working by Joe Klakus.
+
+
+@2025-04-04
+Finishing my text on [A.I.](/ai/).
+Inspired by "[The /ai 'manifesto'](https://www.bydamo.la/p/ai-manifesto)".
+
+
+@2025-04-04
+    :attr: People with smartphones
+I still find it amazing
+how people can survive while staring at their smartphones and texting,
+wearing headphones and walking down the street.
+
+@2025-04-03
+    :attr: The new Nintendo Switch 2 has been unveiled.
+At 470 euros, it's definitely more expensive than I expected.
+Looks like a lot of us are in for a pricey Christmas this year.
+If you're looking to pre-order,
+[JPGames.de](https://jpgames.de/2025/04/die-nintendo-switch-2-vorbestellen-die-ersten-haendler-in-deutschland-legen-los/)
+has a list of popular german electronics retail stores accepting pre-orders.
+
+@2025-04-01
+    :attr: This is the random thoughts document.
+I restarted it in 20250401 with the redesign of my website.
+This is an experiment to save random thoughts
+when I have something that I want to keep
+but don't know where to put it.
+
+@2025-03-29
+    :attr: Russian Propaganda is flooding the language models
+    :source: https://www.zdf.de/nachrichten/panorama/russland-propaganda-sprachmodelle-chatgpt-100.html
+Russian propaganda is flooding the internet with fake news,
+not just targeting humans
+but also manipulating data that language models like ChatGPT rely on,
+leading to widespread dissemination of misinformation.
