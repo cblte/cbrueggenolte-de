@@ -59,8 +59,6 @@ all browsers and devices, at any time.
 - [grep.app](https://grep.app/)
 - [Github Emojis Reference](https://github-emojis.vercel.app/)
 
-## Finance
-
 ## Games
 
 - [Awesome Games](https://github.com/leereilly/games)
@@ -74,7 +72,7 @@ all browsers and devices, at any time.
 - [BambuLab Wiki](https://wiki.bambulab.com/en/p1/manual/unboxing-p1s_combo)
 - [Ender-3 V2 Neo](https://www.creality.com/products/ender-3-v2-neo-3d-printer)
 - [BambuLab Makerworld](https://makerworld.com/)
-- [Prinatbles](https://printables.com/)
+- [Printables](https://printables.com/)
 - [Thingiverse](https://thingiverse.com/)
 - [3D Pros Guides](https://3dpros.com/guides/gettingstarted)
 
@@ -140,6 +138,8 @@ all browsers and devices, at any time.
 
 ## Shopping Cart
 
+- [Amazon Alternativen](https://codeberg.org/phranck/Amazon-Alternativen)
+
 ## Technology
 
 - [invidious.io](https://invidious.io/)
@@ -147,6 +147,19 @@ all browsers and devices, at any time.
 - [metube](https://github.com/alexta69/metube)
 - [tubearchivist](https://www.tubearchivist.com/)
 - [Awesome List of Cybersecurity and AI](https://github.com/ksthk/one)
+
+## AI
+
+- [ExplainThisCode](https://explainthiscode.com/)
+- [Phind](https://www.phind.com/)
+- [Perplexity AI](https://www.perplexity.ai/)
+- [You.com](https://you.com/)
+- [WolframAlpha](https://www.wolframalpha.com/)
+- [ChatGPT](https://chat.openai.com/)
+- [Claude AI](https://claude.ai/)
+- [DeepL Translator](https://www.deepl.com/translator)
+- [DeepL Write](https://www.deepl.com/write)
+-
 
 ## Tools
 
