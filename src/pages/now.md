@@ -48,17 +48,19 @@ It has definitely been one of the best decisions I've made recently.
 
 ## What I am reading
 
-Currently I am reading the Bootcamp script and the [TypeScript
-Handbook](https://www.typescriptlang.org/docs/handbook/intro.html). I am also
-reading [Clean
-Code](https://learning.oreilly.com/library/view/clean-code-a/9780136083238/)
-book to get a better understanding of how to write clean code.
+Currently I am reading the Bootcamp script
+and the [TypeScript Handbook](https://www.typescriptlang.org/docs/handbook/intro.html).
+I am also reading [Clean Code](https://learning.oreilly.com/library/view/clean-code-a/9780136083238/) book
+to get a better understanding of how to write clean code.
 
-When I have some spare time, I am reading through Derek Sivers [Book How to
-Live](http://sive.rs/h). _A masterpiece. The best thing he's ever made._ I have
-to say it definitivly has 27 conflicting answers. Did not get to the conclusion
-yet.
+When I have some spare time,
+I am reading through Derek Sivers [Book How to Live](http://sive.rs/h).
+_A masterpiece. The best thing he's ever made._
+I have to say it definitivly has 27 conflicting answers.
+Did not get to the conclusion yet.
 
-I also started with [Kill Decision from Daniel Suarez](https://en.wikipedia.org/wiki/Kill_Decision). I don't know if I can
-finish it, as I am not a regular reader and it is a bit difficult get back into
-the story when you have to put it down for a while.
+I also started with [Kill Decision from Daniel Suarez](https://en.wikipedia.org/wiki/Kill_Decision).
+I don't know if I can finish it,
+as I am not a regular reader
+and it is a bit difficult get back into the story
+when you have to put it down for a while.
