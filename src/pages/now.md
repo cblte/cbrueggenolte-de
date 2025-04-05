@@ -16,22 +16,26 @@ Last Update: April 2025
 
 ## Where I am
 
-I am still living in the Den Haag, Netherlands, together with my wonderful wife
-Sarah. Trying to make a new website while participating in the [Full-Stack
-TypeScript & React Bootcamp](https://bootcamp.dev) from Flavio Scopes.
+I am still living in the Netherlands,
+together with my wonderful wife.
+Trying to make a new website
+while participating in the [Full-Stack TypeScript & React Bootcamp](https://bootcamp.dev) from Flavio Copes.
 
 ## What I am doing
 
-It took ages to update my website, the last update was probably sometime last
-year when I recreated the page with [Hugo](https://gohugo.io). But I'm not happy
-with Hugo, so I'm going to try something new. This time I created my website
-with [Astro](https://astro.build). It's a site generator written in
-TypeScript, and togethe rwith Tailwind CSS, it is a great combination.
+It took ages to update my website,
+the last update was probably sometime last year
+when I recreated the page with [Hugo](https://gohugo.io).
+But I'm not happy with Hugo,
+so I'm going to try something new.
+This time I created my website with [Astro](https://astro.build).
+It's a site generator written in TypeScript,
+and together with Tailwind CSS, it is a great combination.
 
-In my more or less 9-to-5 job, I'm a software engineer and I'm trying to get
-into DevSecOps. We use Java, TypeScript and Python to make software for our
-customers. We set up services in Docker and Kubernetes for our internal
-development team to keep them happy.
+In my more or less 9-to-5 job, I'm a software engineer.
+We use Java, TypeScript and Python to make software for our customers.
+We set up services in Docker and Kubernetes
+for our internal development team to keep them happy.
 
 ## Getting fit
 
