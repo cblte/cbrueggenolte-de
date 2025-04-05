@@ -33,6 +33,10 @@ This might move at some point to a subdomain.
 
 ---
 
+#### 20250405
+
+Implemenmted View Transitions with the fix that keeps the light/dark mode working. [jklakus.co.uk](https://jklakus.co.uk/blogs/astro-darktheme/)
+
 #### 20250404
 
 Finishing my text on [A.I.](/ai/).
