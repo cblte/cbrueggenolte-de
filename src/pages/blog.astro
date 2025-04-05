@@ -37,7 +37,7 @@ function createSlug(title: string) {
         posts.map((post) => (
           <li class="mb-8">
             <h2 class="text-xl">
-              <a href={`/blog/${createSlug(post.data.title)}`}>
+              <a href={`/blog/${createSlug(post.data.title)}/`}>
                 {post.data.title}
               </a>
             </h2>
