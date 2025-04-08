@@ -99,6 +99,7 @@ all browsers and devices, at any time.
 ## macOS
 
 - [Apple APT Training](https://it-training.apple.com/tutorials/apt-support/)
+- [DBngine](https://dbngin.com/ "All-in-One Database Version Management Tool")
 - [IINA The modern media player for macOS.](https://iina.io/)
 - [LuLu Firewall](https://objective-see.org/products/lulu.html)
 - [Objective-See's Tools FOSS FOR Mac](https://objective-see.org/tools.html)
