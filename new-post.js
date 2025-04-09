@@ -5,40 +5,46 @@
 // Usage: node new-post.js <slug>
 
 import { exec } from "child_process";
-import { error } from "console";
-import fs from "fs";
-import path from "path";
+import fs from "fs/promises";
+import path, { resolve } from "path";
 import { fileURLToPath } from "url";
+import inquirer from "inquirer";
+import pc from "picocolors";
 
-// Get the directory name properly in ES modules
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
+// Handling ctrl+c gracefully globally
+process.on("uncaughtException", (error) => {
+  if (error instanceof Error && error.name === "ExitPromptError") {
+    console.log("👋 until next time!");
+  } else {
+    // Rethrow unknown errors
+    throw error;
+  }
+});
 
 /**
  * Creates a new markdown blogpost with frontmatter in this years folder.
  * @param {string} title
  */
-function createBlogPost(title, editor = null) {
-  // Create the slug from the passed title
-  let slug = title.toLowerCase().replace(/ /g, "-");
-  slug = slug.replace(/[^a-z0-9-]/g, ""); // Remove all non-alphanumeric characters except hyphens
-  slug = slug.replace(/--+/g, "-"); // Remove multiple hyphens
-  slug = slug.replace(/^-+|-+$/g, ""); // Remove leading and trailing hyphens
-  // Replace german special umlauts
-  slug = slug.replace(/ä/g, "ae");
-  slug = slug.replace(/ö/g, "oe");
-  slug = slug.replace(/ü/g, "ue");
-  slug = slug.replace(/ß/g, "ss");
-
-  // Getting seconds
-  const timestamp = Math.floor(Date.now() / 1000);
+async function createBlogPost(title, editor = null) {
   // Get YYYY-MM-DD format
   const today = new Date().toISOString().split("T")[0];
   const year = new Date().getFullYear();
 
   // get the path for the current year and create it if it doesn't exist
   const dirPath = path.join("./src/content/posts", `${year}`);
-  fs.mkdirSync(dirPath, { recursive: true });
+  await fs.mkdir(dirPath, { recursive: true });
+
+  // Create the slug from the passed title
+  let slug = title
+    .toLowerCase()
+    .replace(/ /g, "-")
+    .replace(/[^a-z0-9-]/g, "") // Remove all non-alphanumeric characters except hyphens
+    .replace(/--+/g, "-") // Remove multiple hyphens
+    .replace(/^-+|-+$/g, "") // Remove leading and trailing hyphens
+    .replace(/ä/g, "ae")
+    .replace(/ö/g, "oe")
+    .replace(/ü/g, "ue")
+    .replace(/ß/g, "ss");
 
   // create the frontmatter
   const frontmatter = `---
@@ -51,43 +57,59 @@ tags: []
 
   const filePath = path.join(dirPath, `${today}-${slug}.md`);
   // Create file if it does not exists.
-  if (!fs.existsSync(filePath)) {
-    fs.writeFileSync(filePath, frontmatter, (err) => {
-      if (err) {
-        console.error(err);
-      }
-    });
-    console.log(`Created new post: ${filePath}`);
-    console.log(`Title: ${title}`);
-    console.log(`Slug: ${slug}`);
-  } else {
-    console.log(`Post already existing: ${filePath}`);
+  try {
+    await fs.stat(filePath);
+    console.log(pc.yellow(`? Post already exists: ${filePath}`));
+  } catch (err) {
+    if (err.code === "ENOENT") {
+      await fs.writeFile(filePath, frontmatter);
+      console.log(pc.green(`✔ Created new post: ${pc.cyan(filePath)}`));
+      console.log(pc.green(`✔ Title:`), title);
+      console.log(pc.green(`✔ Slug:`), slug);
+    } else {
+      throw err;
+    }
   }
 
   if (editor) {
-    console.log(`Opening in ${editor}`);
-    exec(`${editor} "${filePath}"`, (error) => {
-      if (error) {
-        console.error(`Failed to open with ${editor}: ${error.message}`);
-      }
+    console.log(pc.cyan(`Opening in ${editor}`));
+    await new Promise((resolve, reject) => {
+      exec(`${editor} "${filePath}"`, (error) => {
+        if (error) {
+          reject(pc.red(`✘ Failed to open with ${editor}: ${error.message}`));
+        } else {
+          resolve();
+        }
+      });
     });
   }
-}
+} // end of function createBlogPost
+
+let title = "";
+let editor = "";
 
 // Check if title was provided as command line argument
-if (process.argv.length < 3) {
-  console.error("Error: Please provide a title for the blog post");
-  console.log('Usage: node new-post.js "My Blog Post Title" [editor-command]');
-  console.log("Examples:");
-  console.log('  node new-post.js "My Blog Post Title" code');
-  console.log('  node new-post.js "My Blog Post Title" vim');
-  console.log('  node new-post.js "My Blog Post Title" "sublime"');
-  process.exit(1);
-}
 
-const title = process.argv[2];
-// Get optional editor command
-const editor = process.argv[3] || null;
-
-// Finally, create the blog post
-createBlogPost(title, editor);
+(async () => {
+  try {
+    const answers = await inquirer.prompt([
+      {
+        name: "title",
+        type: "input",
+        message: "Please provide a title for the blog post",
+        required: true,
+      },
+      {
+        name: "editor",
+        type: "list",
+        message: "Open in which editor?",
+        choices: ["none", "code", "zed", "nano"],
+        default: "none",
+      },
+    ]);
+    const { title, editor } = answers;
+    await createBlogPost(title, editor === "none" ? null : editor);
+  } catch (error) {
+    console.error(pc.red("✘ Error creating file: "), error);
+  }
+})();
