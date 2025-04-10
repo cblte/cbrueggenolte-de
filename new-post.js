@@ -96,7 +96,7 @@ let editor = "";
       {
         name: "title",
         type: "input",
-        message: "Please provide a title for the blog post",
+        message: "Please provide a title for the blog post:",
         required: true,
       },
       {
