@@ -45,6 +45,11 @@ function createSlug(title: string) {
                             <a href={`/blog/${createSlug(post.data.title)}/`}>
                                 {post.data.title}
                             </a>
+                            {post.data?.draft ? (
+                                <span class="bg-red-400 text-white">DRAFT</span>
+                            ) : (
+                                ""
+                            )}
                         </h2>
                         {post.data.description && (
                             <p>{post.data.description}</p>
