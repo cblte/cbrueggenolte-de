@@ -150,6 +150,9 @@ all browsers and devices, at any time.
 
 ## Security
 
+- [Crash Security Notes](https://notes.crashsecurity.io/notes)
+- [Crash Security Malware Knowledge Base](https://notes.crashsecurity.io/notes/b/06C749EC-4BB5-4D23-82EF-B64444AF4C5D/Malware-Knowledge-Base)
+
 ## Shopping Cart
 
 - [Amazon Alternativen](https://codeberg.org/phranck/Amazon-Alternativen)
