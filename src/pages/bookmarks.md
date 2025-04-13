@@ -167,16 +167,16 @@ all browsers and devices, at any time.
 
 ## AI
 
-- [ExplainThisCode](https://explainthiscode.com/)
-- [Phind](https://www.phind.com/)
-- [Perplexity AI](https://www.perplexity.ai/)
-- [You.com](https://you.com/)
-- [WolframAlpha](https://www.wolframalpha.com/)
 - [ChatGPT](https://chat.openai.com/)
 - [Claude AI](https://claude.ai/)
+- [Cursorrules.io](https://cursorrules.io/)
 - [DeepL Translator](https://www.deepl.com/translator)
 - [DeepL Write](https://www.deepl.com/write)
--
+- [ExplainThisCode](https://explainthiscode.com/)
+- [Perplexity AI](https://www.perplexity.ai/)
+- [Phind](https://www.phind.com/)
+- [WolframAlpha](https://www.wolframalpha.com/)
+- [You.com](https://you.com/)
 
 ## Tools
 
