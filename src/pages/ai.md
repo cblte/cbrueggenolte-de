@@ -4,6 +4,8 @@ title: Wie ich generative KI in meinem Blog und Alltag verwende
 date: 2025-04-02
 ---
 
+![Dieses Bild wurde von ChatGPT erstellt.](/images/ai-cover.jpg "Dieses Bild wurde von ChatGPT erstellt.")
+
 _Diese Seite ist inspiriert von [Damola Morenikeji](https://www.bydamo.la/p/ai-manifesto/)._
 
 Ziel ist es, Vertrauen und Transparenz zu fördern.
