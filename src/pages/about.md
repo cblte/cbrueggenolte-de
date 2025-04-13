@@ -1,18 +1,17 @@
 ---
 layout: "@layouts/MDPage.astro"
-title: "About"
+title: "Über mich"
 date: 2025-03-31
 ---
 
 <div class="profile-section">
   <div class="profile-content">
-      <img src="/images/about-me.jpg" alt="This is me. In Simpson style. Image generate with the help of ChatGPT." class="rounded-image" title="This is me. In Simpson style. Image generate with the help of ChatGPT.">
+      <img src="/images/about-me-aipg.jpg" alt="This is me. An image generated with the help of the macOS App Image PlayGround." class="rounded-image" title="This is me. An image generated with the help of the macOS App Image PlayGround.">
 </div>
 
 <style>
 .profile-section {
   position: relative;
-
 }
 
 .profile-content {
@@ -21,10 +20,11 @@ date: 2025-03-31
 }
 
 .rounded-image {
+  margin-top:0;
   border-radius: 20%;
   border: 1px solid var(--color-zinc-200);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  width: 240px;
+  width: 300px;
   height: auto;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -36,119 +36,82 @@ date: 2025-03-31
 }
 </style>
 
-Hello! I'm Carsten, and welcome to my personal corner of the internet.
+Willkommen auf der Über-mich-Seite.
 
-This website has evolved over the years.
-Today, it's a space where I transparently share my thoughts, notes, and ideas on topics I'm passionate about.
-I firmly believe in open, direct communication
-(no beating around the bushes),
-so expect honesty—
-and maybe an occasional typo
+Die Website hat sich im Laufe der Jahre immer wieder verändert.
+Heute ist sie ein Ort,
+an dem ich offen meine Gedanken, Notizen und Ideen zu Themen teile, die mich interessieren.
 
-## 👋 About Me
+Ich bin ein großer Fan von offener, direkter Kommunikation
+– kein Herumreden um den heißen Brei Erwarte also Ehrlichkeit
+– und vielleicht auch gelegentlich einen kleinen Tippfehler.
 
-I was born around 336ppm (CO₂ concentration in the atmosphere),
-in North Rhine-Westphalia, Germany.
-Growing up in a small village,
-surrounded by friends and nature taught me valuable life lessons—
-like knowing milk doesn't actually originate from supermarket shelves.
+_This page is also available in [English](/en/about/)._
 
-These days,
-I live in the north-west of the Netherlands,
-sharing my space with loved ones
-who graciously tolerate my collection of cables,
-adapters, and questionable tech purchases 😊.
+## 👋 Über mich
 
-I hope you'll find something useful or inspiring here—
-and maybe even chuckle at my occasional dry humor.
-Feel free to explore,
-and don't hesitate to [reach out](/contact) if you have questions
-or just want to say hi!
+Geboren in Nordrhein-Westfalen, Deutschland,
+um ca. 336ppm.
+Für die, die es nicht wissen, dass ist die CO₂-Konzentration in der Atmosphäre.
+Aktuell sind wir bei ca. 428ppm.
 
-## 💻 My IT Journey
+Ich wohne aktuell in den Niederlanden,
+zusammen mit meiner wunderbaren Frau,
+die nicht nur meine Sammlung von Kabeln und Adaptern toleriert,
+sondern auch meine technischen Spielereien. 😊
 
-My journey into information technology began during my teenage years
-when I acquired my first computer—
-an [Intel 80286](https://en.wikipedia.org/wiki/Intel_80286)
-running [MS-DOS](https://en.wikipedia.org/wiki/MS-DOS).
-Given how slowly games loaded back then,
-patience became my first debugging skill.
-I quickly became fascinated with technology,
-spending countless hours tinkering with hardware and software.
+Ich hoffe, du findest hier etwas Nützliches oder Inspirierendes
+– und vielleicht zaubert dir mein trockener Humor ein Lächeln ins Gesicht.
+Fühl dich eingeladen, die Seite zu erkunden,
+und kontaktiere mich gerne, falls du Fragen hast oder einfach Hallo sagen möchtest.
 
-My first websites used basic HTML and CSS,
-before expanding into server-side scripting with PHP,
-then Java and Python.
-Today, I use modern frameworks like Astro, Flask and Java Spring,
-continually amazed by how much the tools have evolved.
-After my time at the "Gymnasium,"
-I transitioned to a technical college
-where I earned the title "Information Technology Assistant."
-This prepared me for professional roles
-in software development and network management.
+## 💻 Mein Weg in die IT
 
-Currently,
-I work in software engineering,
-specializing in secure development practices,
-cloud infrastructure
-and exploring a variety of programming languages and technologies.
-At home, I maintain a small-but-growing homelab,
-mostly as an elaborate justification for having too many servers and blinking lights.
-I've gained hands-on experience with
-Linux, macOS, Windows administration,
-Docker, Kubernetes, container orchestration,
-Java, Python, JavaScript/TypeScript, HTML, and CSS
-—though I still occasionally Google "[how to center a div](https://www.yout-ube.com/watch?v=kphds-1V9o8)".
+Meine Reise in die IT begann mit einem [Intel 80286](https://de.wikipedia.org/wiki/Intel_80286)
+und [MS-DOS 5.0](https://de.wikipedia.org/wiki/MS-DOS).
+Geduld war meine erste Debugging-Fähigkeit.
+Angefangen mit HTML, CSS und PHP,
+arbeite ich heute mit modernen Frameworks wie Astro, Flask/Django und Java Spring
+und bin immer wieder erstaunt, wie sich die Werkzeuge weiterentwickelt haben.
 
-Curious about the specific tools and tech I swear by?
-Check out my [uses](/uses) or [bookmarks](/bookmarks) pages.
+Derzeit bin ich im Bereich Softwareentwicklung tätig,
+bilde mich im Bereich Web-Development und CI/CD so wie Cloud-Infrastrukturen weiter
+und erkunde eine Vielzahl and Tools und Technologien.
 
-When not immersed in technology,
-you'll find me gaming on my Switch
-or on the PC (_Factorio_ remains a favorite),
-or listening to podcasts, audiobooks, and radio plays.
-And while I proudly identify as an Apple enthusiast
-I'm deeply passionate about open-source software—
-yes, some contradictions make perfect sense.
+Zu Hause betreibe ich ein kleines Homelab,
+liebe es mit Linux, macOS und (manchmal auch mit) Windows zu arbeiten.
+Erweitere ständig meine Kenntnisse in Java, Python, JavaScript/TypeScript, HTML und CSS
+– auch wenn ich ab und zu immer noch mal nach "[wie zentriert man ein div](https://www.yout-ube.com/watch?v=kphds-1V9o8)" im Web suche muss.
 
-## 🛠️ My Projects and Home Lab Services
+Schau gerne auch auf meinen Seiten [Uses](/uses) oder [Bookmarks](/bookmarks) vorbei,
+wenn du wissen willst, was ich im Alltag an Software und Hardware verwende.
 
-Below are some of the projects and services
-I host for myself, my family, and friends—
-partly because I love technology,
-partly to justify purchasing yet another Raspberry Pi.
-If something is of interest to you
-or you're curious how many backup solutions constitute "too many",
-feel free to reach out!
+Wenn ich nicht gerade an Technik tüftle oder einem Bug hinterherjage,
+spiele ich auf entweder auf der Switch oder am PC _(Factorio, Borderlands, Minecraft)_,
+höre Podcasts oder Hörspiele.
 
-- [AdGuard Home](https://adguard.com/en/adguard-home/overview.html) – Keeping the internet tidy (you're welcome, Mom!).
-- [AudioBookShelf](https://www.audiobookshelf.org/) – Enjoying books without turning pages. Revolutionary!
-- [Bitwarden](https://bitwarden.com/)/[Vaultwarden](https://github.com/dani-garcia/vaultwarden) – Because "password123" was never a good idea.
-- [Forgejo](https://forgejo.org/) – My own Git service: like GitHub, but more introverted.
-- [Jellyfin](https://jellyfin.org/) – Streaming without subscription fatigue.
-- [Nextcloud](https://nextcloud.com/) – Personal cloud storage, rain or shine.
-- [nginx Proxy Manager](https://nginxproxymanager.com/) – Directing web traffic without yelling at browsers.
-- [Stirling-PDF](https://github.com/Stirling-Tools/Stirling-PDF) – PDFs simplified (finally!).
-- Minecraft server via [MineKube](https://connect.minekube.com/) – Because adulting is overrated.
-- NAS – Reliable backups (until I accidentally delete them again).
+## 🛠️ Projekte und Homelab-Dienste
 
-## 📰 RSS Feeds
+- [AdGuard Home](https://adguard.com/de/adguard-home/overview.html)
+- [AudioBookShelf](https://www.audiobookshelf.org/)
+- [Bitwarden](https://bitwarden.com/de)/[Vaultwarden](https://github.com/dani-garcia/vaultwarden)
+- [Forgejo](https://forgejo.org/)
+- [Jellyfin](https://jellyfin.org/)
+- [Nextcloud](https://nextcloud.com/de/)
+- [nginx Proxy Manager](https://nginxproxymanager.com/)
+- [Stirling-PDF](https://github.com/Stirling-Tools/Stirling-PDF)
+- Minecraft-Server via [MineKube](https://connect.minekube.com/)
+- NAS-System für Backups
 
-I'll be regularly adding fresh (and old) content.
-If you'd like to stay updated
-without constantly refreshing your browser
-(no judgment if that's your thing),
-feel free to subscribe to my RSS feed below:
+## 📰 RSS-Feed
 
-[Subscribe to my RSS feed](/rss.xml)
+Wenn du auf dem Laufenden bleiben möchtest, ohne ständig deinen Browser zu aktualisieren
+(jeder wie er mag, falls das dein Ding ist), abonniere gerne den RSS-Feed:
+
+[RSS-Feed abonnieren](/rss.xml)
 
 ---
 
-## 📫 Get in Touch
+## 📫 Kontakt aufnehmen
 
-Want to discuss technology,
-trade bad jokes,
-or simple say hello?
-I'd love to hear from you!
-Head over to my [Contact page](/contact),
-and let's connect.
+Möchtest du über Politik, Technik oder schlechte Witze diskutieren? Schau doch mal auf meiner [Kontaktseite](/contact) vorbei und schreib mir.

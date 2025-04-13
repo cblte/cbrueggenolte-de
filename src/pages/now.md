@@ -2,65 +2,61 @@
 layout: "@layouts/MDPage.astro"
 title: "Now"
 date: 2025-03-31
-modDate: 2025-04-04
+modDate: 2025-04-13
 ---
 
-![/now Cover -Photo by Alireza Parpaei on Unsplash](/images/now-cover.jpg "/now cover - Photo by Alireza Parpaei on Unsplash")
+![/now Cover -Foto von Alireza Parpaei auf Unsplash](/images/now-cover.jpg "/now cover - Foto von Alireza Parpaei auf Unsplash")
 
-_This is my [/now/](https://nownownow.com) page
-and is something I got inspired from [Derek Sivers](https://sive.rs/now)._
-The idea is to write something short,
-something “you’d tell a friend you hadn’t seen in a year.”
+_Das hier ist meine [/now/](https://nownownow.com)-Seite,
+inspiriert von [Derek Sivers](https://sive.rs/now)._
+Die Idee dahinter: eine Seite, die beschreibt, was man gerade macht.
+So als wenn du es einem Freund erzählen würdest,
+den du seit einem Jahr nicht gesehen hast.
 
-Last Update: April 2025
+Letztes Update: April 2025
 
-## Where I am
+_This page is also available in [English](/en/now/)._
 
-I am still living in the Netherlands,
-together with my wonderful wife.
-Trying to make a new website
-while participating in the [Full-Stack TypeScript & React Bootcamp](https://bootcamp.dev) from Flavio Copes.
+## Wo ich gerade bin
 
-## What I am doing
+Zurzeit wohne ich immer noch in den Niederlanden,
+zusammen mit meiner wunderbaren Frau.
+Derzeit arbeite ich an meiner neuen Website und
+nehme am [Full-Stack TypeScript & React Bootcamp](https://bootcamp.dev) von Flavio Copes teil.
 
-It took ages to update my website,
-the last update was probably sometime last year
-when I recreated the page with [Hugo](https://gohugo.io).
-But I'm not happy with Hugo,
-so I'm going to try something new.
-This time I created my website with [Astro](https://astro.build).
-It's a site generator written in TypeScript,
-and together with Tailwind CSS, it is a great combination.
+## Was ich gerade mache
 
-In my more or less 9-to-5 job, I'm a software engineer.
-We use Java, TypeScript and Python to make software for our customers.
-We set up services in Docker and Kubernetes
-for our internal development team to keep them happy.
+Es hat ewig gedauert, meine Website zu aktualisieren,
+das letzte Update war wahrscheinlich irgendwann letztes Jahr,
+als ich die Seite mit [Hugo](https://gohugo.io) neu aufgebaut habe.
+Aber so richtig glücklich war ich damit nie,
+weshalb ich jetzt (schon wieder) etwas Neues ausprobiere.
 
-## Getting fit
+Dieses Mal habe ich meine Website mit [Astro](https://astro.build) gebaut.
+Astro ist ebenfalls ein Site-Generator, der in TypeScript geschrieben ist,
+und zusammen mit Tailwind CSS ist das eine richtig gute Kombination.
 
-Since last September,
-I've been focusing on staying active
-and improving my fitness.
-I try to walk regularly and incorporate movement into my workday,
-making the most of flexible workout options at home.
-It has definitely been one of the best decisions I've made recently.
+In meinem normalen Job arbeite ich als Softwareentwickler.
+Wir nutzen Java, TypeScript und Python,
+um Software für unsere Kunden zu erstellen.
+Außerdem bin ich gerade dabei, mein Wissen über Docker und Kubernetes zu erweitern.
 
-## What I am reading
+## Was ich gerade lese
 
-Currently I am reading the Bootcamp script
-and the [TypeScript Handbook](https://www.typescriptlang.org/docs/handbook/intro.html).
-I am also reading [Clean Code](https://learning.oreilly.com/library/view/clean-code-a/9780136083238/) book
-to get a better understanding of how to write clean code.
+Aktuell lese ich das Bootcamp-Skript
+und das [TypeScript Handbook](https://www.typescriptlang.org/docs/handbook/intro.html).
+Außerdem arbeite ich mich durch das Buch [Clean Code](https://learning.oreilly.com/library/view/clean-code-a/9780136083238/),
+um ein besseres Gefühl dafür zu bekommen,
+wie man sauberen Code schreibt.
 
-When I have some spare time,
-I am reading through Derek Sivers [Book How to Live](http://sive.rs/h).
+Wenn ich etwas Freizeit habe,
+lese ich auch in Derek Sivers [Buch "How to Live"](http://sive.rs/h).
 _A masterpiece. The best thing he's ever made._
-I have to say it definitivly has 27 conflicting answers.
-Did not get to the conclusion yet.
+Ich muss sagen: Es gibt wirklich 27 widersprüchliche Antworten.
+Zu einer endgültigen Erkenntnis bin ich aber auch noch nicht gekommen.
 
-I also started with [Kill Decision from Daniel Suarez](https://en.wikipedia.org/wiki/Kill_Decision).
-I don't know if I can finish it,
-as I am not a regular reader
-and it is a bit difficult get back into the story
-when you have to put it down for a while.
+Außerdem habe ich angefangen,
+[Kill Decision von Daniel Suarez](https://en.wikipedia.org/wiki/Kill_Decision) zu lesen.
+Da ich selten Bücher lese,
+finde ich es schwer, wieder in die Geschichte einzutauchen,
+wenn ich länger pausiert habe.

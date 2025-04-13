@@ -2,108 +2,167 @@
 layout: "@layouts/MDPage.astro"
 title: "Manual Of Me"
 date: 2025-03-31
+toc: true
 ---
 
 ![Manual Of Me Cover - Photo by Karan Suthar on Unsplash](/images/manual-cover.jpg "Manual Of Me - Photo by Karan Suthar on Unsplash")
 
-Welcome to this friendly guide on how to collaborate effectively with me — Carsten.
-While it's comprehensive, it's not exhaustive—
-I'm always open to discussion and adaptation.
+Willkommen zu diesem Leitfaden für eine effektive Zusammenarbeit mit mir – Carsten.
+Er ist umfassend, aber nicht abschließend.
+Ich bin jederzeit offen für Diskussionen und Anpassungen.
 
-## Introduction & Caveats
+_This page is also available in [English](/en/manual-of-me/)._
 
-Think of it as a user-friendly guide for understanding how I work best.
-Remember, everyone is unique, so while these tips apply well to me,
-always feel free to ask if something isn't clear.
+## Einführung & Hinweise
 
-Disclaimer: This manual represents my preferences and habits.
-What works well for me might not always work for you or apply universally.
+Betrachte diesen Leitfaden, dieses Handbuch,
+als Werkzeug, um zu verstehen, wie ich am besten arbeite.
+Denke daran: Jeder Mensch ist einzigartig.
+Frage nach, wenn etwas unklar ist.
 
-I believe in transparency and direct communication,
-which is why I'm sharing these insights.
+Dieses Handbuch spiegelt meine persönlichen Vorlieben und Gewohnheiten wider.
+Auch wenn diese Dinge gut zu mir passen,
+Dinge sind die für mich gut funktionieren,
+muss nicht immer für dich funktionieren oder allgemein anwendbar sein.
 
-## Language & Communication Background
+Ich glaube an Transparenz und direkte Kommunikation –
+deshalb teile ich diese Einblicke.
 
-- Native German (from North Rhine-Westphalia).
-- Fluent in English,
-  though occasionally my idioms or cultural references may not land perfectly.
-  Please ask if anything is unclear.
-- I appreciate quick reviews of critical documents to ensure clarity.
+## Sprach- & Kommunikationshintergrund
 
-## Values & Communication Style
+- Muttersprache: Deutsch.
+- Fließend in Englisch –
+  gelegentliche kulturelle Missverständnisse möglich.
+  Bitte frag bei Unklarheiten nach.
+- Ich schätze schnelle Rückmeldungen bei wichtigen Dokumenten.
 
-- My humor is typically dry and sometimes dark, always focused on absurdities or situations—never targeted at people or their identities.
-- I consciously ensure my humor remains inclusive and respectful. If it ever misses the mark, let me know right away.
-- Working in international environments means my expressions might not come always across as intended—please ask for clarification if something seems off or makes you uncomfortable.
-- I have zero tolerance for [bigotry](https://en.wikipedia.org/wiki/Bigotry) or discrimination and will actively address any inappropriate behaviors I observe.
-- I believe in actively supporting and protecting colleagues who face unfair treatment.
+## Werte & Kommunikationsstil
 
-## How To Communicate With Me
+- Mein Humor ist typischerweise trocken und manchmal sarkastisch,
+  situationsbezogen –
+  nie gegen Personen oder deren Identitäten gerichtet.
+- Ich achte darauf, dass mein Humor inklusiv und respektvoll bleibt.
+  Falls er jemals daneben geht,
+  sag mir bitte sofort Bescheid.
+- Die Arbeit in internationalen Umgebungen bedeutet,
+  dass meine Ausdrucksweise manchmal nicht so ankommt, wie beabsichtigt –
+  bitte frag nach einer Erklärung,
+  wenn etwas seltsam erscheint oder dich unwohl fühlen lässt.
+- Ich habe sehr wenig Toleranz für [Bigotterie](https://de.wikipedia.org/wiki/Bigotterie) oder Diskriminierung
+  und werde aktiv unangemessenes Verhalten ansprechen, das ich beobachte.
+- Ich setze mich aktiv für Kollegen ein,
+  die unfair behandelt werden.
 
-- I prefer instant messaging/chat for most communications, with the understanding that it's asynchronous.
-- Being based in Germany/The Netherlands (CET/CEST), my "being available" hours might not align with yours—please be timezone-aware.
-- Before scheduling meetings, consider if the matter could be handled via email or chat.
-- If something is truly urgent, call me—I'll answer if I'm available and willing.
-- [No "hello" messages](https://nohello.net/)—please get straight to the point.
-- [Don't ask to ask, just ask](https://dontasktoask.com/).
-- Use specific dates for deadlines (e.g., "by Thursday, Feb 22") rather than vague terms like "next week".
-- Include all relevant information in your initial message.
-- For email communication, be specific and precise with clear requirements and deadlines.
-- [No "Need to chat" messages](https://medium.com/@merrylue/5-ways-leaders-can-avoid-sending-toxic-messages-to-employees-dc015698499c).
-- When meetings are necessary:
-  - Schedule during core working hours, avoiding evenings.
-  - Include clear agendas and expected outcomes.
-  - Respect everyone's time by being prepared and focused.
-  - Follow up with written summaries for important decisions or action items.
-  - I encourage using "smart minutes" in meetings, especially ones with an LLM behind them that can be queried for more context or information from the transcript—including 1:1s.
+## So kommunizierst du mit mir
 
-## Working Style Characteristics
+- Ich bevorzuge Instant Messaging/Chat für die meiste Kommunikation,
+  mit dem Verständnis, dass es asynchron ist.
+- Da ich in Deutschland/den Niederlanden (CET/CEST) ansässig bin,
+  könnten meine "verfügbaren" Stunden nicht mit deinen übereinstimmen —
+  bitte sei dir der Zeitzonen bewusst.
+- Bevor du Meetings planst,
+  überlege, ob das Anliegen per E-Mail oder Chat erledigt werden könnte.
+- Wenn etwas wirklich dringend ist,
+  ruf mich an —
+  ich werde antworten, wenn ich verfügbar und bereit bin.
+- [Keine "Hallo"-Nachrichten](https://nohello.net/) —
+  komm bitte direkt zur Sache.
+- [Frag nicht, ob du fragen darfst, frag einfach](https://dontasktoask.com/).
+- Verwende konkrete Daten für Fristen
+  (z.B. "bis Donnerstag, 22. Feb.")
+  anstatt vager Begriffe wie "nächste Woche".
+- Füge alle relevanten Informationen in deine erste Nachricht ein.
+- Für E-Mail-Kommunikation:
+  Sei spezifisch und präzise mit klaren Anforderungen und Fristen.
+- [Keine "Wir müssen reden"-Nachrichten](https://medium.com/@merrylue/5-ways-leaders-can-avoid-sending-toxic-messages-to-employees-dc015698499c).
 
-- I balance a detail-oriented approach with practical outcomes. While I strive for excellence, I recognize when work is "good enough."
-- Highly engaging tasks bring out intense focus and detailed results; less interesting tasks might require additional structure.
-- I handle stressful situations calmly and effectively, focusing clearly on solutions.
-- I enjoy solving problems, even if they extend beyond my direct responsibilities.
-- The quality and speed of my work often correlate with how meaningful or interesting I find the task.
+**Wenn Meetings notwendig sind:**
 
-## Environment & Work Preferences
+- Plane sie während der Kernarbeitszeiten
+  und vermeide Abendtermine.
+- Füge klare Tagesordnungen und erwartete Ergebnisse hinzu.
+- Respektiere die Zeit aller,
+  indem du vorbereitet und fokussiert bist.
+- Folge mit schriftlichen Zusammenfassungen
+  für wichtige Entscheidungen oder Aufgaben.
+- Ich empfehle die Verwendung von 'Smart Minutes' in Meetings.
+  Diese sind besonders effektiv mit einem LLM im Hintergrund,
+  das für zusätzlichen Kontext oder Informationen aus dem Transkript abgefragt werden kann –
+  einschließlich bei 1:1-Gesprächen.
 
-- I'm comfortable switching between collaborative environments and focused solo work.
-- I appreciate uninterrupted periods to tackle detailed or complex tasks.
-- Administrative tasks and non-core work aren't my favorite and can be challenging to focus on. Gentle reminders help keep me on track.
-- Friendly nudges are welcome if you notice a missed message or follow-up.
+## Merkmale meines Arbeitsstils
 
-## How You Can Help Me Succeed
+- Ich balanciere Detailorientierung mit Pragmatismus.
+  Qualität ist mir wichtig,
+  aber ich erkenne, wann etwas "gut genug" ist.
+- Bei fesselnden Aufgaben arbeite ich hochkonzentriert
+  und liefere detaillierte Ergebnisse;
+  weniger interessante Aufgaben erfordern mehr Struktur.
+- In stressigen Situationen bleibe ich ruhig und lösungsorientiert.
+- Ich löse gerne Probleme,
+  auch über meine direkten Zuständigkeiten hinaus.
+- Meine Arbeitsqualität und -geschwindigkeit korrelieren stark
+  mit dem empfundenen Sinn und Interesse an der Aufgabe.
 
-- Provide sufficient uninterrupted time for complex projects.
-- Keep administrative tasks minimal to help maintain my productivity.
-- Involve me in brainstorming and problem-solving, as these activities motivate me.
-- Allow me to work on technical challenges that interest me.
-- Offer autonomy on projects I feel passionate about.
-- For tight deadlines, help break tasks into manageable steps with brief check-ins.
-- Check in if I become unusually quiet—I might appreciate some support or guidance.
+## Arbeitsumgebung & Vorlieben
 
-## What People Might Misunderstand About Me
+- Ich wechsle problemlos zwischen Teamarbeit und fokussierter Einzelarbeit.
+- Für komplexe Aufgaben benötige ich ungestörte Zeitfenster.
+- Administrative und Routineaufgaben fallen mir schwerer –
+  freundliche Erinnerungen helfen mir dabei, fokussiert zu bleiben.
+- Ich bin dankbar für Hinweise,
+  falls ich eine Nachricht oder Anfrage übersehen habe.
 
-- My communication style can very blunt and direct—it could be misunderstood as anger or frustration (it isn't).
-- I have strong beliefs about data privacy and protection, technical quality, and professional ethics.
-- While I hold strong opinions, I'm open to discussion and different perspectives when backed by sound reasoning.
+## Wie du mir helfen kannst, erfolgreich zu sein
 
-## Feedback Preferences
+- Minimiere administrative Aufgaben,
+  um meine Produktivität zu maximieren.
+- Binde mich in Brainstorming und Problemlösungen ein –
+  diese Aktivitäten motivieren mich besonders.
+- Ermögliche mir, an technisch herausfordernden und interessanten Aufgaben zu arbeiten.
+- Gewähre mir Freiräume für Projekte,
+  die meine Begeisterung wecken.
+- Bei engen Fristen unterstütze mich
+  durch Unterteilung in überschaubare Schritte
+  mit kurzen Check-ins.
+- Sprich mich an, wenn ich ungewöhnlich zurückhaltend werde –
+  möglicherweise benötige ich Unterstützung oder Orientierung.
 
-- I appreciate direct, constructive feedback that is specific and actionable.
-- For significant feedback, I prefer receiving it during scheduled one-on-ones rather than impromptu conversations.
-- If something isn't working, I'd rather know sooner than later so I can adjust course.
-- For technical feedback, I value detailed explanations and clear reasoning behind suggestions.
-- When providing feedback about my work:
-  - Focus on specific behaviors or outcomes rather than general statements.
-  - Provide examples where possible.
-  - Suggest clear paths for improvement.
-  - Be direct but professional—I can handle constructive criticism.
-- For collaborative projects, I welcome ongoing feedback to ensure we're aligned with expectations and goals.
+## Was andere an mir missverstehen könnten
 
-## Conflict Resolution
+- Mein direkter Kommunikationsstil wird manchmal fälschlicherweise
+  als Ärger oder Frustration interpretiert.
+- Ich vertrete klare Positionen zu Datenschutz,
+  technischer Qualität und Berufsethik.
+- Trotz meiner festen Überzeugungen bleibe ich offen
+  für fundierte Gegenargumente und alternative Perspektiven.
 
-- I strongly prefer direct, person-to-person communication for addressing issues or misunderstandings.
-- Don't talk about people behind their backs—address concerns directly with the person involved.
-- I'm open to feedback and clarification about my communication style.
-- Give direct feedback if my humor or communication style ever causes discomfort.
+## Feedback-Präferenzen
+
+- Ich bevorzuge direktes, konstruktives Feedback
+  mit spezifischen, umsetzbaren Punkten.
+- Wichtiges Feedback sollte in geplanten Einzelgesprächen erfolgen,
+  nicht spontan.
+- Informiere mich frühzeitig über Probleme,
+  damit ich rechtzeitig gegensteuern kann.
+- Bei technischem Feedback schätze ich detaillierte Erklärungen
+  und fundierte Begründungen.
+- Für effektives Feedback an mich:
+  - Fokussiere auf konkrete Verhaltensweisen oder Ergebnisse
+    statt allgemeiner Aussagen
+  - Untermauere Punkte mit Beispielen
+  - Biete klare Verbesserungsvorschläge
+  - Sei direkt und professionell –
+    konstruktive Kritik ist willkommen
+- Bei Zusammenarbeit schätze ich kontinuierliches Feedback
+  zur Abstimmung auf gemeinsame Ziele.
+
+## Konfliktlösung
+
+- Ich bevorzuge direkte Gespräche
+  zur Klärung von Problemen oder Missverständnissen.
+- Sprich Bedenken direkt mit mir an
+  statt mit Dritten darüber zu reden.
+- Ich bin offen für Feedback zu meinem Kommunikationsstil.
+- Informiere mich unmittelbar,
+  wenn mein Humor oder meine Ausdrucksweise Unbehagen verursacht.

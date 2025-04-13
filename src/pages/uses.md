@@ -2,347 +2,331 @@
 layout: "@layouts/MDPage.astro"
 title: "Uses"
 date: 2025-03-31
+modDate: 2025-04-13
 ---
 
 ![Uses Cover Image](/images/uses-cover.jpg "Uses Cover Image - Photo by ")
 
-_This is my [/uses/](https://uses.tech) page which I got inspired by [Wes
-Bos' uses](https://wesbos.com/uses/) page._
-The idea is to document which developer setup, gear, software, and configurations I use.
+_Dies ist meine [/uses/](https://uses.tech) Seite,
+inspiriert von [Wes Bos' uses](https://wesbos.com/uses/)._
+Die Idee dahinter:
+Entwickler dokumentieren ihre Arbeitsumgebung –
+vom Hardware-Setup
+über Software-Tools
+bis hin zu persönlichen Konfigurationen.
 
-**Last updated on 30th March 2025.**
+_This page is also available in [English](/en/uses/)._
 
-## Sharing my Setup and Tools I use
+**Letztes Update March 2025.**
 
-I believe in sharing the tools I use —
-not just to help others
-but also to document my own journey.
-I love learning Learning about others' setups
-which may inspire me to cherry-pick for my own toolbox.
-While I enjoy exploring new tools,
-I've come to value stability over novelty.
+## Mein Setup und meine Werkzeuge im Überblick
 
-Here's a straightforward list of what I use daily
-for work, home, and everything in between.
+Ich teile gerne die Liste der Tools, die ich nutze —
+nicht nur, um anderen zu helfen,
+sondern auch, um mein eigenes Setup zu dokumentieren.
+Ich lerne gerne von den Setups anderer,
+die mich inspirieren können,
+für meine eigene "Werkzeugkiste".
+Obwohl ich es genieße,
+neue Dinge zu entdecken und auszuprobieren,
+schätze ich mittlerweile Stabilität mehr als Neuheiten.
+
+Hier ist eine übersichtliche Liste dessen,
+was ich täglich nutze
+für die Arbeit,
+zu Hause
+und alles dazwischen.
 
 ## 🖥 Hardware
 
-As a software engineer/developer,
-I've worked primarily with Microsoft Windows throughout my professional career.
-However, I've been using Apple computers at home for over 20 years
-because of their reliability—
-I've rarely experienced hardware issues with them.
+Als Software-Ingenieur/Entwickler habe ich während meiner gesamten beruflichen Laufbahn
+hauptsächlich mit Microsoft Windows gearbeitet.
+Allerdings verwende ich zu Hause seit über 20 Jahren Apple-Computer,
+weil sie so zuverlässig sind
+und ich nur selten Probleme mit der Hardware hatte.
 
-My experience spans multiple platforms,
-including both backend and frontend development.
-Professionally, I've mainly worked with Windows machines
-and Linux/Unix on the server side,
-while my personal machine of choice is a MacBook Pro.
+Meine Erfahrung erstreckt sich über mehrere Plattformen,
+einschließlich Backend- und Frontend-Entwicklung.
+Im professionellen Umfeld nutze ich vorwiegend Windows-Systeme als Desktop-Umgebung
+und Linux/Unix auf der Serverseite.
 
-Please note that this overview of my toolbox
-isn't meant as a recommendation for what others should use,
-but rather a record of what has met my specific needs over time.
+Bitte beachte,
+dass dieser Überblick nicht als Empfehlung gedacht ist,
+was du verwenden solltest,
+sondern eher eine Aufzeichnung dessen,
+was meine spezifischen Bedürfnisse im Laufe der Zeit erfüllt hat.
 
 - **MacBook Air 2025** -
-  My new primary workstation,
-  offering exceptional battery life,
-  silent fanless operation,
-  and enough power to handle demanding development tasks with ease.
-- **Logitech Anywhere MX** -
-  Versatile travel mouse with seamless three-device connectivity.
-  Wish it was a little bit bigger.
-- **LG 32GK650F** -
-  Premium 32" QHD display with versatile inputs for all my devices.
-- **Minisforum i5** -
-  Compact mini pc running Proxmox,
-  Nextcloud,
-  and some small services effortlessly.
-- **ASUSTOR AS6702T** -
-  Feature-rich NAS handling Docker services,
-  archives, and system backups.
-- **Synology DS215j** -
-  Old but reliable offline storage solution
-  for email archives and temporary data.
+  Meine neue primäre Arbeitsstation,
+  bietet außergewöhnliche Akkulaufzeit,
+  lüfterlosen, geräuschlosen Betrieb
+  und genügend Leistung, um anspruchsvolle Entwicklungsaufgaben mühelos zu bewältigen.
 
-- **retired:** MacBook Pro (14-inch, M1 Pro) -
-  A powerful workstation with exceptional battery life and stunning display.
+  - **Logitech Anywhere MX** -
+    Schöne kleine Maus mit Bluetooth für bis zu drei Geräte. Wünschte, sie wäre ein bisschen größer.
+  - **LG 32GK650F** -
+    Hochwertiger 32" QHD-Monitor mit vielseitigen Anschlüssen für alle meine Geräte.
+  - **Minisforum i5** -
+    Kompakter Mini-PC, der Proxmox, Nextcloud und einige kleine Dienste mühelos ausführt.
+  - **ASUSTOR AS6702T** -
+    Funktionsreicher NAS für Docker-Dienste, Archive und System-Backups.
+  - **Synology DS215j** -
+    Alte, aber zuverlässige Offline-Speicherlösung für E-Mail-Archive und temporäre Daten.
+
+  - **Ehemals genutzt:** MacBook Pro (14 Zoll, M1 Pro) -
+    Eine leistungsstarke Workstation mit außergewöhnlicher Akkulaufzeit und beeindruckendem Display.
 
 ## Home Office
 
 - **IKEA Idasen 160x80** -
-  Robust height-adjustable desk with elegant dark brown surface
-  and impressive weight capacity.
+  Stabiler höhenverstellbarer Schreibtisch mit eleganter dunkelbrauner Tischplatte
+  und beeindruckender Belastbarkeit.
 - **beyerdynamic DT 770 PRO** -
-  Studio-quality headphones delivering exceptional audio clarity
-  and comfort for music enthusiasts.
+  Professionelle Studiokopfhörer mit hervorragender Klangqualität
+  und hohem Tragekomfort für Musikliebhaber.
 - **SteelSeries Arctis 7+** -
-  Premium wireless gaming headset featuring Discord-certified ClearCast microphone
-  and separate game/chat audio channels.
+  Hochwertiges kabelloses Gaming-Headset mit Discord-zertifiziertem ClearCast-Mikrofon
+  und getrennten Audio-Kanälen für Spiel und Chat.
 - **X23 Walkingpad** -
-  Compact walking treadmill
-  that integrates seamlessly with my workspace for staying active during home office work.
+  Platzsparendes Laufband,
+  das sich perfekt in meinen Arbeitsbereich einfügt und mir ermöglicht, im Homeoffice in Bewegung zu bleiben.
 
-## Editor and Terminal
+## Editor und Terminal
 
-As a developer, I spend significant time working in terminals.
-This approach is essential for managing remote machines and running multiple services
-without relying on resource-intensive graphical interfaces.
-I consider terminal-based workflows superior for interacting with the digital world,
-and I typically only use a mouse when browsing the web.
+Als Entwickler verbringe ich viel Zeit in Terminals.
+Sie sind unverzichtbar für die Verwaltung entfernter Systeme
+und den Betrieb verschiedener Dienste,
+ohne dabei auf ressourcenhungrige grafische Oberflächen zurückgreifen zu müssen.
+Meiner Meinung nach bieten terminal-basierte Arbeitsabläufe
+die effizienteste Art,
+mit der digitalen Welt zu interagieren
+– die Maus nutze ich eigentlich nur zum Surfen im Internet.
 
-While I primarily work in terminal-based editors,
-I also use modern code editors like VS Code and Zed
-for specific development tasks that benefit from their integrated features and extensions.
-However, my terminal remains the central hub of my workflow.
+Obwohl ich vorwiegend terminal-basierte Editoren verwende,
+greife ich für bestimmte Entwicklungsaufgaben
+auch zu modernen Code-Editoren wie VS Code oder Zed,
+die durch ihre integrierten Funktionen
+und Erweiterungen punkten können.
+Dennoch bleibt das Terminal das Herzstück meines Arbeitsablaufs.
 
-Given the terminal's importance in my workflow,
-I've created a separate category dedicated to terminal tools,
-as they make up a substantial portion of my toolkit.
+Da Terminal-Tools einen so großen Teil meines täglichen Werkzeugkastens ausmachen,
+habe ich ihnen eine eigene Kategorie gewidmet.
+
+# Deutsch
 
 - [VS Code](https://code.visualstudio.com/) -
-  Feature-rich code editor
-  with excellent extension ecosystem
-  supporting virtually all programming languages
-  and frameworks.
+  Funktionsreicher Code-Editor
+  mit hervorragenden Erweiterungen,
+  der praktisch alle Programmiersprachen
+  und Frameworks unterstützt.
 - [Zed](https://zed.dev/) -
-  Lightweight, high-performance editor
-  designed by former Atom developers
-  with collaboration features built-in.
+  Leichtgewichtiger, leistungsstarker Editor,
+  entwickelt von ehemaligen Atom-Entwicklern
+  mit integrierten Kollaborationsfunktionen.
 - [iTerm 2](https://iterm2.com/) -
-  Powerful terminal emulator
-  with extensive customization
-  that served me well
-  until recent dark/light theme switching issues.
+  Leistungsfähiger Terminal-Emulator
+  mit umfangreichen Anpassungsmöglichkeiten.
 - [Ghostty](https://ghostty.org/) -
-  Modern terminal replacement that solved my
-  theming problems after years with iTerm2.
+  Moderner Terminal-Ersatz, der nach vielen Jahren nun iTerm2 abgelöst hat.
 - [Zellij](https://zellij.dev/) -
-  Feature-rich terminal multiplexer offering a
-  refreshing alternative to Tmux.
+  Funktionsreicher Terminal-Multiplexer, der eine
+  erfrischende Alternative zu Tmux bietet.
 - [Fish](https://fishshell.com/) -
-  Intuitive, user-friendly shell that
-  permanently converted me from zsh in early 2023.
+  Intuitive, benutzerfreundliche Shell, die
+  mich Anfang 2023 endgültig in den Bann gezogen hat.
 - [ne](https://ne.di.unimi.it/) -
-  Efficient text editor that recently displaced
-  both vim and nano in my workflow.
+  Effizienter Texteditor, der kürzlich
+  sowohl vim als auch nano in meinem Arbeitsablauf ersetzt hat.
 - [ngrok](https://ngrok.com/), [httpie](https://httpie.io/cli),
   [jq](https://jqlang.org/) -
-  Essential networking toolkit for streamlined
-  software development.
+  Unverzichtbares Netzwerk-Toolkit für die Softwareentwicklung.
 - [Homebrew](https://brew.sh) -
-  Indispensable package manager filling the void
-  left by macOS's lack of native solution.
+  Unverzichtbarer Paketmanager, der die Lücke füllt,
+  die durch das Fehlen einer nativen Lösung in macOS entsteht.
 - [Fira Code](https://www.programmingfonts.org/#firacode), [Fira
   Mono](https://www.programmingfonts.org/#fira), [Victor
   Mono](https://www.programmingfonts.org/#victor-mono) -
-  Superior monospaced typography replacing traditional options like Consolas and Inconsolata.
+  Hervorragende Monospace-Schriftarten, die traditionelle Optionen wie Consolas und Inconsolata ersetzen.
 - [Catppuccin Macchiato](https://catppuccin.com/) -
-  Elegant color scheme for 2025,
-  succeeding my previous favorites Cobalt2 and Synthwave'84.
-  Used in Terminal and Editors.
+  Elegantes Farbschema für 2025,
+  das meine bisherigen Favoriten Cobalt2 und Synthwave'84 ablöst.
+  Wird im Terminal und in Editoren verwendet.
 
 ## 🛠️ Applications
 
-I use a diverse collection of software tools
-to enhance my digital life.
-These applications are distributed across various platforms:
-software installed locally on my computer,
-mobile applications on my smartphone,
-Cloud-based SaaS (Software as a Service) solutions.
+Ich nutze eine vielfältige Sammlung von Software-Werkzeugen,
+um mein digitales Leben zu bereichern.
+Diese Anwendungen verteilen sich auf verschiedene Plattformen:
+lokal installierte Programme auf meinem Computer,
+mobile Apps auf meinem Smartphone.
 
-Each tool serves a specific purpose in my workflow,
-helping me stay productive and organized
-across different devices and environments.
+Jedes Tool erfüllt einen bestimmten Zweck
+und hilft mir dabei,
+produktiv und organisiert zu bleiben,
+unabhängig davon,
+welches Gerät oder welche Umgebung ich gerade nutze.
 
-### Engineering
+### Entwicklung
 
 - [GitHub](https://github.com) -
-  Essential repository hosting the majority of my code projects
-  and dependencies.
-- [Bitwarden](https://bitwarden.com/) clients -
-  Secure password management
-  enforcing unique, complex credentials
-  across all services.
+  Unverzichtbare Plattform für die meisten Codeprojekte und Abhängigkeiten.
+- [Bitwarden](https://bitwarden.com/) -
+  Sichere Passwortverwaltung, die einzigartige, komplexe Zugangsdaten
+  für alle Dienste gewährleistet.
 - [Vaultwarden](https://github.com/dani-garcia/vaultwarden) -
-  Self-hosted Bitwarden alternative
-  giving complete control over my password vault
-  and sensitive data.
+  Selbst gehostete Bitwarden-Alternative, die volle Kontrolle über meinen Passwort-Tresor
+  und sensible Daten bietet.
 - [Mullvad VPN](https://mullvad.net) -
-  Privacy-focused network solution
-  protecting digital activities
-  in an increasingly monitored world.
-- [Uberspace](https://uberspace.de) -
-  Reliable provider handling both my web hosting
-  and email infrastructure needs.
+  Datenschutzorientierte Netzwerklösung, die meine digitalen Aktivitäten in einer zunehmend überwachten Welt schützt.
 - [Tailscale](https://tailscale.com/) -
-  Zero-configuration VPN creating a secure mesh network
-  between all my devices
-  with remarkable ease.
+  VPN ohne Konfigurationsaufwand, das ein sicheres Netzwerk zwischen all meinen Geräten
+  mit bemerkenswerter Einfachheit aufbaut.
 
-### Learning
+### Lernen
 
-- Apple Notes for transient notes -
-  Quick-capture solution that outperformed Notion, Bear, and Obsidian
-  for simple note-taking and family sharing.
+- Apple Notes für Notizen -
+  Schnelle und effiziente Lösung, die sich gegenüber Notion, Bear und Obsidian
+  durch intuitive Bedienung bei einfachen Notizen und nahtloser Familienfreigabe durchsetzt.
 - [TiddlyWiki](https://tiddlywiki.com) -
-  Comprehensive personal knowledge system for permanent notes
-  that seamlessly replaced DayOne as my journaling platform.
+  Umfassendes persönliches Wissenssystem für dauerhafte Notizen,
+  das nahtlos DayOne als meine Journaling-Plattform ersetzt hat.
 - [FeatherWiki](https://feather.wiki/) -
-  Minimalist wiki alternative offering exceptional portability
-  while maintaining powerful knowledge management capabilities.
+  Minimalistische Wiki-Alternative mit außergewöhnlicher Mobilität
+  bei gleichzeitig leistungsstarken Wissensmanagementfunktionen.
 - [Duolingo](https://de.duolingo.com/) -
-  Effective vocabulary-building tool
-  supporting my fluctuating language learning commitment.
+  Effektives Vokabeltraining,
+  das mein wechselhaftes Engagement beim Sprachenlernen unterstützt.
 - [miniflux](https://miniflux.app/) -
-  Self-determined RSS reader enabling deliberate curation of information
-  beyond algorithmic recommendations.
+  Selbstbestimmter RSS-Reader, der bewusste Informationsauswahl
+  jenseits algorithmischer Empfehlungen ermöglicht.
 - [PocketCasts](https://pocketcasts.com/) -
-  Superior podcast application
-  that emerged victorious after extensive comparison testing.
+  Hervorragende Podcast-Anwendung,
+  die nach ausführlichen Vergleichstests überzeugt hat.
 - [Audible](https://audible.de) -
-  Versatile audiobook service
-  transforming mundane activities into productive listening opportunities.
+  Vielseitiger Hörbuchdienst, der alltägliche Tätigkeiten in produktive Hörzeit verwandelt.
 - [dev.to](https://dev.to) -
-  Great tech community and articles.
+  Großartige Tech-Community mit lesenswerten Artikeln.
 
-### Productivity
+### Produktivität
 
 - [TiddlyWiki](https://tiddlywiki.com) -
-  Versatile knowledge system serving as both my personal task manager
-  and comprehensive work journal across all environments.
-- [One Sec Browser Extension](https://one-sec.app/browser-extension/) -
-  Effective intervention tool breaking the automatic social media habit
-  and reducing mindless scrolling behavior.
+  Vielseitiges Wissenssystem, das sowohl als persönlicher Aufgabenplaner
+  als auch umfassendes Arbeitsjournal in allen Umgebungen dient.
+- [One Sec Browser-Erweiterung](https://one-sec.app/browser-extension/) -
+  Wirksames Interventionswerkzeug, das automatische Social-Media-Gewohnheiten durchbricht
+  und gedankenloses Scrollen reduziert.
 - [Raycast](https://raycast.com/) -
-  Powerful command center replacing Spotlight
-  with customizable extensions and workflows.
+  Leistungsstarke Kommandozentrale als Spotlight-Ersatz
+  mit anpassbaren Erweiterungen und Arbeitsabläufen.
 - [Rectangle](https://rectangleapp.com/) -
-  Essential window management tool enhancing productivity
-  by simplifying window organization and navigation.
+  Essentielles Fenstermanagement-Tool zur Produktivitätssteigerung
+  durch vereinfachte Fensterorganisation und -navigation.
 
-### Creating
+### Kreativität
 
 - [LanguageTool](https://languagetool.org/) -
-  Comprehensive writing assistant elevating communication quality
-  by catching grammatical errors and stylistic inconsistencies.
+  Umfassender Schreibassistent, der die Kommunikationsqualität verbessert,
+  indem er grammatikalische Fehler und stilistische Inkonsistenzen aufdeckt.
 - [Deepl](https://deepl.com) -
-  Superior translation service doubling as a creative writing tool
-  through strategic language conversion techniques.
+  Überlegener Übersetzungsdienst, der auch als kreatives Schreibwerkzeug
+  durch strategische Sprachkonversionstechniken dient.
 - [Astro](https://astro.build) -
-  Innovative web framework powering my current website
-  with modern performance features.
+  Innovatives Web-Framework, das meine aktuelle Website
+  mit modernen Leistungsmerkmalen antreibt.
 - [Hugo](https://gohugo.com) -
-  Reliable static site generator delivering impressive results
-  with minimal configuration across multiple projects.
+  Zuverlässiger Static-Site-Generator, der beeindruckende Ergebnisse
+  mit minimaler Konfiguration für verschiedene Projekte liefert.
 - [Wordpress](https://wordpress.org) -
-  Former publishing platform gradually replaced
-  by more efficient static site generation approaches.
+  Frühere Publishing-Plattform, die schrittweise
+  durch effizientere Static-Site-Generierungsansätze ersetzt wurde.
 - [ImageOptim](https://imageoptim.com/) -
-  Essential image optimization utility preserving quality
-  while dramatically reducing file sizes and stripping unnecessary metadata.
+  Unverzichtbares Bildoptimierungstool, das die Qualität erhält
+  bei gleichzeitiger Reduzierung der Dateigröße und Entfernung unnötiger Metadaten.
 
-### Communication
+### Kommunikation
 
 - Apple Messages -
-  Primary communication platform
-  connecting me with the
-  majority of my personal contacts.
+  Primäre Kommunikationsplattform für den Kontakt mit den meisten Bekannten.
 - [Signal Messenger](https://signal.org/) -
-  Secure alternative for
-  privacy-conscious conversations
-  beyond the Apple ecosystem.
+  Sichere Alternative für datenschutzbewusste Gespräche außerhalb des Apple-Ökosystems.
 - [Telegram](https://telegram.org/) -
-  Feature-rich messaging platform
-  offering superior file sharing
-  and bot integration capabilities.
+  Funktionsreicher Messaging-Dienst mit überlegenen Dateiaustausch- und Bot-Integrationsmöglichkeiten.
 - [Discord](https://discord.com) -
-  Essential voice and text communication
-  service enhancing multiplayer gaming experiences.
-
-### Infrastructure
+  (Fast) Unverzichtbarer Sprach- und Textkommunikationsdienst, der Multiplayer-Spielerlebnisse verbessert.
 
 ## Development & Hosting Tools
 
+Hier ist mein Setup für Entwicklung und Hosting,
+das ich für verschiedene Projekte nutze.
+
 - [GitHub](https://github.com) -
-  This robust platform safeguards virtually all
-  my code repositories,
-  though I'm actively exploring innovative alternatives in 2025.
+  Diese robuste Plattform beherbergt praktisch alle meine Code-Repositories,
+  obwohl ich 2025 aktiv nach innovativen Alternativen suche.
 - [fly.io](https://fly.io) -
-  I was privileged to acquire a now-discontinued
-  hobby license last year,
-  providing elegant cloud hosting solutions for my
-  projects.
+  Ich hatte das Glück, letztes Jahr eine inzwischen eingestellte Hobby-Lizenz zu erwerben,
+  die elegante Cloud-Hosting-Lösungen für meine Projekte bietet.
 - [Docker](https://docker.com) -
-  This invaluable containerization technology
-  forms the backbone of my homelab environment,
-  elegantly orchestrating various
-  self-hosted services.
+  Container, Container, Container – jetzt auch mit Kubernetes und LLMs.
 - [desec.io](https://desec.io) -
-  This impeccably reliable dynamic DNS service
-  seamlessly connects my homelab to the outside world
-  with remarkable stability.
+  Dieser tadellos zuverlässige dynamische DNS-Dienst verbindet mein Homelab nahtlos mit der Außenwelt.
 - [inwx.de](https://inwx.de) -
-  My trusted domain registrar of choice,
-  offering competitive pricing
-  for managing all my web domains.
+  Mein bewährter Domain-Registrar der zu wettbewerbsfähigen Preisen alle meine Webdomains verwaltet.
 - [uberspace](https://uberspace.de) -
-  Their "Hosting on Asteroids!" tagline perfectly captures
-  this service's stellar performance
-  and exceptional support team—absolutely worth every penny.
+  Ihr Slogan "Hosting on Asteroids!" beschreibt perfekt die herausragende Leistung dieses Hostinganbieters
+  und das außergewöhnliche Support-Team – absolut jeden Cent wert.
+- [Hostinger](https://hostinger.de) -
+  Zuverlässiger Anbieter für Webhosting und E-Mail-Infrastruktur.
 - [Netlify](https://www.netlify.com/) -
-  One of two brilliant discoveries this year,
-  offering sophisticated hosting solutions
-  specifically optimized for modern JamStack projects.
+  Eine von zwei Lösungen, das speziell für moderne JamStack-Projekte optimiert ist.
 - [Vercel](https://vercel.com/) -
-  An exemplary alternative to Netlify,
-  providing versatile and powerful hosting capabilities
-  for diverse project requirements.
+  Eine alternative Hosting-Lösung zu Netlify.
 
 ## Hobby and Gaming
 
+Neben meinen beruflichen Aktivitäten
+genieße ich verschiedene Hobbys,
+die mir Ausgleich
+und Entspannung bieten.
+Gaming und 3D-Druck gehören zu meinen Leidenschaften,
+für die ich spezielle Hardware verwende
+
 **Gaming PC**:
 
-- **Lenovo Legion T5** - i5 10th Gen, RTX20270, Windows 10 Gaming machine.
-- **Logitech G203** - A simple mouse for large hands.
-- **Logitech G213** - Gaming Keyboard to be used when playing Factorio or
-  Borderlands.
+- **Lenovo Legion T5** - Intel Code i5 10th Gen, RTX 2070, Windows 10 Gaming-PC.
+- **Logitech G203** - Eine Maus für große Hände.
+- **Logitech G213** - Robustes Gaming Keyboard ohne großen Schnickschnack.
 
 **Consoles**:
 
-- **Nintendo Switch** - For all those Zelda games.
-- **Nintendo 2DS XL** - For all those NDS games I havent played yet.
-- **Anbernic RG353** - A great and portable Gameboy sized portable emulation
-  station.
+- **Nintendo Switch** - Für alle Zelda- und Mario-Spiele.
+- **Nintendo 2DS XL** - Für all die NDS Spiele die ich bisher nicht spielen konnte.
+- **Anbernic RG353** - Eine großartige und tragbare Emulations-Station in Game Boy-Größe.
 
 **3D Printing**:
 
 - **Bambulap P1S** -
-  After owning an Ender 3 V2 neo, I made the switch.
-  Since then, it has been printing something almost every day.
+  Nach dem Creality Ender 3 V2 neo habe ich den Wechsel vollzogen.
+  Seitdem druckt er fast jeden Tag etwas.
 
 ## 🎒 Every Day Carry
 
+Die Gegenstände, die ich täglich bei mir trage,
+sind sorgfältig ausgewählt
+und haben sich im Alltag bewährt.
+Sie verbinden Funktionalität mit Zuverlässigkeit
+und unterstützen mich bei meinen täglichen Aktivitäten.
+
 - **iPhone 15 Pro** -
-  Simply the best phone I've ever owned.
-  The camera quality is exceptional,
-  especially in low light,
-  and the battery easily lasts a full day of heavy use.
-  The titanium frame feels premium
-  while keeping it lightweight.
+  Das mit Abstand beste Smartphone, das ich je besessen habe.
+  Die Kameraqualität ist außergewöhnlich,
+  besonders bei schlechten Lichtverhältnissen – und der Akku hält problemlos einen ganzen Tag.
 - **iPad Pro 10.9 M1** -
-  Perfect travel companion with the Magic Keyboard.
-  I use it for quick lookups,
-  running LLMs while coding,
-  writing,
-  or just streaming shows
-  during chores or treadmill sessions.
-- Tasmanian Tiger TT Essential L Backpack -
-  My 15L daily carry
-  that I can't recommend enough.
-  Best daypack purchase I've made.
-- WMF 700ml drink bottle -
-  Keeps me hydrated throughout the day.
+  Mit dem Magic Keyboard eine sehr gute Alternative wenn das MacBook mal nicht greifbar ist.
+- **Tasmanian Tiger TT Essential L Rucksack** -
+  Mein 15L-Tagesbegleiter, den ich wärmstens empfehlen kann.
+  Der beste DayPack, den ich je gekauft habe.
+- **WMF 700ml Trinkflasche** - Stay hydrated!
 
 ## Further Reading
 
-Make sure to check out [uses.tech](https://uses.tech) for other people's setups.
+Schau dir unbedingt auch [uses.tech](https://uses.tech) an, um die Setups anderer Leute zu entdecken.
