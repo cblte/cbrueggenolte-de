@@ -1,7 +1,7 @@
 ---
 title: Ninja 12-in-1 Combi Cooker
 pubDate: 2025-03-26
-modDate: 2025-03-26
+modDate: 2025-04-13
 description: "Wir haben eine neue Heißluftfritteuse und sie ist fantastisch. Meine ersten Eindrücke vom Ninja 12-in-1 Combi Cooker."
 tags: ["airfryer", "küche", "kochen"]
 ---
