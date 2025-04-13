@@ -7,54 +7,24 @@ draft: true
 ---
 
 [youtube](https://www.youtube.com/watch?v=m2VqaNKstGc)
-The Creators of Model Context Protocol about how everyone is jumping on the bandwagon of MCP.
-With it we have [punkpeye/awesome-mcp-servers](https://github.com/punkpeye/awesome-mcp-servers) and [appcypher/awesome-mcp-servers](https://github.com/appcypher/awesome-mcp-servers).
+Die Erschaffer des Model Context Protocol sprechen darüber, wie alle auf den MCP-Zug aufspringen. Damit haben wir [punkpeye/awesome-mcp-servers](https://github.com/punkpeye/awesome-mcp-servers) und [appcypher/awesome-mcp-servers](https://github.com/appcypher/awesome-mcp-servers).
 
-[Open source devs say AI crawlers dominate traffic, forcing blocks on entire countries](https://arstechnica.com/ai/2025/03/devs-say-ai-crawlers-dominate-traffic-forcing-blocks-on-entire-countries/)
-On the other hand, we have the AI crawlers who seemingly start to ruin the internet.
-They are lying about their user-agents, cycling residential ips and more.
-Normal defense mechanisms are not enough.
+[Open-Source-Entwickler berichten, dass KI-Crawler den Datenverkehr dominieren und Blockaden ganzer Länder erzwingen](https://arstechnica.com/ai/2025/03/devs-say-ai-crawlers-dominate-traffic-forcing-blocks-on-entire-countries/)
+Andererseits haben wir die KI-Crawler, die anscheinend beginnen, das Internet zu ruinieren. Sie lügen über ihre User-Agents, wechseln Wohn-IPs und mehr. Normale Verteidigungsmechanismen reichen nicht aus.
 
-[Expert used ChatGPT-4o to create a replica of his passport in just 5 minutes bypassing KYC](https://securityaffairs.com/176224/security/chatgpt-4o-to-create-a-replica-of-his-passport-in-just-five-minutes.html)
-"The implications are obvious –any verification flow relying on images as “proof” is now officially obsolete."
+[Experte nutzte ChatGPT-4o, um in nur 5 Minuten eine Kopie seines Reisepasses zu erstellen und KYC zu umgehen](https://securityaffairs.com/176224/security/chatgpt-4o-to-create-a-replica-of-his-passport-in-just-five-minutes.html)
+"Die Implikationen sind offensichtlich – jeder Verifizierungsprozess, der sich auf Bilder als 'Beweis' stützt, ist jetzt offiziell veraltet."
 
 [nzz.ch](https://archive.is/5rzcq)
-The NZZ recently published an interview
-exploring how AI is changing modern warfare.
-It features [Elke Schwarz](https://www.qmul.ac.uk/politics/staff/profiles/schwarzelke.html),
-a well-known researcher who's studying how new technologies are changing military operations
-and conflict dynamics.
-Her work shows how the global tech sector
-and military establishments worldwide are teaming up more and more.
+Die NZZ veröffentlichte kürzlich ein Interview, das untersucht, wie KI die moderne Kriegsführung verändert. Es stellt [Elke Schwarz](https://www.qmul.ac.uk/politics/staff/profiles/schwarzelke.html) vor, eine bekannte Forscherin, die untersucht, wie neue Technologien militärische Operationen und Konfliktdynamiken verändern. Ihre Arbeit zeigt, wie der globale Technologiesektor und militärische Einrichtungen weltweit immer mehr zusammenarbeiten.
 
 [zeit.de](https://archive.ph/x31lc)
-Another Article about AI and how wrong it can be
-is the one from Eva Wolfangel in the Zeit.
-The articel describes the issue with a system
-that Britain wants to establish to predict crimes.
-But experiences from Spain show, that this isn't right.
+Ein weiterer Artikel über KI und wie falsch sie sein kann, ist der von Eva Wolfangel in der Zeit. Der Artikel beschreibt das Problem mit einem System, das Großbritannien zur Vorhersage von Verbrechen einführen möchte. Aber Erfahrungen aus Spanien zeigen, dass dies nicht richtig ist.
 
 [taz.de](https://taz.de/Datenschuetzer-ueber-neue-Patientenakte/!6059544/)
-Should you keep quiet or object?
-Former Federal Data Protection Commissioner Ulrich Kelber explains the electronic patient file
-and why he thinks that the new version of the patient file is not secure enough.
+Schweigen oder Einspruch erheben? Der ehemalige Bundesbeauftragte für den Datenschutz, Ulrich Kelber, erklärt die elektronische Patientenakte und warum er denkt, dass die neue Version der Patientenakte nicht sicher genug ist.
 
 [heise.de](https://archive.ph/VMeSd)
-The Bundeswehr are going to use OpenDesk,
-an open-source office suite,
-for its forces as a secure alternative to Microsoft 365.
-With over 1500 requests from German institutions,
-OpenDesk aims to enhance digital sovereignty
-and reduce dependency on US tech firms.
-The BundesMessenger based on Matrix will be integrated
-which brings a comprehensive communication tools under sovereign control.
+Die Bundeswehr wird OpenDesk, eine Open-Source-Office-Suite, für ihre Streitkräfte als sichere Alternative zu Microsoft 365 nutzen. Mit über 1500 Anfragen von deutschen Institutionen zielt OpenDesk darauf ab, die digitale Souveränität zu verbessern und die Abhängigkeit von US-Technologieunternehmen zu verringern. Der auf Matrix basierende BundesMessenger wird integriert, wodurch umfassende Kommunikationswerkzeuge unter souveräner Kontrolle gebracht werden.
 
-DuckDuckDuck Browser got an Update.
-They also announced a better onboarding experience
-when signing up for their [DuckDuckDuck Privacy Pro](https://duckduckgo.com/duckduckgo-help-pages/privacy-pro/) service.
-Beside a VPN it includes _Personal Information Removal_
-and _Identity Theft Restoration_.
-But with with 10 Euros/Month I think it is still
-on the more expensive side.
-It might be worth it for you,
-if you are concerned about your privacy and security.
+Der DuckDuckDuck Browser erhielt ein Update. Sie kündigten auch eine bessere Einführungserfahrung an, wenn man sich für ihren [DuckDuckDuck Privacy Pro](https://duckduckgo.com/duckduckgo-help-pages/privacy-pro/) Dienst anmeldet. Neben einem VPN beinhaltet er _Entfernung persönlicher Informationen_ und _Wiederherstellung bei Identitätsdiebstahl_. Aber mit 10 Euro/Monat ist er meiner Meinung nach immer noch auf der teureren Seite. Es könnte sich für Sie lohnen, wenn Sie sich Sorgen um Ihre Privatsphäre und Sicherheit machen.
