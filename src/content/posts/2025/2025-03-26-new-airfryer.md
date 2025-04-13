@@ -2,48 +2,39 @@
 title: Ninja 12-in-1 Combi Cooker
 pubDate: 2025-03-26
 modDate: 2025-03-26
-description: "We have a new AirFryer and it is Amazing. My first impressions of the Ninja 12-in-1 Combi Cooker."
-tags: ["airfryer", "kitchen", "cooking"]
+description: "Wir haben eine neue Heißluftfritteuse und sie ist fantastisch. Meine ersten Eindrücke vom Ninja 12-in-1 Combi Cooker."
+tags: ["airfryer", "küche", "kochen"]
 ---
 
-Yesterday, I went to a friend's place to chat about his home lab and network setup.
-I found out he's got a Ninja Air Fryer.
-They're pretty cool, and you can cook a lot with them.
-My wife has been mentioning the Ninja brand every now and then, too.
+Gestern war ich bei einem Freund, um über sein Homelab und sein Netzwerk zu sprechen.
+Dabei habe ich gesehen, dass er eine Ninja Heißluftfritteuse hat.
+Diese Geräte sind ziemlich gut und man kann echt viel damit zubereiten.
 
 ![Ninja 12-in-1 Combi Cooker](./2025-03-26-cover.jpg "Ninja 12-in-1 Combi Cooker")
 
-After watching a few videos about the different Ninja products,
-we were pretty impressed by the [Ninja 12-in-1 Combi Cooker](https://www.ninjakitchen.de/produkte/ninja-combi-12-in-1-multikocher-ofen-heissluftfritteuse-sfp700eu-zidSFP700EU).
+Nach dem Anschauen einiger Videos über die verschiedenen Ninja-Produkte waren wir ziemlich beeindruckt vom [Ninja 12-in-1 Combi Cooker](https://www.ninjakitchen.de/produkte/ninja-combi-12-in-1-multikocher-ofen-heissluftfritteuse-sfp700eu-zidSFP700EU).
+Nach weiterer intensiver Recherche zum Thema "Was kann man mit einem Ninja Combi Cooker alles machen?" und dem Anschauen zahlreicher Videos haben wir uns entschieden, es zu wagen und einen zu bestellen.
 
-After doing a lot of research on the
-"What can you do with an Ninja Combi Cooker AirFryer?"
-and watching a bunch of videos,
-we decided to go for it and ordered one.
-It arrived today.
-It's still impressive how fast deliveries can be here in the Netherlands.
+Er wurde heute schon geliefert.
+Ich finde das immer noch beeindruckend, wie schnell die Lieferungen hier in den Niederlanden sein können.
+Der Ninja Combi-Cooker ist etwas größer als unsere [Cosori Dual Blaze](https://cosori.com/products/dual-blaze-air-fryer), die schon ziemlich alt ist, aber auch viel genutzt wurde.
 
-The Ninja is a bit bigger than our [Cosori Dual Blaze](https://cosori.com/products/dual-blaze-air-fryer),
-which is pretty outdated and has been used a lot.
-The Ninja has a lot more features,
-but the main thing that made us buy one
-is the ability to cook and bake with steam.
-We've always wanted to try that, but never had the chance.
+Der Ninja hat deutlich mehr Funktionen, aber der Hauptgrund für unseren Kauf ist die Möglichkeit, mit Dampf zu kochen und zu backen.
+Das wollten wir schon immer ausprobieren, hatten aber nie die Gelegenheit dazu.
 
-After unboxing it, we immediately tested it to prove its capabilities, and Sarah prepared the whole dinner with it.
-We had potatoes with green beans and a "protein source"—a piece of pork.
-It's wild how everyone's always talking about "protein sources" instead of pork, beef or chicken these days.
+Nach dem Auspacken haben wir ihn sofort getestet, um seine Fähigkeiten unter Beweis zu stellen.
+Meine Frau hat dann gleich das gesamte Abendessen damit zubereitet.
+Wir hatten Kartoffeln mit grünen Bohnen und einer "Proteinquelle" – einem Stück Schweinefleisch.
+Heute reden alle nur noch von "Proteinquellen" – verrückt!
 
-The potatoes and beans turned out nice and tender,
-and the meat was juicy.
-We also used our [Meater](https://store-de.meater.com/products/meater-plus) temperature probe to
-check the "protein source" temperature.
+Die Kartoffeln und Bohnen wurden schön zart, und das Fleisch war saftig und lecker.
+Wir haben auch unsere [Meater](https://store-de.meater.com/products/meater-plus) Temperatursonde verwendet, um die Temperatur der "Proteinquelle" auf den perfekten Garpunkt zu bringen.
 
-After dinner, I was on the cleaning duty,
-and I was surprised at how easy it was to clean the trays and the inside.
-I used the kitchen machine to make some bread dough for further testing.
-The dough rose really well with the steam function — looking great.
-Baking the bread after another fold and second rest went really well.
-The bread turned out fluffy and the crust was super crunchy.
+Nach dem Abendessen war ich für das Aufräumen zuständig, und ich war überrascht, wie einfach es ist, den Combi Cooker zu reinigen.
 
-We'll be using the steam function more often in the future.
+Im Anschluss habe ich dann gleich auch noch das Brotbacken ausprobiert.
+Dazu habe ich mit der Küchenmaschine den Brotteig kneten lassen, um ihn dann mit Hilfe des Combi Cooker aufgehen zu lassen.
+Nach dem Falten und einer zweiten Ruhezeit wurde das Brot gebacken.
+Es war schön fluffig und die Kruste war super knusprig.
+
+Alleine wegen dem einfachen Brotbacken hat sich der Kauf schon gelohnt.
