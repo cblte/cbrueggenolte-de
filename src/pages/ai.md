@@ -1,12 +1,11 @@
 ---
 layout: "@layouts/MDPage.astro"
-title: Artificial Intelligence
+title: Wie ich generative KI in meinem Blog und Alltag verwende
 date: 2025-04-02
 ---
 
-## Wie ich generative KI in meinem Blog und Alltag verwende
-
 _Diese Seite ist inspiriert von [Damola Morenikeji](https://www.bydamo.la/p/ai-manifesto/)._
+
 Ziel ist es, Vertrauen und Transparenz zu fördern.
 
 Letztes Update: April 2025

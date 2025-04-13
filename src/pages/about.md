@@ -6,7 +6,7 @@ date: 2025-03-31
 
 <div class="profile-section">
   <div class="profile-content">
-      <img src="/images/about-me-aipg.jpg" alt="This is me. An image generated with the help of the macOS App Image PlayGround." class="rounded-image" title="This is me. An image generated with the help of the macOS App Image PlayGround.">
+      <img src="/images/about-me-aipg.jpg" alt="Das bin ich. Ein Bild, das mit Hilfe der macOS App Image PlayGround erstellt wurde." class="rounded-image" title="Das bin ich. Ein Bild, das mit Hilfe der macOS App Image PlayGround erstellt wurde.">
 </div>
 
 <style>
@@ -48,7 +48,7 @@ Ich bin ein großer Fan von offener, direkter Kommunikation
 
 _This page is also available in [English](/en/about/)._
 
-## 👋 Über mich
+## 👋 Wer ich bin
 
 Geboren in Nordrhein-Westfalen, Deutschland,
 um ca. 336ppm.

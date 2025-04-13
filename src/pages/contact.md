@@ -1,6 +1,6 @@
 ---
 layout: "@layouts/MDPage.astro"
-title: "Contact"
+title: "Kontakt"
 date: 2025-03-31
 ---
 

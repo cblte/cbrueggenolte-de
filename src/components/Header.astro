@@ -3,27 +3,26 @@ import ThemeIcon from "@components/ThemeIcon.astro";
 
 const menu = [
     { name: "Home", href: "/" },
-    { name: "About", href: "/about/" },
+    { name: "Über mich", href: "/about/" },
     { name: "Now", href: "/now/" },
     { name: "Blog", href: "/blog/" },
-    { name: "Politics", href: "/politics/" },
-    { name: "Manual of Me", href: "/manual-of-me/" },
+    { name: "Politik", href: "/politics/" },
+    { name: "Mein Handbuch", href: "/manual-of-me/" },
     { name: "Uses", href: "/uses/" },
-    { name: "A.I.", href: "/ai/" },
-    { name: "Bookmarks", href: "/bookmarks/" },
-    { name: "Gallery", href: "/gallery/" },
-    { name: "Contact", href: "/contact/" },
+    { name: "K.I.", href: "/ai/" },
+    { name: "Lesezeichen", href: "/bookmarks/" },
+    { name: "Galerie", href: "/gallery/" },
+    { name: "Kontakt", href: "/contact/" },
 ];
 
-// Normalize URL path by removing trailing slash (except for root path)
-const normalizeUrl = (url: string) =>
-    url === "/" ? "/" : url.replace(/\/$/, "");
+// Normalize URL path by ensuring trailing slash
+const normalizeUrl = (url: string) => (url.endsWith("/") ? url : url + "/");
 const activePage = normalizeUrl(Astro.url.pathname);
 ---
 
 <header class="flex flex-wrap items-center gap-4 justify-between mb-12">
     <div
-        class="text-3xl/7 font-bold -tracking-[3px] flex justify-between items-center w-full"
+        class="text-4xl/9 font-bold -tracking-[3px] flex justify-between items-center w-full"
     >
         <div class="flex-1">
             <a

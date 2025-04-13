@@ -9,6 +9,7 @@ modDate: 2025-04-13
 
 _Das hier ist meine [/now/](https://nownownow.com)-Seite,
 inspiriert von [Derek Sivers](https://sive.rs/now)._
+
 Die Idee dahinter: eine Seite, die beschreibt, was man gerade macht.
 So als wenn du es einem Freund erzählen würdest,
 den du seit einem Jahr nicht gesehen hast.
@@ -17,17 +18,13 @@ Letztes Update: April 2025
 
 _This page is also available in [English](/en/now/)._
 
-## Wo ich gerade bin
+## Was ich gerade mache
 
-Zurzeit wohne ich immer noch in den Niederlanden,
-zusammen mit meiner wunderbaren Frau.
 Derzeit arbeite ich an meiner neuen Website und
 nehme am [Full-Stack TypeScript & React Bootcamp](https://bootcamp.dev) von Flavio Copes teil.
 
-## Was ich gerade mache
-
-Es hat ewig gedauert, meine Website zu aktualisieren,
-das letzte Update war wahrscheinlich irgendwann letztes Jahr,
+Es hat ewig gedauert, meine Website zu aktualisieren.
+Das letzte Update war wahrscheinlich irgendwann letztes Jahr,
 als ich die Seite mit [Hugo](https://gohugo.io) neu aufgebaut habe.
 Aber so richtig glücklich war ich damit nie,
 weshalb ich jetzt (schon wieder) etwas Neues ausprobiere.

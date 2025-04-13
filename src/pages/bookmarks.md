@@ -1,19 +1,17 @@
 ---
 layout: "@layouts/MDPage.astro"
 title: "Bookmarks"
-date: 2025-03-31
+date: 2025-04-13
 toc: true
 ---
 
-This website acts as a unified hub
-for all the bookmarks I’ve gathered
-from numerous browsers and devices.
-Expect updates from time to time,
-as links will be added and removed.
-The purpose of this page is to provide
-a central location for all my interests,
-ensuring they’re accessible across
-all browsers and devices, at any time.
+Diese Liste dient als zentrale Hub für alle Lesezeichen,
+die ich von verschiedenen Browsern und Geräten gesammelt habe.
+Erwarte gelegentliche Aktualisierungen,
+da Links hinzugefügt und entfernt werden.
+Der Zweck dieser Seite ist es,
+einen zentralen Ort für alle meine Lesezeichen zu bieten und sicherzustellen,
+dass sie jederzeit über alle Browser und Geräte zugänglich sind.
 
 ## People
 

@@ -21,7 +21,7 @@ const { frontmatter, headings } = Astro.props;
         <div
           id="toc"
           class="sticky -top-1 pt-2 mb-6 pb-4 bg-zinc-100 dark:bg-slate-900 z-40 text-sm">
-          <div class="font-medium mb-2">Table Of Contents</div>
+          <div class="font-medium mb-2">Inhaltsverzeichnis</div>
           <ul class="flex items-center gap-x-2 not-prose flex-wrap pb-4">
             {headings.map((heading: { slug: string; text: string }) => (
               <li class="toc-item">
@@ -30,7 +30,7 @@ const { frontmatter, headings } = Astro.props;
               <li>&vert;</li>
             ))}
             <li class="toc-item">
-              <a href="#top">Back To Top</a>
+              <a href="#top">Top &uarr;</a>
             </li>
           </ul>
         </div>
