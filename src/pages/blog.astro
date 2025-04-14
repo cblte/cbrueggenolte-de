@@ -2,62 +2,48 @@
 import { getCollection } from "astro:content";
 import Layout from "@layouts/Layout.astro";
 import PostMetaData from "@components/PostMetaData.astro";
+import { createSlug } from "@utils/utils";
 
 let posts = await getCollection("posts");
 // if we are production mode, filter out drafts
 if (import.meta.env.PROD) {
-    posts = posts.filter((draft) => !draft.data.draft);
+  posts = posts.filter((draft) => !draft.data.draft);
 }
 
 // Sort posts by publication date
 posts = posts.sort(
-    (a, b) =>
-        new Date(b.data.pubDate).valueOf() - new Date(a.data.pubDate).valueOf(),
+  (a, b) =>
+    new Date(b.data.pubDate).valueOf() - new Date(a.data.pubDate).valueOf()
 );
-
-// Function to create a slug from the title
-function createSlug(title: string) {
-    // Create a slug from the title
-    const slug = title
-        .toLowerCase()
-        .replace(/[^a-z0-9\s-]/g, "") // Remove special characters
-        .trim()
-        .replace(/\s+/g, "-") // Replace spaces with hyphens
-        .replace(/-+/g, "-"); // Replace multiple hyphens with a single hyphen
-
-    return slug;
-}
 ---
 
 <Layout title="Blog">
-    <section id="blogPosts">
-        <h1 class="text-4xl font-extrabold">Alles ist ein Blogeintrag.</h1>
-        <p class="text-2xl">
-            Ich schreibe über das, was mich interessiert, inspiriert,
-            beeindruckt und informiert.
-        </p>
+  <section id="blogPosts">
+    <h1 class="text-4xl font-extrabold">Alles ist ein Blogeintrag.</h1>
+    <p class="text-2xl">
+      Ich schreibe über das, was mich interessiert, inspiriert, beeindruckt und
+      informiert.
+    </p>
 
-        <ul class="list-none mt-8">
-            {
-                posts.map((post) => (
-                    <li class="mb-8">
-                        <h2 class="text-xl">
-                            <a href={`/blog/${createSlug(post.data.title)}/`}>
-                                {post.data.title}
-                            </a>
-                            {post.data?.draft ? (
-                                <span class="bg-red-400 text-white">DRAFT</span>
-                            ) : (
-                                ""
-                            )}
-                        </h2>
-                        {post.data.description && (
-                            <p>{post.data.description}</p>
-                        )}
-                        <PostMetaData post={post} />
-                    </li>
-                ))
-            }
-        </ul>
-    </section>
+    <ul class="list-none mt-8">
+      {
+        posts.map((post) => (
+          <li class="mb-8">
+            <h2 class="text-xl">
+              <a href={`/blog/${createSlug(post.data.title)}/`}>
+                {post.data.title}
+              </a>
+              {post.data?.draft ? (
+                <span class="bg-red-400 text-white">DRAFT</span>
+              ) : (
+                ""
+              )}
+            </h2>
+            {post.data.description && <p>{post.data.description}</p>}
+            <PostMetaData post={post} />
+          </li>
+        ))
+      }
+    </ul>
+  </section>
 </Layout>

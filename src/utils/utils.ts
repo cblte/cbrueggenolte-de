@@ -11,6 +11,10 @@ export function formatDate(dateString: string): string {
 export function createSlug(title: string): string {
   // Create a slug from the title
   const slug = title
+    // Convert umlauts to their standard letters
+    .replace(/ü/g, "u")
+    .replace(/ö/g, "o")
+    .replace(/ä/g, "a")
     .toLowerCase()
     .replace(/[^a-z0-9\s-]/g, "") // Remove special characters
     .trim()
