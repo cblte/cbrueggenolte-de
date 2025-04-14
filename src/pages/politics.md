@@ -3,9 +3,9 @@ layout: "@layouts/MDPage.astro"
 title: "Politics"
 date: 2025-03-31
 modDate: 2025-04-13
+cover: "/images/politics-cover.jpg"
+coverDescription: "Demokratie-Graffiti auf einer farbenfrohen Wand von Marco Verch."
 ---
-
-![Politics Cover](/images/politics-cover.jpg)
 
 _This page is also available in [English](/en/politics/)_.
 

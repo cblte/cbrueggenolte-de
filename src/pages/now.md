@@ -3,9 +3,9 @@ layout: "@layouts/MDPage.astro"
 title: "Now"
 date: 2025-03-31
 modDate: 2025-04-13
+cover: /images/now-cover.jpg
+coverDescription: "/now Cover -Foto von Alireza Parpaei auf Unsplash"
 ---
-
-![/now Cover -Foto von Alireza Parpaei auf Unsplash](/images/now-cover.jpg "/now cover - Foto von Alireza Parpaei auf Unsplash")
 
 _Das hier ist meine [/now/](https://nownownow.com)-Seite,
 inspiriert von [Derek Sivers](https://sive.rs/now)._

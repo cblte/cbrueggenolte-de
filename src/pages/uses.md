@@ -3,10 +3,10 @@ layout: "@layouts/MDPage.astro"
 title: "Uses"
 date: 2025-03-31
 modDate: 2025-04-13
+cover: /images/uses-cover.jpg
+coverDescription: "Uses Cover Image"
 toc: true
 ---
-
-![Uses Cover Image](/images/uses-cover.jpg "Uses Cover Image - Photo by ")
 
 _Dies ist meine [/uses/](https://uses.tech) Seite,
 inspiriert von [Wes Bos' uses](https://wesbos.com/uses/)._

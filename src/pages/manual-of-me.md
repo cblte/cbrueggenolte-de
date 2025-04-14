@@ -2,10 +2,10 @@
 layout: "@layouts/MDPage.astro"
 title: "Manual Of Me"
 date: 2025-03-31
+cover: /images/manual-cover.jpg
+coverDescription: "Manual Of Me Cover - Photo by Karan Suthar on Unsplash"
 toc: true
 ---
-
-![Manual Of Me Cover - Photo by Karan Suthar on Unsplash](/images/manual-cover.jpg "Manual Of Me - Photo by Karan Suthar on Unsplash")
 
 Willkommen zu diesem Leitfaden für eine effektive Zusammenarbeit mit mir – Carsten.
 Er ist umfassend, aber nicht abschließend.

@@ -2,9 +2,9 @@
 layout: "@layouts/MDPage.astro"
 title: "Kontakt"
 date: 2025-03-31
+cover: /images/contact-cover.jpg
+coverDescription: "Contact Cover"
 ---
-
-![Contact Cover](/images/contact-cover.jpg)
 
 👋 Hallo!
 
