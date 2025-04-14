@@ -48,7 +48,7 @@ Ich bin ein großer Fan von offener, direkter Kommunikation
 
 _This page is also available in [English](/en/about/)._
 
-## 👋 Wer ich bin
+## Wer ich bin 👋
 
 Geboren in Nordrhein-Westfalen, Deutschland,
 um ca. 336ppm.
@@ -65,7 +65,7 @@ Ich hoffe, du findest hier etwas Nützliches oder Inspirierendes
 Fühl dich eingeladen, die Seite zu erkunden,
 und kontaktiere mich gerne, falls du Fragen hast oder einfach Hallo sagen möchtest.
 
-## 💻 Mein Weg in die IT
+## Mein Weg in die IT
 
 Meine Reise in die IT begann mit einem [Intel 80286](https://de.wikipedia.org/wiki/Intel_80286)
 und [MS-DOS 5.0](https://de.wikipedia.org/wiki/MS-DOS).
@@ -90,7 +90,7 @@ Wenn ich nicht gerade an Technik tüftle oder einem Bug hinterherjage,
 spiele ich auf entweder auf der Switch oder am PC _(Factorio, Borderlands, Minecraft)_,
 höre Podcasts oder Hörspiele.
 
-## 🛠️ Projekte und Homelab-Dienste
+## Projekte und Homelab-Dienste
 
 - [AdGuard Home](https://adguard.com/de/adguard-home/overview.html)
 - [AudioBookShelf](https://www.audiobookshelf.org/)
@@ -103,7 +103,7 @@ höre Podcasts oder Hörspiele.
 - Minecraft-Server via [MineKube](https://connect.minekube.com/)
 - NAS-System für Backups
 
-## 📰 RSS-Feed
+## RSS-Feed
 
 Wenn du auf dem Laufenden bleiben möchtest, ohne ständig deinen Browser zu aktualisieren
 (jeder wie er mag, falls das dein Ding ist), abonniere gerne den RSS-Feed:
@@ -112,6 +112,6 @@ Wenn du auf dem Laufenden bleiben möchtest, ohne ständig deinen Browser zu akt
 
 ---
 
-## 📫 Kontakt aufnehmen
+## Kontakt aufnehmen
 
 Möchtest du über Politik, Technik oder schlechte Witze diskutieren? Schau doch mal auf meiner [Kontaktseite](/contact) vorbei und schreib mir.

@@ -19,9 +19,9 @@ bis hin zu persönlichen Konfigurationen.
 
 _This page is also available in [English](/en/uses/)._
 
-**Letztes Update March 2025.**
+**Letztes Update März 2025.**
 
-## Mein Setup und meine Werkzeuge im Überblick
+## Intro
 
 Ich teile gerne die Liste der Tools, die ich nutze —
 nicht nur, um anderen zu helfen,
@@ -39,7 +39,7 @@ für die Arbeit,
 zu Hause
 und alles dazwischen.
 
-## 🖥 Hardware
+## Hardware
 
 Als Software-Ingenieur/Entwickler habe ich während meiner gesamten beruflichen Laufbahn
 hauptsächlich mit Microsoft Windows gearbeitet.
@@ -58,25 +58,19 @@ was du verwenden solltest,
 sondern eher eine Aufzeichnung dessen,
 was meine spezifischen Bedürfnisse im Laufe der Zeit erfüllt hat.
 
-- **MacBook Air 2025** -
-  Meine neue primäre Arbeitsstation,
-  bietet außergewöhnliche Akkulaufzeit,
-  lüfterlosen, geräuschlosen Betrieb
-  und genügend Leistung, um anspruchsvolle Entwicklungsaufgaben mühelos zu bewältigen.
+- **MacBook Air 2025** - Mit 32GB Ram ist es ein toller Ersatz für das M1Pro.
+- **Logitech Anywhere MX** -
+  Schöne kleine Bluetooth-Maus die sich mit bis zu drei Geräten koppeln kann.
+- **LG 32GK650F** - 32" QHD-Monitor
+- **Minisforum i5** -
+  Kompakter Mini-PC, für Proxmox, Nextcloud und einige kleine Dienste mühelos ausführt.
+- **ASUSTOR AS6702T** -
+  Funktionsreicher NAS für Docker-Dienste, Archive und System-Backups.
+- **Synology DS215j** -
+  Alte, aber zuverlässige Offline-Speicherlösung für E-Mail-Archive und temporäre Daten.
 
-  - **Logitech Anywhere MX** -
-    Schöne kleine Maus mit Bluetooth für bis zu drei Geräte. Wünschte, sie wäre ein bisschen größer.
-  - **LG 32GK650F** -
-    Hochwertiger 32" QHD-Monitor mit vielseitigen Anschlüssen für alle meine Geräte.
-  - **Minisforum i5** -
-    Kompakter Mini-PC, der Proxmox, Nextcloud und einige kleine Dienste mühelos ausführt.
-  - **ASUSTOR AS6702T** -
-    Funktionsreicher NAS für Docker-Dienste, Archive und System-Backups.
-  - **Synology DS215j** -
-    Alte, aber zuverlässige Offline-Speicherlösung für E-Mail-Archive und temporäre Daten.
-
-  - **Ehemals genutzt:** MacBook Pro (14 Zoll, M1 Pro) -
-    Eine leistungsstarke Workstation mit außergewöhnlicher Akkulaufzeit und beeindruckendem Display.
+- **Ehemals genutzt:** MacBook Pro (14 Zoll, M1 Pro) -
+  Eine leistungsstarke Workstation mit außergewöhnlicher Akkulaufzeit und beeindruckendem Display.
 
 ## Home Office
 
@@ -114,7 +108,7 @@ Dennoch bleibt das Terminal das Herzstück meines Arbeitsablaufs.
 Da Terminal-Tools einen so großen Teil meines täglichen Werkzeugkastens ausmachen,
 habe ich ihnen eine eigene Kategorie gewidmet.
 
-# Deutsch
+# Terminal-Tools
 
 - [VS Code](https://code.visualstudio.com/) -
   Funktionsreicher Code-Editor
@@ -154,7 +148,7 @@ habe ich ihnen eine eigene Kategorie gewidmet.
   das meine bisherigen Favoriten Cobalt2 und Synthwave'84 ablöst.
   Wird im Terminal und in Editoren verwendet.
 
-## 🛠️ Applications
+## Applications
 
 Ich nutze eine vielfältige Sammlung von Software-Werkzeugen,
 um mein digitales Leben zu bereichern.
@@ -310,7 +304,7 @@ für die ich spezielle Hardware verwende
   Nach dem Creality Ender 3 V2 neo habe ich den Wechsel vollzogen.
   Seitdem druckt er fast jeden Tag etwas.
 
-## 🎒 Every Day Carry
+## Every Day Carry
 
 Die Gegenstände, die ich täglich bei mir trage,
 sind sorgfältig ausgewählt
@@ -329,6 +323,6 @@ und unterstützen mich bei meinen täglichen Aktivitäten.
   Der beste DayPack, den ich je gekauft habe.
 - **WMF 700ml Trinkflasche** - Stay hydrated!
 
-## Further Reading
+## Interesse an mehr?
 
 Schau dir unbedingt auch [uses.tech](https://uses.tech) an, um die Setups anderer Leute zu entdecken.

@@ -6,7 +6,7 @@ cover: /images/contact-cover.jpg
 coverDescription: "Contact Cover"
 ---
 
-👋 Hallo!
+Hallo 👋!
 
 Schön, dass du meine Kontaktseite gefunden hast und Interesse an einem Gespräch hast 🤝.
 Du erreichst mich über folgende Kanäle:
