@@ -175,6 +175,7 @@ dass sie jederzeit über alle Browser und Geräte zugänglich sind.
 - [Phind](https://www.phind.com/)
 - [WolframAlpha](https://www.wolframalpha.com/)
 - [You.com](https://you.com/)
+- [Msty.com](https://msty.com/)
 
 ## Tools
 
