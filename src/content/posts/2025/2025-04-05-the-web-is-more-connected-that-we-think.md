@@ -1,64 +1,80 @@
 ---
-title: "The Web is More Connected Than We Think"
-description: "Following my interests online led me on an unexpected journey, reminding me how small and beautifully interconnected the web can feel."
+title: "Das Web ist stärker verbunden, als wir denken"
+description: "Wenn man online seinen Interessen folgt, begibt man sich manchmal auf eine unerwartete Reise – und wird daran erinnert, wie klein und wunderschön vernetzt sich das Web anfühlen kann."
 pubDate: 2025-04-05
 modDate: 2025-04-05
 tags: [internet, blogging, personal]
 ---
 
-Today, I subscribed to the [People & Blocks newsletter](https://peopleandblocks.com/),
-a weekly series that highlights interesting people and their blogs.
-And pretty much right away, I ran into [Matt Webb](https://interconnected.org).
-Again.
-Because I first heard about Matt sometime last year
-thanks to his [AI clock project: Poem/1](https://www.actsnotfacts.com/made/ai-clock).
-A clock that generates poetry along the current time, powered by ChatGPT — not your average wall decoration.
+Heute habe ich den [People & Blocks Newsletter](https://peopleandblocks.com/) abonniert,
+eine wöchentliche Reihe, die interessante Menschen und ihre Blogs vorstellt.
+Und ziemlich schnell bin ich erneut über [Matt Webb](https://interconnected.org) gestolpert.
 
-But the way I ended up back at his website is the more interesting story
-and why I think, the web is more connected that we think
-and that we do not need big tech with their platforms to stay connected.
+Ich hatte letztes Jahr zum ersten Mal von Matt gehört,
+und zwar durch sein Projekt [AI Clock: Poem/1](https://www.actsnotfacts.com/made/ai-clock) –
+eine Uhr, die basierend auf der aktuellen Zeit Gedichte generiert, unterstützt von ChatGPT –
+definitiv keine gewöhnliche Wanduhr.
 
-It started yesterday evening:
-I was sittig in front of my page about how I use AI (spoiler: not for writing full blog posts).
-I was doing that
-because I came across the [AI Manifesto](https://www.bydamo.la/p/ai-manifesto) by [Damola Morenikeji](https://damola.com).
-From there, I browsed around the [slashAI.page](https://slashai.page/) listing other peoples pages about their us of AI,
-clicked a few links (as you do),
-and suddenly found myself on [kagi.com](https://kagi.com) [^kagi].
+Aber viel spannender ist eigentlich, wie ich wieder auf seiner Seite gelandet bin.
+Und genau deshalb glaube ich, dass das Web viel stärker miteinander verbunden ist,
+als wir oft denken –
+und dass wir keine großen Plattformen brauchen, um in Verbindung zu bleiben.
 
-I had heard about Kagi before, but never really took the time to fully explore it.
-Kagi is a search engine that promises to be the opposite of Google.
-No ads, no tracking, no algorithmic manipulation.
-Instead, it’s all about user privacy and a clean search experience.
-Anyway.
+Es begann gestern Abend:
+Ich schrieb an meiner Seite, in der ich erkläre, wie ich [KI](/ai/) einsetze.
+Dazu kam ich, weil ich auf das [AI Manifesto](https://www.bydamo.la/p/ai-manifesto) von [Damola Morenikeji](https://damola.com) gestoßen war.
+Von dort klickte ich mich weiter durch die [slashAI.page](https://slashai.page/),
+eine Sammlung von Seiten anderer Leute über ihren Umgang mit KI,
+klickte hier und da auf ein paar Links (wie man das eben so macht)
+– und landete plötzlich auf [kagi.com](https://kagi.com) [^kagi].
 
-Coming back to Kagi this morning, I found out about the [Small Web](https://kagi.com/smallweb) [^project] — a lovingly curated collection of personal websites.
-I hit "Next Post" a couple of times and landed on [Simon Willison's blog](https://simonwillison.net/), which I already follow for his AI related content.
+Von Kagi hatte ich schon einmal gehört,
+aber ich hatte nie die Zeit gefunden, es wirklich auszuprobieren.
+Kagi ist eine Suchmaschine, die das genaue Gegenteil von Google sein will:
+Keine Werbung, kein Tracking, keine algorithmische Manipulation.
+Stattdessen stehen Datenschutz und eine klare, ungestörte Sucherfahrung im Vordergrund.
+Aber gut, weiter im Text.
 
-And from there? Straight into the People & Blocks interview with Matt Webb.
-Full circle, basically.
+Heute Morgen bin ich dann wieder auf Kagi gelandet
+und habe das [Small Web Projekt](https://kagi.com/smallweb) [^project] entdeckt –
+eine liebevoll kuratierte Sammlung persönlicher Webseiten.
+Ich klickte ein paar Mal auf „Nächster Beitrag“
+und landete schließlich bei [Simon Willisons Blog](https://simonwillison.net/),
+dem ich ohnehin schon wegen seiner KI-Inhalte folge.
 
-People always say the internet is huge. And it is — if you're looking at cat videos or arguing about pineapple on pizza. Still not as huge as the [deep web]() [^deepweb], but that’s a different story.
-But when you stick to your bubble of interests, it suddenly feels cozy, small, and familiar.
-It’s almost like a digital small town where everyone somehow knows everyone.
+Und von dort?
+Direkt ins People & Blocks-Interview mit Matt Webb –
+wo sich der Kreis schließlich schloss.
 
-Fittingly, Matt’s site is literally called `interconnected.org`.
-Sometimes the universe has a sense of humor too.
+Alle sagen immer, das Internet sei riesig.
+Und ja, das mag stimmen – besonders wenn man Katzenvideos schaut oder über Ananas auf Pizza diskutiert.
+(Das [Deep Web](https://en.wikipedia.org/wiki/Deep_web) [^deepweb] ist übrigens noch größer – aber das ist eine andere Geschichte.)
+Aber wenn man seiner eigenen kleinen Interessensblase folgt,
+fühlt sich das Internet plötzlich gemütlich, überschaubar und fast familiär an.
+Fast wie eine digitale Kleinstadt, in der irgendwie jeder jeden kennt.
 
-Here’s a quote from the interview that stuck with me [^simonquoted]:
+Passenderweise heißt Matts Seite auch `interconnected.org`.
+Manchmal hat das Universum wirklich Sinn für Humor.
+
+Hier ist ein Zitat aus dem Interview, das bei mir besonders hängen geblieben ist [^simonquoted]:
 
 > Blogging has become a political act once again. It’s about making a statement by putting your words in a place where they aren’t subject to someone else’s algorithm dictating what success looks like; when you blog, your words are not a vote for the values of another platform.
 
-This hit home.
-Over the years, my backends have changed, my layouts have changed, my writing rhythm has changed.
-But the reason I keep blogging?
-It’s simple: it’s my space. My words, my terms.
-And my website where I can do whater the hell I want with it.
+Das hat mich wirklich beeindruckt.
+Im Laufe der Jahre haben sich meine technischen Grundlagen verändert,
+mein Layout hat sich verändert,
+mein Schreibrhythmus und -stil hat sich verändert.
+Aber warum ich trotzdem immer noch blogge?
 
-Again, the web is gigantic, sure.
-But when you move through it following your passions, it feels wonderfully small — and a lot more human.
+Ganz einfach:
+Es ist mein Raum. Meine Worte, zu meinen Bedingungen.
+Meine Website, auf der ich tun und lassen kann, was ich will.
 
-[^kagi]: Kagi is a search engine that focuses on privacy and user experience.
-[^project]: The smallweb project on ([github.com](https://github.com/kagisearch/smallweb)).
-[^deepweb]: The deep web refers to parts of the internet that are not indexed by traditional search engines. [wikipedia](https://en.wikipedia.org/wiki/Deep_web) / [nordvpn](https://nordvpn.com/blog/what-is-the-dark-web/#surface-web-vs-deep-web-vs-dark-web-what%E2%80%99s-the-difference)
-[^simonquoted]: Which is funny because it is the same piece that [Simon Willison](https://simonwillison.net/2025/Apr/5/matt-webb/) quoted on his blog.
+Klar, das Web ist riesig.
+Doch folgt man seinen eigenen Leidenschaften,
+fühlt es sich plötzlich wunderbar klein und viel menschlicher an.
+
+[^kagi]: Kagi ist eine Suchmaschine, die den Fokus auf Datenschutz und Nutzererfahrung legt.
+[^project]: Das Small Web Projekt auf [github.com](https://github.com/kagisearch/smallweb).
+[^deepweb]: Das Deep Web umfasst Teile des Internets, die nicht von klassischen Suchmaschinen indexiert werden. [Wikipedia](https://de.wikipedia.org/wiki/Deep_Web) / [NordVPN Blog](https://nordvpn.com/de/blog/was-ist-das-dark-web/).
+[^simonquoted]: Lustigerweise ist es genau das gleiche Zitat, das [Simon Willison](https://simonwillison.net/2025/Apr/5/matt-webb/) in seinem Blogpost verwendet hat.
