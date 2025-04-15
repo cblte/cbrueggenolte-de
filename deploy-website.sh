@@ -10,11 +10,11 @@ echo "🚀 Starting deployment process..."
 
 # 1. Install dependencies without dev dependencies
 echo "📦 Installing production dependencies only..."
-pnpm install --prod --frozen-lockfile
+npm install --prod --frozen-lockfile
 
 # 2. Build the project
 echo "🔨 Building project..."
-pnpm run build
+npm run build
 
 # 3. Deploy to server
 echo "📤 Deploying to server at $SERVER_SSH:$SERVER_PATH"
@@ -22,6 +22,6 @@ rsync -avz --delete dist/ "$SERVER_SSH:$SERVER_PATH"
 
 # 4. Reinstall dev dependencies for local development (optional)
 echo "🔄 Reinstalling dev dependencies for continued development..."
-pnpm install
+npm install
 
 echo "✅ Deployment complete!"
