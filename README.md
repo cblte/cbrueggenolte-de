@@ -14,17 +14,34 @@ All commands are run from the root of the project, from a terminal:
 
 | Command                   | Action                                           |
 | :------------------------ | :----------------------------------------------- |
-| `pnpm install`             | Installs dependencies                            |
-| `pnpm dev`             | Starts local dev server at `localhost:4321`      |
-| `pnpm build`           | Build your production site to `./dist/`          |
-| `pnpm preview`         | Preview your build locally, before deploying     |
-| `pnpm astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `pnpm astro -- --help` | Get help using the Astro CLI                     |
+| `npm install`         | Installs dependencies                            |
+| `npm dev`             | Starts local dev server at `localhost:4321`      |
+| `npm build`           | Build your production site to `./dist/`          |
+| `npm preview`         | Preview your build locally, before deploying     |
+| `npm astro ...`       | Run CLI commands like `astro add`, `astro check` |
+| `npm astro -- --help` | Get help using the Astro CLI                     |
 
-## Common colors
+## Technologies Used
 
-- link: `text-red-500`
-- link navigation hover: `hover:text-red-500 hover:underline`
-- link navigation active: `text-slate-900 underline`
-- link text: `text-red-500`
-- dark link text: `dark:text-green-500`
+* [Astro](https://astro.build): A modern static site generator.
+* [Tailwind CSS](https://tailwindcss.com): For styling.
+* [TypeScript](https://www.typescriptlang.org/): For type-safe code.
+
+## Key Files and Directories
+
+* [`astro.config.mjs`](astro.config.mjs): Astro configuration file.
+* [`src/content.config.ts`](src/content.config.ts): Content collections configuration.
+* [`src/pages/`](src/pages/): Contains the source code for the site's pages.
+* [`src/components/`](src/components/):  Reusable Astro components.
+* [`src/layouts/`](src/layouts/): Page layouts.
+* [`src/styles/tailwind.config.js`](src/styles/tailwind.config.js): Tailwind CSS configuration.
+* [`src/utils/utils.ts`](src/utils/utils.ts): Utility functions, including `formatDate` and `createSlug`.
+* [`new-post.ts`](new-post.ts): Script to create new blog posts.
+
+## Content
+
+The site includes the following content types:
+
+* **Blog posts:** Located in [`src/content/posts/`](src/content/posts/).  Use the [`new-post.ts`](new-post.ts) script to create new posts.
+* **Static pages:**  Such as "About", "Uses", "Bookmarks", and "Manual Of Me".  These are located in the [`src/pages/`](src/pages/) directory.
+* **Microblog:**  Random thoughts saved in [`src/content/microblog.txt`](src/content/microblog.txt).
