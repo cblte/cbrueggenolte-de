@@ -1,14 +1,30 @@
-#!/usr/bin/env node
-// new-post.js
+#!/usr/bin/env bun
+// new-post.ts
 // version 25.4.3
 // Create a new blog post in the posts directory
-// Usage: node new-post.js <slug>
+// Usage: bun new-post.ts
 
 import { exec } from "child_process";
 import fs from "fs/promises";
 import path from "path";
 import inquirer from "inquirer";
 import pc from "picocolors";
+
+// Get YYYY-MM-DD format
+const today: string = new Date().toISOString().split("T")[0];
+const year: number = new Date().getFullYear();
+
+// Create the defaulTitle upfront
+const formatDate = (date: Date) => {
+  const options: Intl.DateTimeFormatOptions = {
+    weekday: "long", // 'short' für abgekürzten Wochentag
+    year: "numeric",
+    month: "long", // 'short' für abgekürzten Monatsnamen
+    day: "2-digit",
+  };
+  return new Intl.DateTimeFormat("de-DE", options).format(date);
+};
+const defaultTitle = formatDate(new Date()); // z.B. "Freitag, 6. Oktober 2023"
 
 // Handling ctrl+c gracefully globally
 process.on("uncaughtException", (error) => {
@@ -31,12 +47,8 @@ interface BlogPostOptions {
 
 async function createBlogPost(
   title: string,
-  editor: string | null = null
+  editor: string | null = null,
 ): Promise<void> {
-  // Get YYYY-MM-DD format
-  const today: string = new Date().toISOString().split("T")[0];
-  const year: number = new Date().getFullYear();
-
   // get the path for the current year and create it if it doesn't exist
   const dirPath: string = path.join("./src/content/posts", `${year}`);
   await fs.mkdir(dirPath, { recursive: true });
@@ -103,8 +115,9 @@ let editor: string = "";
       {
         name: "title",
         type: "input",
-        message: "Please provide a title for the blog post: ",
+        message: `Please provide a title for the blog post\nor leave empty for today's date: `,
         required: true,
+        default: defaultTitle,
       },
       {
         name: "editor",
