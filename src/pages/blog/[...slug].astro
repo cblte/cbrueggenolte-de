@@ -21,7 +21,7 @@ const { Content } = await render(post);
 <Layout title={post.data.title} postdata={post.data}>
   <section
     id="content"
-    class="prose max-w-3xl dark:prose-invert prose-p:text-lg prose-h1:mb-2 prose-h2:mb-4 prose-h3:mb-4 prose-p:mb-5 prose-p:mt-0">
+    class="prose max-w-4xl dark:prose-invert prose-p:text-lg prose-h1:mb-2 prose-h2:mb-4 prose-h3:mb-4 prose-p:mb-5 prose-p:mt-0">
     <h1>{post.data.title}</h1>
     <PostMetaData post={post} />
     <Content />
