@@ -108,7 +108,7 @@ Dennoch bleibt das Terminal das Herzstück meines Arbeitsablaufs.
 Da Terminal-Tools einen so großen Teil meines täglichen Werkzeugkastens ausmachen,
 habe ich ihnen eine eigene Kategorie gewidmet.
 
-# Terminal-Tools
+## Terminal-Tools
 
 - [VS Code](https://code.visualstudio.com/) -
   Funktionsreicher Code-Editor
