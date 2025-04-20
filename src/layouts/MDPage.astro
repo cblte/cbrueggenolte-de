@@ -51,7 +51,7 @@ const { frontmatter, headings } = Astro.props;
     const tocHeight = tocElement ? tocElement.offsetHeight : 0;
     const headings = document.querySelectorAll("h2, h3");
     headings.forEach((heading) => {
-      (heading as HTMLElement).style.scrollMarginTop = `${tocHeight + 16}px`; // adding 16px padding
+      (heading as HTMLElement).style.scrollMarginTop = `${tocHeight + 24}px`; // adding 16px padding
     });
   }
 
