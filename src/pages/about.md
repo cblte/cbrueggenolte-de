@@ -42,9 +42,9 @@ Die Website hat sich im Laufe der Jahre immer wieder verändert.
 Heute ist sie ein Ort,
 an dem ich offen meine Gedanken, Notizen und Ideen zu Themen teile, die mich interessieren.
 
-Ich bin ein großer Fan von offener, direkter Kommunikation
-– kein Herumreden um den heißen Brei Erwarte also Ehrlichkeit
-– und vielleicht auch gelegentlich einen kleinen Tippfehler.
+Ich bin ein großer Fan von offener, direkter Kommunikation.
+Kein Herumreden um den heißen Brei. Erwarte also Ehrlichkeit
+und vielleicht auch gelegentlich einen kleinen Tippfehler.
 
 _This page is also available in [English](/en/about/)._
 
@@ -61,7 +61,7 @@ die nicht nur meine Sammlung von Kabeln und Adaptern toleriert,
 sondern auch meine technischen Spielereien. 😊
 
 Ich hoffe, du findest hier etwas Nützliches oder Inspirierendes
-– und vielleicht zaubert dir mein trockener Humor ein Lächeln ins Gesicht.
+und vielleicht zaubert dir mein trockener Humor ein Lächeln ins Gesicht.
 Fühl dich eingeladen, die Seite zu erkunden,
 und kontaktiere mich gerne, falls du Fragen hast oder einfach Hallo sagen möchtest.
 

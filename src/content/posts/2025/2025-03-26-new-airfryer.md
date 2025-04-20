@@ -17,14 +17,14 @@ Nach weiterer intensiver Recherche zum Thema "Was kann man mit einem Ninja Combi
 
 Er wurde heute schon geliefert.
 Ich finde das immer noch beeindruckend, wie schnell die Lieferungen hier in den Niederlanden sein können.
-Der Ninja Combi-Cooker ist etwas größer als unsere [Cosori Dual Blaze](https://cosori.com/products/dual-blaze-air-fryer), die schon ziemlich alt ist, aber auch viel genutzt wurde.
+Der Ninja Combi-Cooker ist etwas größer als unsere [Cosori Dual Blaze](https://cosori.com/products/dual-blaze-air-fryer), die schon ziemlich alt ist, aber auch viel genutzt wurde.w
 
 Der Ninja hat deutlich mehr Funktionen, aber der Hauptgrund für unseren Kauf ist die Möglichkeit, mit Dampf zu kochen und zu backen.
 Das wollten wir schon immer ausprobieren, hatten aber nie die Gelegenheit dazu.
 
 Nach dem Auspacken haben wir ihn sofort getestet, um seine Fähigkeiten unter Beweis zu stellen.
 Meine Frau hat dann gleich das gesamte Abendessen damit zubereitet.
-Wir hatten Kartoffeln mit grünen Bohnen und einer "Proteinquelle" – einem Stück Schweinefleisch.
+Wir hatten Kartoffeln mit grünen Bohnen und einer "Proteinquelle", einem Stück Schweinefleisch.
 Heute reden alle nur noch von "Proteinquellen" – verrückt!
 
 Die Kartoffeln und Bohnen wurden schön zart, und das Fleisch war saftig und lecker.

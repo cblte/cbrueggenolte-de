@@ -15,5 +15,5 @@ Du erreichst mich über folgende Kanäle:
 - [💬 Threema: 2S96RXBJ](https://threema.id/2s96rxbj)
 - [🐘 Mastodon @cblte@nrw.social](https://nrw.social/@cblte)
 
-Gerne unterhalte ich mich über Politik, Technologie, Programmieren – oder einfach nur so.
+Gerne unterhalte ich mich über Politik, Technologie, Programmieren oder einfach nur so.
 Ich freue mich auf ein einfaches Hallo!

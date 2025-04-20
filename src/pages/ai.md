@@ -16,7 +16,7 @@ _This page is also available in [English](/en/ai/)._
 
 ### Schreiben
 
-Ich setze KI-gestützte Sprachmodelle (LLMs) unterstützend ein – niemals ersetzend.
+Ich setze KI-gestützte Sprachmodelle (LLMs) unterstützend ein, aber niemals ersetzend.
 Sie helfen mir beim Formatieren, Korrigieren und Optimieren von Inhalten.
 
 Kein Text wird vollständig von einem LLM verfasst.
@@ -32,11 +32,11 @@ und [LM Studio](https://lmstudio.ai/).
 Ich lasse das LLM zwar nicht meine ersten Entwürfe schreiben,
 doch nutze ich sie, um meine Texte zu verbessern.
 Beim Schreiben geht es schließlich nicht darum,
-die KI für mich denken zu lassen, sondern sie als Werkzeug einzusetzen
-– zum Beispiel die Lesbarkeit zu verbessern.
+die KI für mich denken zu lassen, sondern sie als Werkzeug einzusetzen,
+um Beispiel die Lesbarkeit zu verbessern.
 
-Eine KI oder ein Sprachmodell ist letztlich nichts anderes als eine Maschine
-– sie denkt nicht und weiß nicht, was wahr oder falsch ist.
+Eine KI oder ein Sprachmodell ist letztlich nichts anderes als eine Maschine.
+Sie denkt nicht und weiß nicht, was wahr oder falsch ist.
 Was sie jedoch hervorragend beherrscht, ist das Strukturieren großer Informationsmengen,
 um diese schnell und effizient zugänglich zu machen.
 Und das ist, bei allem Vorbehalt, durchaus beeindruckend.
@@ -62,8 +62,8 @@ Stoße ich dabei auf etwas Unklares oder Interesaantes,
 kann ich unkompliziert mit dem Sprachmodel reden und es mir erklären lassen.
 
 Bei der Programmierung nutze ich Code-Vervollständigung.
-Nach einer kurzen Testphase mit Copilot entschied ich mich für lokale LLMs mit Ollama
-– sie bieten mehr Privatsphäre und Offline-Nutzung.
+Nach einer kurzen Testphase mit Copilot entschied ich mich für lokale LLMs mit Ollama.
+Sie bieten mehr Privatsphäre und Offline-Nutzung.
 Besonders gut funktioniert das mit dem Editor [Zed](https://zed.dev)
 und der VSCode-Erweiterung [Continue](https://continue.dev/).
 Seit Mitte 2024 verwende ich außerdem [fabric](https://github.com/danielmiessler/fabric),

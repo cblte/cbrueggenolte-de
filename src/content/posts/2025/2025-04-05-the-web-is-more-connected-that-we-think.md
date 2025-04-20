@@ -11,13 +11,12 @@ eine wöchentliche Reihe, die interessante Menschen und ihre Blogs vorstellt.
 Und ziemlich schnell bin ich erneut über [Matt Webb](https://interconnected.org) gestolpert.
 
 Ich hatte letztes Jahr zum ersten Mal von Matt gehört,
-und zwar durch sein Projekt [AI Clock: Poem/1](https://www.actsnotfacts.com/made/ai-clock) –
-eine Uhr, die basierend auf der aktuellen Zeit Gedichte generiert, unterstützt von ChatGPT –
-definitiv keine gewöhnliche Wanduhr.
+und zwar durch sein Projekt [AI Clock: Poem/1](https://www.actsnotfacts.com/made/ai-clock),
+eine Uhr, die basierend auf der aktuellen Zeit Gedichte generiert, unterstützt von ChatGPT.
 
 Aber viel spannender ist eigentlich, wie ich wieder auf seiner Seite gelandet bin.
 Und genau deshalb glaube ich, dass das Web viel stärker miteinander verbunden ist,
-als wir oft denken –
+als wir oft denken
 und dass wir keine großen Plattformen brauchen, um in Verbindung zu bleiben.
 
 Es begann gestern Abend:
@@ -26,7 +25,7 @@ Dazu kam ich, weil ich auf das [AI Manifesto](https://www.bydamo.la/p/ai-manifes
 Von dort klickte ich mich weiter durch die [slashAI.page](https://slashai.page/),
 eine Sammlung von Seiten anderer Leute über ihren Umgang mit KI,
 klickte hier und da auf ein paar Links (wie man das eben so macht)
-– und landete plötzlich auf [kagi.com](https://kagi.com) [^kagi].
+und landete plötzlich auf [kagi.com](https://kagi.com) [^kagi].
 
 Von Kagi hatte ich schon einmal gehört,
 aber ich hatte nie die Zeit gefunden, es wirklich auszuprobieren.
@@ -36,18 +35,18 @@ Stattdessen stehen Datenschutz und eine klare, ungestörte Sucherfahrung im Vord
 Aber gut, weiter im Text.
 
 Heute Morgen bin ich dann wieder auf Kagi gelandet
-und habe das [Small Web Projekt](https://kagi.com/smallweb) [^project] entdeckt –
-eine liebevoll kuratierte Sammlung persönlicher Webseiten.
+und habe das [Small Web Projekt](https://kagi.com/smallweb) [^project] entdeckt.
+Eine von Hand kuratierte Sammlung persönlicher Webseiten.
 Ich klickte ein paar Mal auf „Nächster Beitrag“
 und landete schließlich bei [Simon Willisons Blog](https://simonwillison.net/),
 dem ich ohnehin schon wegen seiner KI-Inhalte folge.
 
 Und von dort?
-Direkt ins People & Blocks-Interview mit Matt Webb –
+Direkt ins People & Blocks-Interview mit Matt Webb,
 wo sich der Kreis schließlich schloss.
 
 Alle sagen immer, das Internet sei riesig.
-Und ja, das mag stimmen – besonders wenn man Katzenvideos schaut oder über Ananas auf Pizza diskutiert.
+Und ja, das mag stimmen, besonders wenn man Katzenvideos schaut oder über Ananas auf Pizza diskutiert.
 (Das [Deep Web](https://en.wikipedia.org/wiki/Deep_web) [^deepweb] ist übrigens noch größer – aber das ist eine andere Geschichte.)
 Aber wenn man seiner eigenen kleinen Interessensblase folgt,
 fühlt sich das Internet plötzlich gemütlich, überschaubar und fast familiär an.

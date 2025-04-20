@@ -12,10 +12,8 @@ _Dies ist meine [/uses/](https://uses.tech) Seite,
 inspiriert von [Wes Bos' uses](https://wesbos.com/uses/)._
 
 Die Idee dahinter:
-Entwickler dokumentieren ihre Arbeitsumgebung –
-vom Hardware-Setup
-über Software-Tools
-bis hin zu persönlichen Konfigurationen.
+Entwickler dokumentieren ihre Arbeitsumgebung
+vom Hardware-Setup über Software-Tools bis hin zu persönlichen Konfigurationen.
 
 _This page is also available in [English](/en/uses/)._
 
@@ -23,8 +21,8 @@ _This page is also available in [English](/en/uses/)._
 
 ## Intro
 
-Ich teile gerne die Liste der Tools, die ich nutze —
-nicht nur, um anderen zu helfen,
+Ich teile gerne die Liste der Tools, die ich nutze.
+Nicht nur, um anderen zu helfen,
 sondern auch, um mein eigenes Setup zu dokumentieren.
 Ich lerne gerne von den Setups anderer,
 die mich inspirieren können,
@@ -95,8 +93,7 @@ und den Betrieb verschiedener Dienste,
 ohne dabei auf ressourcenhungrige grafische Oberflächen zurückgreifen zu müssen.
 Meiner Meinung nach bieten terminal-basierte Arbeitsabläufe
 die effizienteste Art,
-mit der digitalen Welt zu interagieren
-– die Maus nutze ich eigentlich nur zum Surfen im Internet.
+mit der digitalen Welt zu interagieren - die Maus nutze ich eigentlich nur zum Surfen im Internet.
 
 Obwohl ich vorwiegend terminal-basierte Editoren verwende,
 greife ich für bestimmte Entwicklungsaufgaben
@@ -269,7 +266,7 @@ das ich für verschiedene Projekte nutze.
   Mein bewährter Domain-Registrar der zu wettbewerbsfähigen Preisen alle meine Webdomains verwaltet.
 - [uberspace](https://uberspace.de) -
   Ihr Slogan "Hosting on Asteroids!" beschreibt perfekt die herausragende Leistung dieses Hostinganbieters
-  und das außergewöhnliche Support-Team – absolut jeden Cent wert.
+  und das außergewöhnliche Support-Team. **Absolut jeden Cent wert.**
 - [Hostinger](https://hostinger.de) -
   Zuverlässiger Anbieter für Webhosting und E-Mail-Infrastruktur.
 - [Netlify](https://www.netlify.com/) -
@@ -315,7 +312,7 @@ und unterstützen mich bei meinen täglichen Aktivitäten.
 - **iPhone 15 Pro** -
   Das mit Abstand beste Smartphone, das ich je besessen habe.
   Die Kameraqualität ist außergewöhnlich,
-  besonders bei schlechten Lichtverhältnissen – und der Akku hält problemlos einen ganzen Tag.
+  besonders bei schlechten Lichtverhältnissen und der Akku hält problemlos einen ganzen Tag.
 - **iPad Pro 10.9 M1** -
   Mit dem Magic Keyboard eine sehr gute Alternative wenn das MacBook mal nicht greifbar ist.
 - **Tasmanian Tiger TT Essential L Rucksack** -

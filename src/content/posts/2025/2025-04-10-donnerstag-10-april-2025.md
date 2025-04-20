@@ -7,7 +7,7 @@ tags: [journal, trump, stock]
 ---
 
 Heute ging es ziemlich chaotisch zu, was die neuen Zölle betrifft.
-Zuerst schockierte Trump die Welt mit der Einführung zahlreicher neuer Zölle –
+Zuerst schockierte Trump die Welt mit der Einführung zahlreicher neuer Zölle,
 mit eher willkürlich wirkenden, erfundenen Zahlen.
 Und plötzlich setzt er die Zölle für Europa für 90 Tage aus.
 Diese Pause gilt aber nicht für China, wo die Zölle nun auf 125 Prozent steigen.
