@@ -1,43 +1,44 @@
 ---
-import Layout from "@layouts/Layout.astro";
+import Layout from '@layouts/Layout.astro';
+import { array } from 'astro:schema';
 
-import { readFileSync } from "fs";
-import { marked } from "marked";
+import { readFileSync } from 'fs';
+import { marked } from 'marked';
 
 // Read the file content
-const fileContent = readFileSync("./src/content/microblog.txt", "utf8");
+const fileContent = readFileSync('./src/content/microblog.txt', 'utf8');
 
 // Split entries by each @ symbol, and remove the first empty split result
 const entries = fileContent
-  .split("\n@")
+  .split('\n@')
   .slice(1)
-  .map((entry, index) => {
+  .map((entry, index, array) => {
     // Extract the date and content for each post
-    const [date, ...contentLines] = entry.split("\n");
-    let content = contentLines.join("\n").trim(); // Join content into a multi-line string
+    const [date, ...contentLines] = entry.split('\n');
+    let content = contentLines.join('\n').trim(); // Join content into a multi-line string
 
     // Extract attributes like :attr: and :source:
     let attr = null;
     let source = null;
 
     // Check if :attr: and :source: exist in the content
-    if (content.includes(":attr:")) {
+    if (content.includes(':attr:')) {
       attr = content.match(/:attr:\s*(.+)/);
       if (attr) attr = attr[1].trim();
-      content = content.replace(/:attr:.+/, "").trim(); // Remove :attr: line
+      content = content.replace(/:attr:.+/, '').trim(); // Remove :attr: line
     }
 
-    if (content.includes(":source:")) {
+    if (content.includes(':source:')) {
       source = content.match(/:source:\s*(.+)/);
       if (source) source = source[1].trim();
-      content = content.replace(/:source:.+/, "").trim(); // Remove :source: line
+      content = content.replace(/:source:.+/, '').trim(); // Remove :source: line
     }
 
     // Convert Markdown to HTML
     const htmlContent = marked.parse(content);
 
     return {
-      number: index + 1, // Post number
+      number: array.length - index, // Post number in reverse order
       date: date.trim(),
       content: htmlContent,
       attr: attr,
@@ -49,26 +50,22 @@ const entries = fileContent
 <Layout title="Microblog">
   <h1 class="text-4xl font-extrabold">Microblog</h1>
   <p class="text-2xl">
-    A place for shorter entries. Random thoughts and notes that I want to keep,
-    not just for myself.
+    A place for shorter entries. Random thoughts and notes that I want to keep, not just for myself.
   </p>
   <section id="introduction" class="prose mt-4">
     <p>
-      So, with the relaunch of my website, I decided to create a space for
-      shorter posts. This is where I'll share random thoughts and ideas that
-      don't quite fit into a full blog post.
+      So, with the relaunch of my website, I decided to create a space for shorter posts. This is where I'll share
+      random thoughts and ideas that don't quite fit into a full blog post.
     </p>
     <p>
-      So, welcome to my Microblog. It's a place for quick ideas, links,
-      comments, or anything too short—or not yet ready—for a full post. All
-      coming from a single text file.
+      So, welcome to my Microblog. It's a place for quick ideas, links, comments, or anything too short—or not yet
+      ready—for a full post. All coming from a single text file.
     </p>
     <p class="text-sm">
       <strong>Note:</strong>
-      Entries from my previous blog project, a blog done in Flask and Python that
-      I started in 2022, will be added gradually. Whether or not they make it depends
-      on their relevance to me today and whether I can find the time to transfer
-      them over. This microblog might become a subdomain at some point in the future.
+      Entries from my previous blog project, a blog done in Flask and Python that I started in 2022, will be added gradually.
+      Whether or not they make it depends on their relevance to me today and whether I can find the time to transfer them
+      over. This microblog might become a subdomain at some point in the future.
     </p>
   </section>
 
@@ -80,11 +77,9 @@ const entries = fileContent
             <a href={`#post-${entry.number}`} class="inline-block ">
               {`#${entry.number}`}
             </a>
-            <span
-              class="text-zinc-400 text-md flex-1 text-right"
-              id={entry.date}>
+            <span class="text-zinc-400 text-md flex-1 text-right" id={entry.date}>
               {entry.date}
-            </span>{" "}
+            </span>{' '}
           </div>
           {entry.attr && (
             <div id={`attr-${entry.number}`} class="text-center">

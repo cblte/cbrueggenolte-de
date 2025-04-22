@@ -1,5 +1,17 @@
 # Microblog.txt file
 
+@2025-04-22
+    :attr: Schon wieder – Der Aufstieg der NSDAP/AfD
+    :source: https://datajournal-org.github.io/schon-wieder/
+Der Datenjournalist Michael Kreil inszeniert auf seiner Website eine eindrucksvolle visuelle Erzählung: Beim Scrollen verwandeln sich braune Schlüsselbegriffe im Text in blaue, wodurch sich NSDAP-Bezüge in AfD-Bezüge umkehren – samt Änderung des gesamten Textkontexts. Kreil verknüpft den historischen Aufstieg der NSDAP mit einer spekulativen Zukunftsvision der AfD bis 2030 und zeigt dabei strukturelle Parallelen, etwa in der politischen Verschiebung durch Friedrich Merz, die er mit der Rolle Ludwig Kaas’ zur Zeit der Zentrumspartei vergleicht.
+
+@2025-04-14
+    :attr: Found out that SingleFile is also available for Safari
+    :source: https://www.getsinglefile.com/#download
+It is nice to see, that SingleFile is also available for Safari.
+So I do not have to start Firefox for this anymore.
+I would prefer if SingleFile would be available for DuckDuckGo Browser.
+
 @2025-04-05
     :attr: Implementing Dark Mode in Astro 4.0 with ViewTransitions
     :source: https://jklakus.co.uk/blogs/astro-darktheme/
