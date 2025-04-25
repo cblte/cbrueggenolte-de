@@ -1,5 +1,14 @@
 # Microblog.txt file
 
+
+
+@2025-04-24
+    :attr: The Register - US Crosswalk Button Hacking
+    :source: https://www.theregister.com/2025/04/19/us_crosswalk_button_hacking/
+    Im *The Register steht•, dass es wohl mit Leichtigkeit möglich sei, die Sprachausgabe der Ampeln zu hacken. Auf der einen Seite ist das schon ziemlich lustig, auf der anderen Seite ist es aber auch ein bisschen beunruhigend für Menschen mit Behinderung. Was ich bisher aber so gelesen habe, haben die Hacker allerdings nur die alternativen Ansagen der Ampeln manipuliert.
+
+
+
 @2025-04-22
     :attr: Schon wieder – Der Aufstieg der NSDAP/AfD
     :source: https://datajournal-org.github.io/schon-wieder/
