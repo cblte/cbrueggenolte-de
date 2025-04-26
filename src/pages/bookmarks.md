@@ -213,6 +213,7 @@ Some CSS frameworks which are worth knowing.
 
 ### RegEx
 
+- [pyrexp](https://pythonium.net/regex)
 - [regex101](https://regex101.com/)
 - [RegExer](https://regexr.com/)
 
