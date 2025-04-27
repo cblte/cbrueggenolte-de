@@ -34,6 +34,16 @@ const { Content } = await render(post);
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
       display: block;
       margin: 0 auto;
+      width: 100%; /* Ensures the image scales down */
+      height: auto; /* Maintains aspect ratio */
+    }
+
+    /* Add media query for smaller screens */
+    @media (max-width: 768px) {
+      :global(img) {
+        max-width: 90%; /* Adjusts the image size for smaller screens */
+        margin: 0 auto; /* Centers the image */
+      }
     }
   </style>
 </Layout>
