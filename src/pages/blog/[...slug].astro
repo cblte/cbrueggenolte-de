@@ -6,15 +6,26 @@ import PostMetaData from '@components/PostMetaData.astro';
 import { createSlug } from '@utils/utils';
 
 export async function getStaticPaths() {
-  const posts = await getCollection('posts');
+  let posts = await getCollection('posts');
 
-  return posts.map((post) => ({
+  if (import.meta.env.PROD) {
+    posts = posts.filter((draft) => !draft.data.draft);
+  }
+
+  // Sort posts by publication date
+  let sortedPosts = posts.sort((a, b) => new Date(b.data.pubDate).valueOf() - new Date(a.data.pubDate).valueOf());
+
+  return sortedPosts.map((post, index) => ({
     params: { slug: createSlug(post.data.title) },
-    props: { post },
+    props: {
+      post,
+      prevPost: sortedPosts[index + 1] || null,
+      nextPost: sortedPosts[index - 1] || null,
+    },
   }));
 }
 
-const { post } = Astro.props;
+const { post, prevPost, nextPost } = Astro.props;
 const { Content } = await render(post);
 ---
 
@@ -25,6 +36,22 @@ const { Content } = await render(post);
     <h1>{post.data.title}</h1>
     <PostMetaData post={post} />
     <Content />
+    <footer class="mt-12 flex justify-between items-center text-blue-600 text-base font-medium">
+      {
+        prevPost && (
+          <a href={`/blog/${createSlug(prevPost.data.title)}/`} class="hover:underline">
+            &larr; Zurück: {prevPost.data.title}
+          </a>
+        )
+      }
+      {
+        nextPost && (
+          <a href={`/blog/${createSlug(nextPost.data.title)}/`} class="ml-auto hover:underline">
+            Weiter: {nextPost.data.title} &rarr;
+          </a>
+        )
+      }
+    </footer>
   </section>
 
   <style>
