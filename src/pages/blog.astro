@@ -1,43 +1,31 @@
 ---
-import { getCollection } from "astro:content";
-import Layout from "@layouts/Layout.astro";
-import PostMetaData from "@components/PostMetaData.astro";
-import { createSlug } from "@utils/utils";
+import { getCollection } from 'astro:content';
+import Layout from '@layouts/Layout.astro';
+import PostMetaData from '@components/PostMetaData.astro';
+import { createSlug } from '@utils/utils';
 
-let posts = await getCollection("posts");
+let posts = await getCollection('posts');
 // if we are production mode, filter out drafts
 if (import.meta.env.PROD) {
   posts = posts.filter((draft) => !draft.data.draft);
 }
 
 // Sort posts by publication date
-posts = posts.sort(
-  (a, b) =>
-    new Date(b.data.pubDate).valueOf() - new Date(a.data.pubDate).valueOf()
-);
+let sortedPosts = posts.sort((a, b) => new Date(b.data.pubDate).valueOf() - new Date(a.data.pubDate).valueOf());
 ---
 
 <Layout title="Blog">
   <section id="blogPosts">
     <h1 class="text-4xl font-extrabold">Alles ist ein Blogeintrag.</h1>
-    <p class="text-2xl">
-      Ich schreibe über das, was mich interessiert, inspiriert, beeindruckt und
-      informiert.
-    </p>
+    <p class="text-2xl">Ich schreibe über das, was mich interessiert, inspiriert, beeindruckt und informiert.</p>
 
     <ul class="list-none mt-8">
       {
-        posts.map((post) => (
+        sortedPosts.map((post) => (
           <li class="mb-8">
             <h2 class="text-xl">
-              <a href={`/blog/${createSlug(post.data.title)}/`}>
-                {post.data.title}
-              </a>
-              {post.data?.draft ? (
-                <span class="bg-red-400 text-white">DRAFT</span>
-              ) : (
-                ""
-              )}
+              <a href={`/blog/${createSlug(post.data.title)}/`}>{post.data.title}</a>
+              {post.data?.draft ? <span class="bg-red-400 text-white">DRAFT</span> : ''}
             </h2>
             {post.data.description && <p>{post.data.description}</p>}
             <PostMetaData post={post} />
