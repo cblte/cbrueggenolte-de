@@ -2,6 +2,57 @@
 @plugin '@tailwindcss/typography';
 @config './tailwind.config.js';
 
+#blogcontent img {
+  border: 1px solid var(--color-zinc-200);
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: block;
+  margin: 0 auto;
+  width: 100%; /* Ensures the image scales down */
+  height: auto; /* Maintains aspect ratio */
+}
+
+/* 🌙 Dark Mode-Anpassung */
+html.dark #blogcontent img {
+  border-color: var(--color-zinc-700);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4); /* etwas stärkerer Schatten */
+}
+
+/* Add media query for smaller screens */
+@media (max-width: 768px) {
+  #blogcontent img {
+    max-width: 90%; /* Adjusts the image size for smaller screens */
+    margin: 0 auto; /* Centers the image */
+  }
+}
+
+#blogcontent .astro-code {
+  position: relative;
+  padding: 1rem;
+}
+#blogcontent .copy-button {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  background-color: var(--color-slate-700);
+  border: none;
+  padding: 0.25rem;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#blogcontent .copy-button:hover {
+  background-color: var(--color-slate-500);
+}
+
+#blogcontent pre {
+  position: relative;
+  padding: 1rem;
+}
+
 .admonition {
   @apply m-0 p-0.5 border-l-4 rounded-md;
 }
@@ -14,7 +65,7 @@
   @apply bg-green-100 border-green-400 text-green-900;
 }
 .dark .admonition-tip {
-  @apply bg-green-900 border-green-600 text-green-100;
+  @apply bg-green-800 border-green-500 text-green-200;
 }
 
 /* ⚠️ Warnung (gelb) */
@@ -22,7 +73,7 @@
   @apply bg-yellow-100 border-yellow-400 text-yellow-900;
 }
 .dark .admonition-warning {
-  @apply bg-yellow-900 border-yellow-600 text-yellow-100;
+  @apply bg-yellow-800 border-yellow-500 text-yellow-200;
 }
 
 /* ❗ Gefahr (rot) */
@@ -30,7 +81,7 @@
   @apply bg-red-100 border-red-400 text-red-900;
 }
 .dark .admonition-danger {
-  @apply bg-red-900 border-red-600 text-red-100;
+  @apply bg-red-800 border-red-500 text-red-200;
 }
 
 /* 📝 Hinweis (blau) */
@@ -38,7 +89,7 @@
   @apply bg-blue-100 border-blue-400 text-blue-900;
 }
 .dark .admonition-note {
-  @apply bg-blue-900 border-blue-600 text-blue-100;
+  @apply bg-blue-800 border-blue-500 text-blue-200;
 }
 
 /* 🔠 Titel */

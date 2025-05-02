@@ -31,7 +31,7 @@ const { Content } = await render(post);
 
 <Layout title={post.data.title} postdata={post.data}>
   <section
-    id="content"
+    id="blogcontent"
     class="prose max-w-4xl dark:prose-invert prose-p:text-lg prose-h1:mb-2 prose-h2:mb-4 prose-h3:mb-4">
     <h1>{post.data.title}</h1>
     <PostMetaData post={post} />
@@ -53,33 +53,26 @@ const { Content } = await render(post);
       }
     </footer>
   </section>
-
-  <style>
-    :global(img) {
-      border: 1px solid var(--color-zinc-200);
-      border-radius: 0.5rem;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-      display: block;
-      margin: 0 auto;
-      width: 100%; /* Ensures the image scales down */
-      height: auto; /* Maintains aspect ratio */
-    }
-
-    /* 🌙 Dark Mode-Anpassung */
-    :global(html.dark img) {
-      border-color: var(--color-zinc-700);
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4); /* etwas stärkerer Schatten */
-    }
-
-    /* Add media query for smaller screens */
-    @media (max-width: 768px) {
-      :global(img) {
-        max-width: 90%; /* Adjusts the image size for smaller screens */
-        margin: 0 auto; /* Centers the image */
-      }
-    }
-  </style>
 </Layout>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    document.querySelectorAll('pre').forEach((pre) => {
+      const button = document.createElement('button');
+      button.innerText = 'Copy';
+      button.className = 'copy-button';
+      pre.appendChild(button);
+
+      button.addEventListener('click', () => {
+        const code = pre.querySelector('code').innerText;
+        navigator.clipboard.writeText(code).then(() => {
+          button.innerText = 'Copied!';
+          setTimeout(() => (button.innerText = 'Copy'), 2000);
+        });
+      });
+    });
+  });
+</script>
 
 <!--
 
