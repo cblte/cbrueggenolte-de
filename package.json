@@ -16,6 +16,8 @@
     "inquirer": "^12.5.2",
     "marked": "^15.0.7",
     "picocolors": "^1.1.1",
+    "remark-directive": "^4.0.0",
+    "remark-toc": "^9.0.0",
     "tailwindcss": "^4.1.0"
   },
   "devDependencies": {
