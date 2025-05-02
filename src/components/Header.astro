@@ -1,19 +1,6 @@
 ---
 import ThemeIcon from '@components/ThemeIcon.astro';
-
-const menu = [
-  { name: 'Home', href: '/' },
-  { name: 'Über mich', href: '/about/' },
-  { name: 'Now', href: '/now/' },
-  { name: 'Blog', href: '/blog/' },
-  { name: 'Politik', href: '/politics/' },
-  { name: 'Mein Handbuch', href: '/manual-of-me/' },
-  { name: 'Uses', href: '/uses/' },
-  { name: 'K.I.', href: '/ai/' },
-  { name: 'Lesezeichen', href: '/bookmarks/' },
-  { name: 'Galerie', href: '/gallery/' },
-  { name: 'Kontakt', href: '/contact/' },
-];
+import { headerMenu } from '@utils/menu';
 
 // Normalize URL path by ensuring trailing slash
 const normalizeUrl = (url: string) => (url.endsWith('/') ? url : url + '/');
@@ -32,10 +19,10 @@ const activePage = normalizeUrl(Astro.url.pathname);
     </div>
     <div class="flex-1 text-right"><ThemeIcon /></div>
   </div>
-  <nav class="font-normal mx-auto">
+  <nav class="font-normal">
     <ul class="flex flex-wrap justify-start text-2xl -mr-2 -ml-2">
       {
-        menu.map((item) => (
+        headerMenu.map((item) => (
           <li class="inline-block">
             <a
               href={item.href}
@@ -43,7 +30,7 @@ const activePage = normalizeUrl(Astro.url.pathname);
               class={`${activePage === item.href ? 'text-slate-900 dark:text-zinc-100 underline font-semibold' : ''} hover:underline inline-block py-0 px-2 -mr-1 text-red-500 dark:text-green-500`}>
               {item.name}
             </a>
-            {item !== menu[menu.length - 1] ? '|' : ''}
+            {item !== headerMenu[headerMenu.length - 1] ? '|' : ''}
           </li>
         ))
       }
