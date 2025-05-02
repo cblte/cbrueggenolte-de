@@ -3,9 +3,12 @@
 @config './tailwind.config.js';
 
 .admonition {
-  @apply my-4 p-4 border-l-4 rounded-md;
+  @apply m-0 p-0.5 border-l-4 rounded-md;
 }
 
+.admonition p {
+  @apply m-1;
+}
 /* 💡 Tipp (grün) */
 .admonition-tip {
   @apply bg-green-100 border-green-400 text-green-900;
