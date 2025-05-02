@@ -237,7 +237,9 @@ starte ihn jetzt erneut – sonst wird die eingebundene Datei `output.css` nicht
 
 Verwende dazu denselben Befehl wie zuvor:
 
-    bunx @tailwindcss/cli -i ./src/styles/global.css -o ./public/output.css --watch
+```sh
+bunx @tailwindcss/cli -i ./src/styles/global.css -o ./public/output.css --watch
+```
 
 Am besten lässt du den Compiler dauerhaft in einem separaten Terminalfenster laufen,
 während du am Projekt arbeitest.
@@ -248,13 +250,18 @@ Wenn alles funktioniert, wird die Startseite unter
 
 ![Bun Hono und Tailwindcss](bun-hon-tailwindcss.png "Bun Hono und Tailwindcss")
 
-Deine Version ist bereits sehr gut – klar strukturiert, technisch korrekt und stilistisch passend zum Blog. Ich habe sie jetzt nur leicht sprachlich geglättet und einen durchgehenden, natürlichen Lesefluss hergestellt. Hier die überarbeitete Fassung:
+Deine Version ist bereits sehr gut – klar strukturiert, technisch korrekt und stilistisch passend zum Blog.
+Ich habe sie jetzt nur leicht sprachlich geglättet
+und einen durchgehenden, natürlichen Lesefluss hergestellt.
+Hier die überarbeitete Fassung:
 
 ---
 
-## 🚀 Dev-Workflow verbessern
+## Dev-Workflow verbessern
 
-Damit du nicht ständig zwei Terminals gleichzeitig offen haben musst – eines für Hono, eines für Tailwind –, kannst du deinen Workflow etwas bequemer gestalten.
+Damit du nicht ständig zwei Terminals gleichzeitig offen haben musst,
+eines für Hono und eines für Tailwind,
+kannst du deinen Workflow etwas bequemer gestalten.
 
 Wir verwenden das Tool [`concurrently`](https://www.npmjs.com/package/concurrently), um beide Prozesse parallel zu starten:
 
@@ -278,7 +285,10 @@ Wenn du möchtest, kannst du den Prozessen zusätzlich **Namen und Farben** zuwe
 }
 ```
 
-Statt alle Befehle in eine lange und schwer lesbare Zeile zu packen, kannst du das Ganze noch besser strukturieren, indem du **zwei separate Scripts** anlegst:
+Statt alle Befehle in eine lange
+und schwer lesbare Zeile zu packen,
+kannst du das Ganze noch besser strukturieren,
+indem du **zwei separate Scripts** anlegst:
 Eines für den Server, eines für Tailwind.
 Dann kombinierst du sie im `dev`-Befehl über `concurrently`:
 
