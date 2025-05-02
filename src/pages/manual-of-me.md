@@ -85,7 +85,7 @@ Deshalb teile ich diese Einblicke.
   für wichtige Entscheidungen oder Aufgaben.
 - Ich empfehle die Verwendung von 'Smart Minutes' in Meetings.
   Mit einem LLM dahinter sind sie besonders effektiv.
-  Das kann zusätzliche Infos oder Kontext aus dem Transkript hinzufügen. Das gilt auch für 1:1-Gespräche.
+  Das kann zusätzliche Infos oder Kontext aus dem Transkript hinzufügen. Das gilt auch für 1-1-Gespräche.
 
 ## Merkmale meines Arbeitsstils
 
