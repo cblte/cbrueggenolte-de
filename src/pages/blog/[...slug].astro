@@ -65,6 +65,12 @@ const { Content } = await render(post);
       height: auto; /* Maintains aspect ratio */
     }
 
+    /* 🌙 Dark Mode-Anpassung */
+    :global(html.dark img) {
+      border-color: var(--color-zinc-700);
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4); /* etwas stärkerer Schatten */
+    }
+
     /* Add media query for smaller screens */
     @media (max-width: 768px) {
       :global(img) {
