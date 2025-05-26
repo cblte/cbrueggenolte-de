@@ -1,0 +1,27 @@
+---
+// props: title (string), user (string), domain (string)
+const { title, user, domain } = Astro.props;
+---
+
+<p class="mt-10 text-base text-gray-600 dark:text-gray-300">
+  Du hast Fragen oder Gedanken zum Beitrag <strong>{title}</strong>?
+  <a id="mailLink" data-u={user} data-d={domain} data-t={title} href="#" class="text-blue-600 hover:underline"
+    >Schreib mir gern eine E-Mail</a
+  > – ich freu mich drauf!
+</p>
+
+<script>
+  document.addEventListener('DOMContentLoaded', (e) => {
+    const mailLink = document.getElementById('mailLink') as HTMLAnchorElement;
+
+    if (mailLink) {
+      const userEncoded = mailLink.dataset.u;
+      const domainEncoded = mailLink.dataset.d;
+      const titleEncoded = mailLink.dataset.t;
+
+      const subject = encodeURIComponent('Blogpost: ' + titleEncoded);
+
+      mailLink.href = `mailto:${userEncoded}@${domainEncoded}?subject=${subject}`;
+    }
+  });
+</script>

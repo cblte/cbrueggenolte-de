@@ -4,6 +4,7 @@ import { getCollection, render } from 'astro:content';
 import Layout from '@layouts/Layout.astro';
 import PostMetaData from '@components/PostMetaData.astro';
 import { createSlug } from '@utils/utils';
+import EmailLink from '@components/EmailLink.astro';
 
 export async function getStaticPaths() {
   let posts = await getCollection('posts');
@@ -36,6 +37,9 @@ const { Content } = await render(post);
     <h1>{post.data.title}</h1>
     <PostMetaData post={post} />
     <Content />
+
+    <EmailLink title={post.data.title} user="mail" domain="cbrueggenolte.de" />
+
     <footer class="mt-12 flex justify-between items-center text-blue-600 text-base font-medium">
       {
         prevPost && (
