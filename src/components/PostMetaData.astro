@@ -1,21 +1,23 @@
 ---
-import { formatDate } from "@utils/utils";
+import { formatDate } from '@utils/utils';
 
 const { post } = Astro.props;
 ---
 
 <div class="text-sm text-slate-500 dark:text-zinc-400 mb-8">
-    Mod: {formatDate(post.data.modDate)} | Pub:{" "}
-    {formatDate(post.data.pubDate)} | Tags: {" "}
-    {
-        post.data.tags?.length > 0
-            ? post.data.tags
-                  .map((tag: string) => (
-                      <>
-                          <a href={`/tags/${tag}`}>{tag}</a>
-                      </>
-                  ))
-                  .reduce((prev: string, curr: string) => [prev, ", ", curr])
-            : "No tags"
-    }
+  Pub:{' '}
+  {formatDate(post.data.pubDate)}
+  | LastMod: {formatDate(post.data.modDate)}
+  | Tags: {' '}
+  {
+    post.data.tags?.length > 0
+      ? post.data.tags
+          .map((tag: string) => (
+            <>
+              <a href={`/tags/${tag}`}>{tag}</a>
+            </>
+          ))
+          .reduce((prev: string, curr: string) => [prev, ', ', curr])
+      : 'No tags'
+  }
 </div>
