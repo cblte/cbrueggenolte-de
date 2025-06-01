@@ -43,7 +43,6 @@ dass sie jederzeit über alle Browser und Geräte zugänglich sind.
 - [archive.vn](http://archive.vn)
 - [awesome-web-archiving](https://github.com/iipc/awesome-web-archiving)
 - [Web Archiving Community](https://github.com/ArchiveBox/ArchiveBox/wiki/Web-Archiving-Community)
--
 
 ## Watching
 
@@ -63,12 +62,14 @@ dass sie jederzeit über alle Browser und Geräte zugänglich sind.
 
 ## Development
 
+- [Codeberg](https://codeberg.org/)
 - [DBngine](https://dbngin.com/ "All-in-One Database Version Management Tool")
 - [Github Emojis Reference](https://github-emojis.vercel.app/)
 - [grep.app](https://grep.app/)
 - [Incremental Regular Expression](http://jkff.info/articles/ire/)
 - [Learn X in Y minutes](https://learnxinyminutes.com/)
 - [Papers With Code](https://paperswithcode.com/sota)
+- [SourceHut](https://sourcehut.org/)
 - [VSCodium](https://vscodium.com/)
 
 ## Games
@@ -113,6 +114,7 @@ dass sie jederzeit über alle Browser und Geräte zugänglich sind.
 - [Apple APT Training](https://it-training.apple.com/tutorials/apt-support/)
 - [IINA The modern media player for macOS.](https://iina.io/)
 - [LuLu Firewall](https://objective-see.org/products/lulu.html)
+- [Moves - Window positioning for macOS](https://mikkelmalmberg.com/moves)
 - [Objective-See's Tools FOSS FOR Mac](https://objective-see.org/tools.html)
 - [RoboFont](https://robofont.com/)
 
