@@ -180,7 +180,7 @@ const route = new Hono();
 
 route.get('/', (c) => {
   const content = `
-    <h1 class="text-3xl font-bold mb-4">🎨 Filament Manager</h1>
+    <h1 class="text-3xl font-medium mb-4">🎨 Filament Manager</h1>
     <p class="text-lg">Hier verwalten wir bald unsere Filamente.</p>
   `;
   return c.html(Layout({ children: content }));
