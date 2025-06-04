@@ -7,7 +7,7 @@ const normalizeUrl = (url: string) => (url.endsWith('/') ? url : url + '/');
 const activePage = normalizeUrl(Astro.url.pathname);
 ---
 
-<footer class="border-t-2 text-sm text-center pt-4">
+<footer class="text-sm text-center">
   <nav class="font-normal mx-auto">
     <ul class="flex flex-wrap justify-center text-lg -mr-2 -ml-2">
       {
@@ -25,19 +25,14 @@ const activePage = normalizeUrl(Astro.url.pathname);
       }
     </ul>
   </nav>
-  <p class="pt-2">&copy; 2025 cbrueggenolte.de. All rights reserved.</p>
-  <p class="">
+  <p class="pt-4">&copy; 2025 cbrueggenolte.de. All rights reserved.</p>
+  <p class="pt-2">
     Made with <a href="https://astro.build" class="text-green-500">Astro</a>
     and hosted on <a href="https://uberspace.de" class="text-green-500">Asteroids</a>
   </p>
 </footer>
 
 <style>
-  footer {
-    border-top: 1px solid var(--color-slate-400);
-    padding: 2rem;
-    margin-top: 2rem;
-  }
   footer a:hover {
     text-decoration: underline;
   }

@@ -31,9 +31,13 @@ const { Content } = await render(post);
 ---
 
 <Layout title={post.data.title} postdata={post.data}>
-  <section id="blogcontent" class="prose max-w-4xl prose-p:text-lg/8 prose-h1:mb-2 prose-h2:mb-4 prose-h3:mb-4">
-    <h1>{post.data.title}</h1>
-    <PostMetaData post={post} />
+  <article id="blogcontent" class="prose max-w-4xl prose-p:text-lg/8 prose-h1:mb-2 prose-h2:mb-4 prose-h3:mb-4 mb-16">
+    <header>
+      <h1 class="text-center">{post.data.title}</h1>
+      <div class="text-center">
+        <PostMetaData post={post} />
+      </div>
+    </header>
     <Content />
 
     <EmailLink title={post.data.title} user="mail" domain="cbrueggenolte.de" />
@@ -54,7 +58,7 @@ const { Content } = await render(post);
         )
       }
     </footer>
-  </section>
+  </article>
 </Layout>
 
 <script>

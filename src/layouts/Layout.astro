@@ -44,13 +44,19 @@ const { title, postdata } = Astro.props;
     </div>
 
     <!-- Main content container with brighter background -->
-    <div class="container max-w-3xl mx-auto px-6 py-8 bg-slate-800 rounded-lg my-4">
-      <main class="text-lg">
+    <div class="container max-w-3xl mx-auto px-6 pt-8 bg-slate-800 rounded-lg my-4">
+      <main class="text-lg mb-16">
         <slot />
       </main>
 
-      <Footer />
     </div>
+
+    <!-- Footer - full width bottom -->
+    <footer class="w-full bg-slate-950 mt-8">
+      <div class="max-w-5xl mx-auto px-6 py-6">
+        <Footer />
+      </div>
+    </footer>
   </body>
 </html>
 

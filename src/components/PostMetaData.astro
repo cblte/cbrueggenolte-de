@@ -5,19 +5,21 @@ const { post } = Astro.props;
 ---
 
 <div class="text-sm text-stone-400 mb-8">
-  Pub:{' '}
-  {formatDate(post.data.pubDate)}
-  | LastMod: {formatDate(post.data.modDate)}
-  | Tags: {' '}
-  {
-    post.data.tags?.length > 0
-      ? post.data.tags
-          .map((tag: string) => (
-            <>
-              <a href={`/tags/${tag}`}>{tag}</a>
-            </>
-          ))
-          .reduce((prev: string, curr: string) => [prev, ', ', curr])
-      : 'No tags'
-  }
+  <div class="block">
+    {formatDate(post.data.pubDate)}
+  </div>
+  <div class="block">
+    Tags: {' '}
+    {
+      post.data.tags?.length > 0
+        ? post.data.tags
+            .map((tag: string) => (
+              <>
+                <a href={`/tags/${tag}`}>{tag}</a>
+              </>
+            ))
+            .reduce((prev: string, curr: string) => [prev, ', ', curr])
+        : 'No tags'
+    }
+  </div>
 </div>
