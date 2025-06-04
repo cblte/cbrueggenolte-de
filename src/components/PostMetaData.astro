@@ -4,7 +4,7 @@ import { formatDate } from '@utils/utils';
 const { post } = Astro.props;
 ---
 
-<div class="text-sm text-slate-500 dark:text-zinc-400 mb-8">
+<div class="text-sm text-stone-400 mb-8">
   Pub:{' '}
   {formatDate(post.data.pubDate)}
   | LastMod: {formatDate(post.data.modDate)}

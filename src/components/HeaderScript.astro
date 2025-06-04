@@ -1,42 +1,18 @@
 ---
 /**
- * This script utilizes the `astro:after-swap` directive to prevent a flash effect
- * during client-side navigation in an Astro application. The `astro:after-swap`
- * directive ensures that the DOM updates are deferred until after the new content
- * is fully loaded and ready to be displayed. By doing so, it avoids the visual
- * disruption caused by partially rendered or unstyled content appearing momentarily
- * during the page transition.
- * First seen here: https://jklakus.co.uk/blogs/astro-darktheme#astroafter-swap
- *
- * Import this script in your layout file to ensure it runs on every page.
+ * This script ensures the page loads with consistent styling
+ * during client-side navigation in an Astro application.
  */
 ---
 
 <script is:inline>
+  // No theme switching needed - always use dark theme
   const setTheme = () => {
-    const theme = (() => {
-      if (
-        typeof localStorage !== "undefined" &&
-        localStorage.getItem("theme")
-      ) {
-        return localStorage.getItem("theme");
-      }
-      if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
-        return "dark";
-      }
-      return "light";
-    })();
-
-    if (theme === "light") {
-      document.documentElement.classList.remove("dark");
-    } else {
-      document.documentElement.classList.add("dark");
-    }
-
-    window.localStorage.setItem("theme", theme || "light");
+    // Always ensure we're in "dark" mode (though we removed the toggle)
+    document.documentElement.classList.remove('dark');
   };
 
   setTheme();
 
-  document.addEventListener("astro:after-swap", setTheme);
+  document.addEventListener('astro:after-swap', setTheme);
 </script>

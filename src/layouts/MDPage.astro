@@ -8,10 +8,10 @@ const { frontmatter, headings } = Astro.props;
 <Layout title={frontmatter.title}>
   <section
     id="pageContent"
-    class="prose max-w-4xl text-lg/8 dark:prose-invert prose-h2:mt-4 prose-h3:mt-4">
+    class="prose max-w-4xl text-lg/8 prose-h2:mt-4 prose-h3:mt-4">
     <header class="mb-6">
       <h1 class="mb-1">{frontmatter.title}</h1>
-      <div class="text-sm text-slate-500 dark:text-zinc-400">
+      <div class="text-sm text-stone-400">
         {frontmatter.date && formatDate(frontmatter.date)}
       </div>
 
@@ -25,7 +25,7 @@ const { frontmatter, headings } = Astro.props;
       frontmatter.toc == true && headings.length > 0 && (
         <div
           id="toc"
-          class="sticky -top-1 pt-2 mb-6 pb-4 bg-zinc-100 dark:bg-slate-900 z-40 text-sm">
+          class="sticky -top-1 pt-2 mb-6 pb-4 bg-slate-800 z-40 text-sm">
           <div class="font-medium mb-2">Inhaltsverzeichnis</div>
           <ul class="flex items-center gap-x-2 not-prose flex-wrap pb-4">
             {headings.map((heading: { slug: string; text: string }) => (
@@ -74,13 +74,9 @@ const { frontmatter, headings } = Astro.props;
 
 <style is:global>
   .is-sticky ul {
-    border-bottom: 1px solid var(--color-slate-600);
+    border-bottom: 1px solid var(--color-stone-200);
     border-spacing: 20px;
-  }
-
-  .dark .is-sticky ul {
-    border-bottom: 1px solid var(--color-zinc-200);
-    background-color: var(--color-slate-900);
+    background-color: var(--color-slate-800);
   }
 
   h2,

@@ -16,7 +16,7 @@ const activePage = normalizeUrl(Astro.url.pathname);
             <a
               href={item.href}
               target="_self"
-              class={`${activePage === item.href ? 'text-slate-900 dark:text-zinc-100 underline font-semibold' : ''} hover:underline inline-block py-0 px-2 -mr-1 text-red-500 dark:text-green-500`}>
+              class={`${activePage === item.href ? 'text-stone-200 underline font-semibold' : ''} hover:underline inline-block py-0 px-2 -mr-1 text-green-500`}>
               {item.name}
             </a>
             {item !== footerMenu[footerMenu.length - 1] ? '|' : ''}
@@ -27,8 +27,8 @@ const activePage = normalizeUrl(Astro.url.pathname);
   </nav>
   <p class="pt-2">&copy; 2025 cbrueggenolte.de. All rights reserved.</p>
   <p class="">
-    Made with <a href="https://astro.build" class="text-red-500 dark:text-green-500">Astro</a>
-    and hosted on <a href="https://uberspace.de" class="text-red-500 dark:text-green-500">Asteroids</a>
+    Made with <a href="https://astro.build" class="text-green-500">Astro</a>
+    and hosted on <a href="https://uberspace.de" class="text-green-500">Asteroids</a>
   </p>
 </footer>
 

@@ -3,19 +3,13 @@
 @config './tailwind.config.js';
 
 #blogcontent img {
-  border: 1px solid var(--color-zinc-200);
+  border: 1px solid var(--color-zinc-700);
   border-radius: 0.5rem;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
   display: block;
   margin: 0 auto;
   max-width: 100%; /* Ensures the image scales down */
   height: auto; /* Maintains aspect ratio */
-}
-
-/* 🌙 Dark Mode-Anpassung */
-html.dark #blogcontent img {
-  border-color: var(--color-zinc-700);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4); /* etwas stärkerer Schatten */
 }
 
 /* Add media query for smaller screens */
@@ -62,33 +56,21 @@ html.dark #blogcontent img {
 }
 /* 💡 Tipp (grün) */
 .admonition-tip {
-  @apply bg-green-100 border-green-400 text-green-900;
-}
-.dark .admonition-tip {
   @apply bg-green-800 border-green-500 text-green-200;
 }
 
 /* ⚠️ Warnung (gelb) */
 .admonition-warning {
-  @apply bg-yellow-100 border-yellow-400 text-yellow-900;
-}
-.dark .admonition-warning {
   @apply bg-yellow-800 border-yellow-500 text-yellow-200;
 }
 
 /* ❗ Gefahr (rot) */
 .admonition-danger {
-  @apply bg-red-100 border-red-400 text-red-900;
-}
-.dark .admonition-danger {
   @apply bg-red-800 border-red-500 text-red-200;
 }
 
 /* 📝 Hinweis (blau) */
 .admonition-note {
-  @apply bg-blue-100 border-blue-400 text-blue-900;
-}
-.dark .admonition-note {
   @apply bg-blue-800 border-blue-500 text-blue-200;
 }
 

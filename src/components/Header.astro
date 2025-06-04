@@ -7,33 +7,42 @@ const normalizeUrl = (url: string) => (url.endsWith('/') ? url : url + '/');
 const activePage = normalizeUrl(Astro.url.pathname);
 ---
 
-<header class="flex flex-wrap items-center gap-4 justify-between mb-12">
-  <div class="text-4xl/9 font-bold -tracking-[3px] flex justify-between items-center w-full">
-    <div class="flex-1">
-      <a
-        href="/"
-        target="_self"
-        class="inline-block w-min border-b-3 hover:text-red-500 dark:hover:text-green-500 border-red-500 hover:border-slate-900 dark:border-green-500 dark:hover:border-zinc-100 pr-2.5 pl-2 transition duration-300"
-        >CB</a
-      >
+<header class="flex flex-col md:flex-row md:items-center md:justify-between py-6 mb-6 gap-4">
+  <!-- Top row on mobile: Logo and Theme Icon -->
+  <div class="flex items-center justify-between md:flex-shrink-0">
+    <a
+      href="/"
+      target="_self"
+      class="text-4xl font-bold -tracking-[3px] inline-block border-b-3 hover:text-green-500 border-green-500 hover:border-stone-200 px-2 transition duration-300"
+      >CB</a
+    >
+    <!-- Theme icon on mobile, hidden on desktop (will be shown in right section) -->
+    <div class="md:hidden">
+      <ThemeIcon />
     </div>
-    <div class="flex-1 text-right"><ThemeIcon /></div>
   </div>
-  <nav class="font-normal">
-    <ul class="flex flex-wrap justify-start text-2xl -mr-2 -ml-2">
+
+  <!-- Navigation - full width on mobile, center on desktop -->
+  <nav class="flex-1 md:flex md:justify-center">
+    <ul class="flex flex-wrap justify-center md:items-center text-xl gap-2 md:gap-1">
       {
-        headerMenu.map((item) => (
+        headerMenu.map((item, index) => (
           <li class="inline-block">
             <a
               href={item.href}
               target="_self"
-              class={`${activePage === item.href ? 'text-slate-900 dark:text-zinc-100 underline font-semibold' : ''} hover:underline inline-block py-0 px-2 -mr-1 text-red-500 dark:text-green-500`}>
+              class={`${activePage === item.href ? 'text-stone-200 underline font-semibold' : ''} hover:underline px-3 py-2 text-green-500 transition duration-200`}>
               {item.name}
             </a>
-            {item !== headerMenu[headerMenu.length - 1] ? '|' : ''}
+            {index < headerMenu.length - 1 && <span class="text-stone-400 mx-1 hidden md:inline">|</span>}
           </li>
         ))
       }
     </ul>
   </nav>
+
+  <!-- Theme Icon - only visible on desktop -->
+  <div class="hidden md:block md:flex-shrink-0">
+    <ThemeIcon />
+  </div>
 </header>

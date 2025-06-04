@@ -35,12 +35,17 @@ const { title, postdata } = Astro.props;
     <HeaderScript />
   </head>
 
-  <body class="bg-zinc-100 text-slate-900 dark:bg-slate-900 dark:text-zinc-100 font-normal">
+  <body class="bg-slate-900 text-stone-200 font-normal">
     <div id="top"></div>
-    <div class="container max-w-3xl mx-auto px-6 pt-4">
-      <Header />
 
-      <main class="mt-8 text-lg">
+    <!-- Header outside the container -->
+    <div class="max-w-5xl mx-auto px-6 pt-4">
+      <Header />
+    </div>
+
+    <!-- Main content container with brighter background -->
+    <div class="container max-w-3xl mx-auto px-6 py-8 bg-slate-800 rounded-lg my-4">
+      <main class="text-lg">
         <slot />
       </main>
 
@@ -51,26 +56,14 @@ const { title, postdata } = Astro.props;
 
 <style is:global>
   main a {
-    color: var(--color-red-500);
-    text-decoration: underline;
-    font-weight: var(--font-weight-normal);
-    transition-duration: 300ms;
-  }
-  main a:hover {
-    background-color: var(--color-red-500);
-    color: var(--color-zinc-100);
-  }
-
-  .dark main a {
     color: var(--color-green-500);
     text-decoration: underline;
     font-weight: var(--font-weight-normal);
     transition-duration: 300ms;
   }
-   .dark main a:hover {
-      background-color: var(--color-green-500);
-      color: var(--color-slate-900);
+  main a:hover {
+    background-color: var(--color-green-500);
+    color: var(--color-slate-900);
   }
-
 </style>
 

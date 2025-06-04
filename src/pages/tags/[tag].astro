@@ -32,7 +32,7 @@ const filteredPosts = posts.filter((post) => post.data.tags?.includes(tag));
 ---
 
 <Layout title={`Posts mit dem Tag "${tag}"`}>
-  <section id={`tag_${tag}`} class="prose dark:prose-invert">
+  <section id={`tag_${tag}`} class="prose">
     <h1>Posts mit dem Tag #{tag}</h1>
     {
       filteredPosts.length > 0 ? (
