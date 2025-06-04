@@ -12,7 +12,7 @@ module.exports = {
             '--tw-prose-headings': 'var(--color-stone-100)',
             '--tw-prose-lead': 'var(--color-stone-300)',
             '--tw-prose-links': 'var(--color-green-500)',
-            '--tw-prose-bold': 'var(--color-stone-100)',
+            '--tw-prose-medium': 'var(--color-stone-100)',
             '--tw-prose-counters': 'var(--color-stone-400)',
             '--tw-prose-bullets': 'var(--color-stone-500)',
             '--tw-prose-hr': 'var(--color-slate-700)',

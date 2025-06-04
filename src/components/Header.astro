@@ -38,7 +38,7 @@ const activePage = normalizeUrl(Astro.url.pathname);
             <a
               href={item.href}
               target="_self"
-              class={`${activePage === item.href ? 'text-stone-200 underline font-semibold' : ''} hover:underline px-3 py-2 text-green-500 transition duration-200`}>
+              class={`${activePage === item.href ? 'text-stone-200 underline font-medium' : ''} hover:underline px-3 py-2 text-green-500 transition duration-200`}>
               {item.name}
             </a>
           </li>
