@@ -2,6 +2,9 @@
 module.exports = {
   theme: {
     extend: {
+      fontFamily: {
+        sans: ['Rubik', 'system-ui', 'sans-serif'],
+      },
       typography: () => ({
         DEFAULT: {
           css: {

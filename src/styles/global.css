@@ -2,6 +2,87 @@
 @plugin '@tailwindcss/typography';
 @config './tailwind.config.js';
 
+/* Rubik Font Face Declarations */
+@font-face {
+  font-family: 'Rubik';
+  src: url('/fonts/rubik-light.woff2') format('woff2'), url('/fonts/rubik-light.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Rubik';
+  src: url('/fonts/rubik-lightitalic.woff2') format('woff2'), url('/fonts/rubik-lightitalic.woff') format('woff');
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Rubik';
+  src: url('/fonts/rubik-regular.woff2') format('woff2'), url('/fonts/rubik-regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Rubik';
+  src: url('/fonts/rubik-italic.woff2') format('woff2'), url('/fonts/rubik-italic.woff') format('woff');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Rubik';
+  src: url('/fonts/rubik-medium.woff2') format('woff2'), url('/fonts/rubik-medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Rubik';
+  src: url('/fonts/rubik-mediumitalic.woff2') format('woff2'), url('/fonts/rubik-mediumitalic.woff') format('woff');
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Rubik';
+  src: url('/fonts/rubik-bold.woff2') format('woff2'), url('/fonts/rubik-bold.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Rubik';
+  src: url('/fonts/rubik-bolditalic.woff2') format('woff2'), url('/fonts/rubik-bolditalic.woff') format('woff');
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Rubik';
+  src: url('/fonts/rubik-black.woff2') format('woff2'), url('/fonts/rubik-black.woff') format('woff');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Rubik';
+  src: url('/fonts/rubik-blackitalic.woff2') format('woff2'), url('/fonts/rubik-blackitalic.woff') format('woff');
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
+
 #blogcontent img {
   border: 1px solid var(--color-zinc-700);
   border-radius: 0.5rem;
