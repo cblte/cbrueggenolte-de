@@ -1,7 +1,7 @@
 ---
 layout: "@layouts/MDPage.astro"
 title: "Bookmarks"
-date: 2025-04-13
+date: 2025-06-01
 toc: true
 ---
 
@@ -29,6 +29,7 @@ dass sie jederzeit über alle Browser und Geräte zugänglich sind.
 
 - [Poorly Drawn Lines Comic](https://poorlydrawnlines.com/)
 - [Anna's Archive](https://annas-archive.org/)
+- [GamePro](https://www.gamepro.de/)
 - [Scan of the Month](https://www.scanofthemonth.com/)
 - [Restore Privacy Blog](https://restoreprivacy.com/)
 
