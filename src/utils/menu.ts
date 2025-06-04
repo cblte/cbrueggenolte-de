@@ -1,5 +1,4 @@
 export const headerMenu = [
-  { name: 'Home', href: '/' },
   { name: 'Über mich', href: '/about/' },
   { name: 'Now', href: '/now/' },
   { name: 'Blog', href: '/blog/' },

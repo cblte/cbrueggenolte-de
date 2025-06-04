@@ -9,22 +9,29 @@ const activePage = normalizeUrl(Astro.url.pathname);
 
 <header class="flex flex-col md:flex-row md:items-center md:justify-between py-6 mb-6 gap-4">
   <!-- Top row on mobile: Logo and Theme Icon -->
-  <div class="flex items-center justify-between md:flex-shrink-0">
-    <a
-      href="/"
-      target="_self"
-      class="text-4xl font-bold -tracking-[3px] inline-block border-b-3 hover:text-green-500 border-green-500 hover:border-stone-200 px-2 transition duration-300"
-      >CB</a
-    >
-    <!-- Theme icon on mobile, hidden on desktop (will be shown in right section) -->
-    <div class="md:hidden">
-      <ThemeIcon />
-    </div>
+  <div class="flex md:flex-shrink-0 uppercase">
+    <a href="/" target="_self" class="text-lg lg:text-2xl flex gap-4 items-center">
+      <div class="w-12 h-12 lg:w-16 lg:h-16">
+        <img
+          src="/images/about-me-aipg.jpg"
+          alt="A AI generate picture of Carsten Brüggenolte"
+          width="1024"
+          height="1024"
+          loading="lazy"
+          decoding="async"
+          class="object-cover w-full h-full rounded-lg shadow-lg border-2 border-stone-100"
+        />
+      </div>
+      <div class="leading-tight">
+        <div class="text-green-500 inline">C</div>arsten<br />
+        <div class="text-green-500 inline">B</div>rüggenolte
+      </div>
+    </a>
   </div>
 
   <!-- Navigation - full width on mobile, center on desktop -->
-  <nav class="flex-1 md:flex md:justify-center">
-    <ul class="flex flex-wrap justify-center md:items-center text-xl gap-2 md:gap-1">
+  <nav class="w-full flex justify-end">
+    <ul class="flex flex-wrap md:items-center text-xl gap-4 md:gap-4">
       {
         headerMenu.map((item, index) => (
           <li class="inline-block">
@@ -34,15 +41,9 @@ const activePage = normalizeUrl(Astro.url.pathname);
               class={`${activePage === item.href ? 'text-stone-200 underline font-semibold' : ''} hover:underline px-3 py-2 text-green-500 transition duration-200`}>
               {item.name}
             </a>
-            {index < headerMenu.length - 1 && <span class="text-stone-400 mx-1 hidden md:inline">|</span>}
           </li>
         ))
       }
     </ul>
   </nav>
-
-  <!-- Theme Icon - only visible on desktop -->
-  <div class="hidden md:block md:flex-shrink-0">
-    <ThemeIcon />
-  </div>
 </header>
