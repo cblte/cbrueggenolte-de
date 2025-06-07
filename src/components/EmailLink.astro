@@ -3,11 +3,10 @@
 const { title, user, domain } = Astro.props;
 ---
 
-<p class="mt-10 text-base text-gray-600 dark:text-gray-300">
+<p class="mt-10">
   Du hast Fragen oder Gedanken zum Beitrag <strong>{title}</strong>?
-  <a id="mailLink" data-u={user} data-d={domain} data-t={title} href="#" class="text-blue-600 hover:underline"
-    >Schreib mir gern eine E-Mail</a
-  > – ich freu mich drauf!
+  <a id="mailLink" data-u={user} data-d={domain} data-t={title} href="#">Schreib mir gern eine E-Mail</a> – ich freu mich
+  drauf!
 </p>
 
 <script>
