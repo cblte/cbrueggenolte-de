@@ -7,29 +7,30 @@ const normalizeUrl = (url: string) => (url.endsWith('/') ? url : url + '/');
 const activePage = normalizeUrl(Astro.url.pathname);
 ---
 
-<footer class="text-sm text-center">
-  <nav class="font-normal mx-auto">
-    <ul class="flex flex-wrap justify-center text-lg -mr-2 -ml-2">
-      {
-        footerMenu.map((item) => (
-          <li class="inline-block">
-            <a
-              href={item.href}
-              target="_self"
-              class={`${activePage === item.href ? 'text-stone-200 underline font-medium' : ''} hover:underline inline-block py-0 px-2 -mr-1 text-green-500`}>
-              {item.name}
-            </a>
-            {item !== footerMenu[footerMenu.length - 1] ? '|' : ''}
-          </li>
-        ))
-      }
-    </ul>
-  </nav>
-  <p class="pt-4">&copy; 2025 cbrueggenolte.de. All rights reserved.</p>
-  <p class="pt-2">
-    Made with <a href="https://astro.build" class="text-green-500">Astro</a>
-    and hosted on <a href="https://uberspace.de" class="text-green-500">Asteroids</a>
-  </p>
+<footer class="bg-slate-950 py-16 w-full">
+  <div class="mx-auto max-w-5xl">
+    <nav class="mt-6">
+      <ul class="flex md:flex-row flex-col justify-center items-center gap-2 md:gap-6">
+        {
+          footerMenu.map((item) => (
+            <li class="inline-block">
+              <a
+                href={item.href}
+                target="_self"
+                class={`${activePage === item.href ? 'text-stone-200 underline font-medium' : ''} hover:underline inline-block py-0 px-2 -mr-1 text-green-500`}>
+                {item.name}
+              </a>
+            </li>
+          ))
+        }
+      </ul>
+    </nav>
+    <p class="pt-4 text-center">&copy; 2025 cbrueggenolte.de. All rights reserved.</p>
+    <p class="pt-2 text-center">
+      Made with <a href="https://astro.build" class="text-green-500">Astro</a>
+      and hosted on <a href="https://uberspace.de" class="text-green-500">Asteroids</a>
+    </p>
+  </div>
 </footer>
 
 <style>

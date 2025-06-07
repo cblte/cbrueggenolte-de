@@ -7,11 +7,11 @@ const normalizeUrl = (url: string) => (url.endsWith('/') ? url : url + '/');
 const activePage = normalizeUrl(Astro.url.pathname);
 ---
 
-<header class="flex flex-col md:flex-row md:items-center md:justify-between py-6 mb-6 gap-4">
+<header class="flex md:flex-row flex-col md:justify-between md:items-center gap-4 mx-auto mt-16 mb-8 px-6 max-w-5xl">
   <!-- Top row on mobile: Logo and Theme Icon -->
   <div class="flex md:flex-shrink-0 uppercase">
-    <a href="/" target="_self" class="text-lg lg:text-2xl flex gap-4 items-center">
-      <div class="w-12 h-12 lg:w-16 lg:h-16">
+    <a href="/" target="_self" class="flex items-center gap-4 text-lg lg:text-2xl">
+      <div class="w-12 lg:w-16 h-12 lg:h-16">
         <img
           src="/images/about-me-aipg.jpg"
           alt="A AI generate picture of Carsten Brüggenolte"
@@ -19,19 +19,19 @@ const activePage = normalizeUrl(Astro.url.pathname);
           height="1024"
           loading="lazy"
           decoding="async"
-          class="object-cover w-full h-full rounded-lg shadow-lg border-2 border-stone-100"
+          class="shadow-lg border-2 border-stone-100 rounded-lg w-full h-full object-cover"
         />
       </div>
       <div class="leading-tight">
-        <div class="text-green-500 inline">C</div>arsten<br />
-        <div class="text-green-500 inline">B</div>rüggenolte
+        <div class="inline text-green-500">C</div>arsten<br />
+        <div class="inline text-green-500">B</div>rüggenolte
       </div>
     </a>
   </div>
 
   <!-- Navigation - full width on mobile, center on desktop -->
-  <nav class="w-full flex justify-end">
-    <ul class="flex flex-wrap md:items-center text-xl gap-4 md:gap-4">
+  <nav class="flex justify-end w-full">
+    <ul class="flex flex-wrap md:items-center gap-4 md:gap-4 text-xl">
       {
         headerMenu.map((item, index) => (
           <li class="inline-block">

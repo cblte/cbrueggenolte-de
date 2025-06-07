@@ -35,7 +35,7 @@
   font-display: swap;
 }
 
-#blogcontent img {
+#blogcontent #content img {
   border: 1px solid var(--color-zinc-700);
   border-radius: 0.5rem;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
@@ -109,5 +109,5 @@
 
 /* 🔠 Titel */
 .admonition-title {
-  @apply font-medium mb-2;
+  @apply mb-2 font-medium;
 }
