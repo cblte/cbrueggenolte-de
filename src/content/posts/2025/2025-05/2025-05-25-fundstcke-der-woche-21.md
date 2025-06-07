@@ -4,6 +4,7 @@ description: "Neue Woche, neues Format, alte Aufreger: Musik, Add-ons, Panzer un
 pubDate: 2025-05-25
 modDate: 2025-05-25
 tags: [fundstuecke, musik, links, journal]
+cover: "/images/fundstuecke-der-woche.jpg"
 draft: false
 ---
 
@@ -11,8 +12,6 @@ draft: false
 Diese Woche gibt’s die Fundstücke mal in einem neuen Format.
 Ich bin da immer noch ein wenig in der Findungsphase.
 Heute mal im 5-Bullet-Sunday-Format.
-
-![FundStuecke Cover](/images/fundstuecke-der-woche.jpg)
 
 ## Musik aus meiner Playliste
 
