@@ -1,5 +1,6 @@
 ---
 import { getCollection, render } from 'astro:content';
+import { Image } from 'astro:assets';
 
 import Layout from '@layouts/Layout.astro';
 import PostMetaData from '@components/PostMetaData.astro';
@@ -31,32 +32,50 @@ const { Content } = await render(post);
 ---
 
 <Layout title={post.data.title} postdata={post.data}>
-  <article id="blogcontent" class="prose max-w-4xl prose-p:text-lg/8 prose-h1:mb-2 prose-h2:mb-4 prose-h3:mb-4 mb-16">
-    <header>
-      <h1 class="text-center">{post.data.title}</h1>
+  <article
+    id="blogcontent"
+    class="bg-slate-800 mb-16 prose-h2:mb-4 prose-h3:mb-4 rounded-2xl max-w-3xl prose-p:text-lg/8 prose">
+    <header class="mb-8">
+      {
+        post.data.cover && (
+          <Image
+            src={post.data.cover}
+            alt={post.data.coverAlt ? post.data.coverAlt : 'Cover Image'}
+            class="rounded-t-2xl w-full h-80 object-cover"
+          />
+        )
+      }
+
+      <h1 class="mt-4 pt-4 font-semibold text-stone-400 text-4xl text-center text-balance">{post.data.title}</h1>
       <div class="text-center">
         <PostMetaData post={post} />
       </div>
     </header>
-    <Content />
+    <div id="content" class="px-16">
+      <Content />
 
-    <EmailLink title={post.data.title} user="mail" domain="cbrueggenolte.de" />
+      <EmailLink title={post.data.title} user="mail" domain="cbrueggenolte.de" />
+    </div>
 
-    <footer class="mt-12 flex justify-between items-center text-blue-600 text-base font-medium">
-      {
-        prevPost && (
-          <a href={`/blog/${createSlug(prevPost.data.title)}/`} class="hover:underline">
-            &larr; Zurück: {prevPost.data.title}
-          </a>
-        )
-      }
-      {
-        nextPost && (
-          <a href={`/blog/${createSlug(nextPost.data.title)}/`} class="ml-auto hover:underline">
-            Weiter: {nextPost.data.title} &rarr;
-          </a>
-        )
-      }
+    <footer class="flex mt-12 p-4 font-medium">
+      <div class="flex-1">
+        {
+          prevPost && (
+            <a href={`/blog/${createSlug(prevPost.data.title)}/`} class="hover:underline">
+              &larr; {prevPost.data.title}
+            </a>
+          )
+        }
+      </div>
+      <div class="flex-1 text-right">
+        {
+          nextPost && (
+            <a href={`/blog/${createSlug(nextPost.data.title)}/`} class="hover:underline">
+              {nextPost.data.title} &rarr;
+            </a>
+          )
+        }
+      </div>
     </footer>
   </article>
 </Layout>

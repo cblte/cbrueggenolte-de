@@ -4,13 +4,13 @@ pubDate: 2025-03-26
 modDate: 2025-04-13
 description: "Wir haben eine neue Heißluftfritteuse und sie ist fantastisch. Meine ersten Eindrücke vom Ninja 12-in-1 Combi Cooker."
 tags: ["airfryer", "küche", "kochen"]
+cover: "./2025-03-26-cover.jpg"
+coverAlt: "Ninja 12-in-1 Combi Cooker"
 ---
 
 Gestern war ich bei einem Freund, um über sein Homelab und sein Netzwerk zu sprechen.
 Dabei habe ich gesehen, dass er eine Ninja Heißluftfritteuse hat.
 Diese Geräte sind ziemlich gut und man kann echt viel damit zubereiten.
-
-![Ninja 12-in-1 Combi Cooker](./2025-03-26-cover.jpg "Ninja 12-in-1 Combi Cooker")
 
 Nach dem Anschauen einiger Videos über die verschiedenen Ninja-Produkte waren wir ziemlich beeindruckt vom [Ninja 12-in-1 Combi Cooker](https://www.ninjakitchen.de/produkte/ninja-combi-12-in-1-multikocher-ofen-heissluftfritteuse-sfp700eu-zidSFP700EU).
 Nach weiterer intensiver Recherche zum Thema "Was kann man mit einem Ninja Combi Cooker alles machen?" und dem Anschauen zahlreicher Videos haben wir uns entschieden, es zu wagen und einen zu bestellen.

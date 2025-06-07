@@ -91,7 +91,7 @@ bun run dev
 
 Wenn alles richtig eingerichtet ist, erreichst du die Startseite unter `http://localhost:3000` in deinem Browser.
 
-![Ergebnis von bun run dev](bun-hono-start.png "Ergebnis von bun run dev")
+![Ergebnis von bun run dev](./bun-hono-start.png "Ergebnis von bun run dev")
 
 :::tip
 Da wir das Terminal gleich wieder brauchen, stoppen wir den Server mit `Ctrl + C`.
@@ -248,7 +248,7 @@ während du am Projekt arbeitest.
 Wenn alles funktioniert, wird die Startseite unter
 <http://localhost:3000> angezeigt – diesmal mit TailwindCSS-Styling.
 
-![Bun Hono und Tailwindcss](bun-hon-tailwindcss.png "Bun Hono und Tailwindcss")
+![Bun Hono und Tailwindcss](/src/assets/bun-hono-tailwindcss.png "Bun Hono und Tailwindcss")
 
 Deine Version ist bereits sehr gut – klar strukturiert, technisch korrekt und stilistisch passend zum Blog.
 Ich habe sie jetzt nur leicht sprachlich geglättet

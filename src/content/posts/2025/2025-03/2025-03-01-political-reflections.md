@@ -4,6 +4,8 @@ description: "Dieser Begleitbeitrag liefert Referenzen und Quellen, die meine Ü
 pubDate: 2025-03-09
 modDate: 2025-04-13
 tags: ["politics", "trump", "elections", "noafd"]
+cover: "./politics-cover.jpg"
+coverAlt: "Politik Cover"
 ---
 
 Dieser Begleitbeitrag liefert Referenzen und Quellen,

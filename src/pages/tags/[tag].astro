@@ -36,12 +36,12 @@ const filteredPosts = posts.filter((post) => post.data.tags?.includes(tag));
     <h1>Posts mit dem Tag #{tag}</h1>
     {
       filteredPosts.length > 0 ? (
-        <ul class="list-none p-0 m-0">
+        <ul class="m-0 p-0 list-none">
           {filteredPosts.map((post) => (
-            <li class="before:content-['»_'] before:absolute p-0 m-0 md-2">
-              <div class="ml-4 flex justify-between">
+            <li class="before:absolute m-0 p-0 before:content-['»_'] md-2">
+              <div class="flex justify-between ml-4">
                 <a href={`/blog/${createSlug(post.data.title)}`}>{post.data.title}</a>
-                <span class="font-mono">{formatDate(post.data.pubDate)}</span>
+                <span class="font-mono">{formatDate(post.data.pubDate.toString())}</span>
               </div>
             </li>
           ))}

@@ -4,7 +4,8 @@ description: "Neue Woche, neues Format, alte Aufreger: Musik, Add-ons, Panzer un
 pubDate: 2025-05-25
 modDate: 2025-05-25
 tags: [fundstuecke, musik, links, journal]
-cover: "/images/fundstuecke-der-woche.jpg"
+cover: "./fundstuecke-der-woche.jpg"
+coverAlt: "Die Fundstücke der Woche 21"
 draft: false
 ---
 

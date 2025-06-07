@@ -4,9 +4,9 @@ description: "Frohe Ostern."
 pubDate: 2025-04-17
 modDate: 2025-04-17
 tags: [journal]
+cover: "./2025-04-17-cover.jpg"
+coverAlt: "Frohe Ostern"
 ---
-
-![Frohe Ostern](./2025-04-17-frohe-ostern.png)
 
 Heute ist Gründonnerstag.
 Morgen ist Karfreitag und damit startet das Osterwochenende.
