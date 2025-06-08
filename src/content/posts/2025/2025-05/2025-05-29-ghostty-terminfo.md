@@ -4,6 +4,8 @@ description: "Behebung des Terminfo-Problems mit Ghostty auf Uberspace 7"
 pubDate: 2025-05-29
 modDate: 2025-05-29
 tags: [terminal, ghostty, uberspace, tutorial]
+cover: "./2025-05-29-cover-ghostty.jpg"
+coverAlt: "Ghostty Terminal"
 ---
 
 [Ghostty](https://ghostty.org/)) ist ein tolles Terminal.
