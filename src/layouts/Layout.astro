@@ -34,12 +34,12 @@ const { title, postdata } = Astro.props;
     <ClientRouter />
     <HeaderScript />
   </head>
-
-  <body class="bg-slate-900 font-sans text-stone-200">
+  <body class="font-sans">
     <div id="top"></div>
+    
     <Header />
-
-    <main class="mx-auto my-12 px-6 pt-8 pb-12 rounded-lg max-w-4xl text-lg container">
+    
+    <main class="mx-auto my-12 px-6 pt-8 pb-12 rounded-lg max-w-3xl text-lg container">
       <slot />
     </main>
 
@@ -49,14 +49,13 @@ const { title, postdata } = Astro.props;
 
 <style is:global>
   main a {
-    color: var(--color-green-500);
     text-decoration: underline;
     font-weight: var(--font-weight-normal);
     transition-duration: 300ms;
   }
   main a:hover {
-    background-color: var(--color-green-500);
-    color: var(--color-slate-900);
+    background-color: transparent;
+    text-decoration: underline;
   }
 </style>
 

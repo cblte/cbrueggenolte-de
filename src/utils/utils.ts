@@ -4,8 +4,8 @@ export function formatDate(dateString: string): string {
 
   const date = new Date(dateString);
   return `${date.getDate()}. ${date.toLocaleString('de-DE', {
-    month: 'short',
-  })}. ${date.getFullYear()}`;
+    month: 'long',
+  })} ${date.getFullYear()}`;
 }
 
 export function createSlug(title: string): string {

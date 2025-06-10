@@ -11,7 +11,7 @@ const { frontmatter, headings } = Astro.props;
     class="prose-h2:mt-4 prose-h3:mt-4 max-w-4xl text-lg/8 prose">
     <header class="mb-6">
       <h1 class="mb-1">{frontmatter.title}</h1>
-      <div class="text-stone-400 text-sm">
+      <div class="text-sm">
         {frontmatter.date && formatDate(frontmatter.date)}
       </div>
 
@@ -25,17 +25,17 @@ const { frontmatter, headings } = Astro.props;
       frontmatter.toc == true && headings.length > 0 && (
         <div
           id="toc"
-          class="-top-1 z-40 sticky bg-slate-800 mb-6 p-4 rounded-md text-sm">
+          class="-top-1 z-40 sticky bg-white mb-6 p-4 rounded-md text-sm">
           <div class="mb-2 font-semibold">Inhaltsverzeichnis</div>
           <ul class="flex flex-wrap items-center gap-x-2 pb-4 not-prose">
             {headings.map((heading: { slug: string; text: string }) => (
               <li class="toc-item">
-                <a href={`#${heading.slug}`}>{heading.text}</a>
+                <a href={`#${heading.slug}`} class="hover:underline">{heading.text}</a>
               </li>
               <li>&vert;</li>
             ))}
             <li class="toc-item">
-              <a href="#top">Top &uarr;</a>
+              <a href="#top" class="hover:underline">Top &uarr;</a>
             </li>
           </ul>
         </div>

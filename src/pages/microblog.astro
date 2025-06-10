@@ -50,22 +50,26 @@ const entries = fileContent
 <Layout title="Microblog">
   <h1 class="text-4xl">Microblog</h1>
   <p class="text-2xl">
-    A place for shorter entries. Random thoughts and notes that I want to keep, not just for myself.
+    A place for shorter entries. Random thoughts and notes that I want to keep,
+    not just for myself.
   </p>
   <section id="introduction" class="prose mt-4">
     <p>
-      So, with the relaunch of my website, I decided to create a space for shorter posts. This is where I'll share
-      random thoughts and ideas that don't quite fit into a full blog post.
+      So, with the relaunch of my website, I decided to create a space for
+      shorter posts. This is where I'll share random thoughts and ideas that
+      don't quite fit into a full blog post.
     </p>
     <p>
-      So, welcome to my Microblog. It's a place for quick ideas, links, comments, or anything too short—or not yet
-      ready—for a full post. All coming from a single text file.
+      So, welcome to my Microblog. It's a place for quick ideas, links,
+      comments, or anything too short—or not yet ready—for a full post. All
+      coming from a single text file.
     </p>
     <p class="text-sm">
       <strong>Note:</strong>
-      Entries from my previous blog project, a blog done in Flask and Python that I started in 2022, will be added gradually.
-      Whether or not they make it depends on their relevance to me today and whether I can find the time to transfer them
-      over. This microblog might become a subdomain at some point in the future.
+      Entries from my previous blog project, a blog done in Flask and Python that
+      I started in 2022, will be added gradually. Whether or not they make it depends
+      on their relevance to me today and whether I can find the time to transfer
+      them over. This microblog might become a subdomain at some point in the future.
     </p>
   </section>
 
@@ -77,7 +81,10 @@ const entries = fileContent
             <a href={`#post-${entry.number}`} class="inline-block ">
               {`#${entry.number}`}
             </a>
-            <span class="text-zinc-400 text-md flex-1 text-right" id={entry.date}>
+            <span
+              class="text-zinc-400 text-md flex-1 text-right"
+              id={entry.date}
+            >
               {entry.date}
             </span>{' '}
           </div>
@@ -102,12 +109,11 @@ const entries = fileContent
   .microblog {
     margin: 2rem;
   }
-
   .microblog-entry {
     margin-bottom: 2rem;
     padding: 1rem;
-    background-color: var(--color-slate-800);
+    background-color: var(--color-slate-700);
     border-radius: 8px;
-    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);
   }
 </style>

@@ -36,9 +36,9 @@
 }
 
 #blogcontent #content img {
-  border: 1px solid var(--color-zinc-700);
+  border: 1px solid var(--color-zinc-600);
   border-radius: 0.5rem;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
   display: block;
   margin: 0 auto;
   max-width: 100%; /* Ensures the image scales down */
@@ -61,7 +61,7 @@
   position: absolute;
   top: 0.5rem;
   right: 0.5rem;
-  background-color: var(--color-slate-700);
+  background-color: var(--color-slate-600);
   border: none;
   padding: 0.25rem;
   border-radius: 0.25rem;
@@ -72,7 +72,7 @@
 }
 
 #blogcontent .copy-button:hover {
-  background-color: var(--color-slate-500);
+  background-color: var(--color-slate-400);
 }
 
 #blogcontent pre {
@@ -89,22 +89,22 @@
 }
 /* 💡 Tipp (grün) */
 .admonition-tip {
-  @apply bg-green-800 border-green-500 text-green-200;
+  @apply bg-green-700 border-green-400 text-green-100;
 }
 
 /* ⚠️ Warnung (gelb) */
 .admonition-warning {
-  @apply bg-yellow-800 border-yellow-500 text-yellow-200;
+  @apply bg-yellow-700 border-yellow-400 text-yellow-100;
 }
 
 /* ❗ Gefahr (rot) */
 .admonition-danger {
-  @apply bg-red-800 border-red-500 text-red-200;
+  @apply bg-red-700 border-red-400 text-red-100;
 }
 
 /* 📝 Hinweis (blau) */
 .admonition-note {
-  @apply bg-blue-800 border-blue-500 text-blue-200;
+  @apply bg-blue-700 border-blue-400 text-blue-100;
 }
 
 /* 🔠 Titel */
