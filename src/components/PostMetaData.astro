@@ -10,16 +10,12 @@ const { post } = Astro.props;
   </div>
   <div class="block">
     Tags: {' '}
-    {
-      post.data.tags?.length > 0
+    <span
+      set:html={post.data.tags?.length > 0
         ? post.data.tags
-            .map((tag: string) => (
-              <>
-                <a href={`/tags/${tag}`}>{tag}</a>
-              </>
-            ))
-            .reduce((prev: string, curr: string) => [prev, ', ', curr])
-        : 'No tags'
-    }
+            .map((tag: string) => `<a href="/tags/${tag}/">${tag}</a>`)
+            .join(', ')
+        : 'No tags'}
+    />
   </div>
 </div>

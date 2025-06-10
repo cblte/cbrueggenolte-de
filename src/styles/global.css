@@ -8,9 +8,6 @@ body {
   color: var(--color-stone-700); /* stone-700 */
 }
 
-h1, h2, h3, h4, h5, h6 {
-  color: var(--color-stone-800); /* stone-800 */
-}
 
 /* Rubik Font Face Declarations - Essential weights only */
 @font-face {

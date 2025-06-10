@@ -5,11 +5,12 @@ import { formatDate, getCoverImage } from "@utils/utils";
 const { frontmatter, headings } = Astro.props;
 ---
 
-<Layout title={frontmatter.title}>  <section
+<Layout title={frontmatter.title}>  
+  <section
     id="pageContent"
-    class="bg-stone-50 shadow-lg prose-h2:mt-4 prose-h3:mt-4 p-8 border border-stone-200 rounded-lg max-w-4xl text-lg/8 prose prose-stone">
+    class="bg-stone-100 shadow-lg prose-h2:mt-4 prose-h3:mt-4 p-8 border border-stone-200 rounded-lg max-w-4xl text-lg/8 prose prose-stone">
     <header class="mb-6">
-      <h1 class="mb-1 text-stone-800">{frontmatter.title}</h1>
+      <h1 class="mb-1">{frontmatter.title}</h1>
       <div class="text-stone-600 text-sm">
         {frontmatter.date && formatDate(frontmatter.date)}
       </div>
@@ -23,17 +24,17 @@ const { frontmatter, headings } = Astro.props;
     {
       frontmatter.toc == true && headings.length > 0 && (        <div
           id="toc"
-          class="-top-1 z-40 sticky bg-stone-100 shadow-md mb-6 p-4 border border-stone-300 rounded-md text-sm">
-          <div class="mb-2 font-semibold text-stone-800">Inhaltsverzeichnis</div>
-          <ul class="flex flex-wrap items-center gap-x-2 pb-4 not-prose">
+          class="-top-1 z-40 sticky bg-stone-100 mb-6 p-4 border-stone-300 border-b text-sm">
+          <div class="mb-2">Inhaltsverzeichnis</div>
+          <ul class="flex flex-wrap items-center gap-x-2 pb-4 not-prose"> 
             {headings.map((heading: { slug: string; text: string }) => (
               <li class="toc-item">
-                <a href={`#${heading.slug}`} class="text-red-600 hover:text-red-700 hover:underline">{heading.text}</a>
+                <a href={`#${heading.slug}`} class="text-sky-600 hover:text-sky-700 hover:underline">{heading.text}</a>
               </li>
               <li class="text-stone-400">&vert;</li>
             ))}
             <li class="toc-item">
-              <a href="#top" class="text-red-600 hover:text-red-700 hover:underline">Top &uarr;</a>
+              <a href="#top" class="text-sky-600 hover:text-sky-700 hover:underline">Top &uarr;</a>
             </li>
           </ul>
         </div>

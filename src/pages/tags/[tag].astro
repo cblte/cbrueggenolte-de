@@ -1,7 +1,7 @@
 ---
 import { getCollection } from 'astro:content';
 import Layout from '@layouts/Layout.astro';
-import { formatDate } from '@utils/utils';
+import { formatDate, createSlug } from '@utils/utils';
 
 export async function getStaticPaths() {
   const posts = await getCollection('posts');
@@ -12,18 +12,6 @@ export async function getStaticPaths() {
   return tags.map((tag) => ({
     params: { tag },
   }));
-}
-
-export function createSlug(title: string) {
-  // Create a slug from the title
-  const slug = title
-    .toLowerCase()
-    .replace(/[^a-z0-9\s-]/g, '') // Remove special characters
-    .trim()
-    .replace(/\s+/g, '-') // Replace spaces with hyphens
-    .replace(/-+/g, '-'); // Replace multiple hyphens with a single hyphen
-
-  return slug;
 }
 
 const { tag } = Astro.params;
@@ -40,8 +28,12 @@ const filteredPosts = posts.filter((post) => post.data.tags?.includes(tag));
           {filteredPosts.map((post) => (
             <li class="before:absolute m-0 p-0 before:content-['»_'] md-2">
               <div class="flex justify-between ml-4">
-                <a href={`/blog/${createSlug(post.data.title)}`}>{post.data.title}</a>
-                <span class="font-mono">{formatDate(post.data.pubDate.toString())}</span>
+                <a href={`/blog/${createSlug(post.data.title)}/`}>
+                  {post.data.title}
+                </a>
+                <span class="font-mono">
+                  {formatDate(post.data.pubDate.toString())}
+                </span>
               </div>
             </li>
           ))}

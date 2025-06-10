@@ -36,9 +36,15 @@ module.exports = {
             },
             h1: {
               fontWeight: '500',
+              color: 'var(--color-stone-800)',
             },
             h2: {
               fontWeight: '500', // medium instead of bold
+              color: 'var(--color-stone-800)',
+            },
+            h3: {
+              fontWeight: '500', // medium instead of bold
+              color: 'var(--color-stone-800)',
             },
           },
         },
