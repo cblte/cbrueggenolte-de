@@ -4,17 +4,17 @@ import { formatDate } from '@utils/utils';
 const { post } = Astro.props;
 ---
 
-<div class="text-md text-stone-400">
-  <div class="block">
+<div class="flex text-md text-stone-500">
+  <div class="">
     {formatDate(post.data.pubDate)}
   </div>
-  <div class="block">
+  &mdash;
+  <div class="inline">
     Tags: {' '}
-    <span
+    <div
+      class="inline"
       set:html={post.data.tags?.length > 0
-        ? post.data.tags
-            .map((tag: string) => `<a href="/tags/${tag}/">${tag}</a>`)
-            .join(', ')
+        ? post.data.tags.map((tag: string) => `<a href="/tags/${tag}/">${tag}</a>`).join(', ')
         : 'No tags'}
     />
   </div>

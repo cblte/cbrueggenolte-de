@@ -1,0 +1,44 @@
+---
+import { Image } from 'astro:assets';
+import { createSlug, formatDate } from '@utils/utils';
+
+const { posts } = Astro.props;
+---
+
+<ul class="mt-4 pl-6 list-none">
+  {
+    posts.map((post) => (
+      <li class="relative mb-4">
+        <span class="-left-6 absolute font-medium text-sky-500 transition-all duration-200 blog-arrow">»</span>
+        <div class="flex justify-between items-start">
+          <div class="flex-1">
+            <h2 class="text-left">
+              <a
+                href={`/blog/${createSlug(post.data.title)}/`}
+                class="text-sky-600 hover:text-sky-700 underline hover:underline">
+                {post.data.title}
+              </a>
+              {post.data?.draft ? (
+                <span class="bg-yellow-200 ml-2 px-2 py-1 border border-yellow-300 rounded text-yellow-800 text-xs">
+                  DRAFT
+                </span>
+              ) : (
+                ''
+              )}
+            </h2>
+            {post.data.tags && (
+              <div class="flex gap-1 mt-1">
+                {post.data.tags.map((tag) => (
+                  <span class="px-0.5 text-stone-500 text-sm">{tag.trim()}</span>
+                ))}
+              </div>
+            )}
+          </div>
+          <span class="flex-shrink-0 ml-4 text-stone-600 text-sm">
+            <time datetime={post.data.pubDate.toISOString()}>{formatDate(post.data.pubDate.toString())}</time>
+          </span>
+        </div>
+      </li>
+    ))
+  }
+</ul>

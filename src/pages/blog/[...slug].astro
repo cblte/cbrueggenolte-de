@@ -15,10 +15,7 @@ export async function getStaticPaths() {
   }
 
   // Sort posts by publication date
-  let sortedPosts = posts.sort(
-    (a, b) =>
-      new Date(b.data.pubDate).valueOf() - new Date(a.data.pubDate).valueOf()
-  );
+  let sortedPosts = posts.sort((a, b) => new Date(b.data.pubDate).valueOf() - new Date(a.data.pubDate).valueOf());
 
   return sortedPosts.map((post, index) => ({
     params: { slug: createSlug(post.data.title) },
@@ -37,27 +34,25 @@ const { Content } = await render(post);
 <Layout title={post.data.title} postdata={post.data}>
   <article
     id="blogcontent"
-    class="bg-stone-100 shadow-lg mb-16 prose-h2:mb-4 prose-h3:mb-4 p-8 border border-stone-200 rounded-2xl max-w-3xl prose-p:text-lg/8 prose prose-stone"
-  >
+    class="bg-stone-100 shadow-lg mb-16 prose-h2:mb-4 prose-h3:mb-4 p-8 border border-stone-200 rounded-2xl max-w-3xl prose-p:text-lg/8 prose prose-stone">
     <header class="mb-4">
-      <h1 class="text-center text-balance">
+      <div class="-left-2 absolute border-sky-600 border-l-2"></div>
+      <h1 class="mb-1 text-balance">
         {post.data.title}
       </h1>
-      <div class="text-stone-600 text-center">
+      <div class="text-stone-600">
         <PostMetaData post={post} />
       </div>
     </header>
-    <div id="content" class="px-16">
+
+    <div id="content" class="">
       <Content />
     </div>
     <footer class="flex mt-12 p-4">
       <div class="flex-1">
         {
           prevPost && (
-            <a
-              href={`/blog/${createSlug(prevPost.data.title)}/`}
-              class="hover:underline"
-            >
+            <a href={`/blog/${createSlug(prevPost.data.title)}/`} class="hover:underline">
               &larr; {prevPost.data.title}
             </a>
           )
@@ -66,10 +61,7 @@ const { Content } = await render(post);
       <div class="flex-1 text-right">
         {
           nextPost && (
-            <a
-              href={`/blog/${createSlug(nextPost.data.title)}/`}
-              class="hover:underline"
-            >
+            <a href={`/blog/${createSlug(nextPost.data.title)}/`} class="hover:underline">
               {nextPost.data.title} &rarr;
             </a>
           )

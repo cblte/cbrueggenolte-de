@@ -1,6 +1,7 @@
 ---
 import { getCollection } from 'astro:content';
 import Layout from '@layouts/Layout.astro';
+import BlogList from '@components/BlogList.astro';
 import { formatDate, createSlug } from '@utils/utils';
 
 export async function getStaticPaths() {
@@ -22,25 +23,6 @@ const filteredPosts = posts.filter((post) => post.data.tags?.includes(tag));
 <Layout title={`Posts mit dem Tag "${tag}"`}>
   <section id={`tag_${tag}`} class="prose">
     <h1>Posts mit dem Tag #{tag}</h1>
-    {
-      filteredPosts.length > 0 ? (
-        <ul class="m-0 p-0 list-none">
-          {filteredPosts.map((post) => (
-            <li class="before:absolute m-0 p-0 before:content-['»_'] md-2">
-              <div class="flex justify-between ml-4">
-                <a href={`/blog/${createSlug(post.data.title)}/`}>
-                  {post.data.title}
-                </a>
-                <span class="font-mono">
-                  {formatDate(post.data.pubDate.toString())}
-                </span>
-              </div>
-            </li>
-          ))}
-        </ul>
-      ) : (
-        <p>Keine Posts mit diesem Tag gefunden.</p>
-      )
-    }
+    {filteredPosts.length > 0 ? <BlogList posts={filteredPosts} /> : <p>Keine Posts mit diesem Tag gefunden.</p>}
   </section>
 </Layout>
