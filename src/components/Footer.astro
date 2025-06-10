@@ -16,10 +16,11 @@ const activePage = normalizeUrl(Astro.url.pathname);
         {
           footerMenu.map((item) => (
             <li class="inline-block">
+              {' '}
               <a
                 href={item.href}
                 target="_self"
-                class={` hover:underline hover:text-red-700 inline-block py-0 px-2 -mr-1`}
+                class={` hover:underline hover:text-sky-700 inline-block py-0 px-2 -mr-1`}
               >
                 {item.name}
               </a>
@@ -34,11 +35,11 @@ const activePage = normalizeUrl(Astro.url.pathname);
     <p class="pt-2 text-stone-600 text-center">
       Made with <a
         href="https://astro.build"
-        class="text-red-600 hover:text-red-700 hover:underline">Astro</a
+        class="text-sky-600 hover:text-sky-700 hover:underline">Astro</a
       >
       and hosted on <a
         href="https://uberspace.de"
-        class="text-red-600 hover:text-red-700 hover:underline">Asteroids</a
+        class="text-sky-600 hover:text-sky-700 hover:underline">Asteroids</a
       >
     </p>
   </div>
