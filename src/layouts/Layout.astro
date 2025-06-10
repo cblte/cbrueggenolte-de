@@ -104,11 +104,18 @@ const metaDescription = postdata?.description || SITE_DESCRIPTION;
     <ClientRouter />
   </head>
   <body class="font-sans">
+    <!-- Skip to content link for accessibility -->
+    <a
+      href="#main-content"
+      class="sr-only focus:not-sr-only focus:top-4 focus:left-4 focus:z-50 focus:absolute focus:bg-sky-600 focus:shadow-lg focus:px-4 focus:py-2 focus:rounded focus:outline-none focus:ring-2 focus:ring-sky-400 focus:text-white"
+    >
+      Skip to main content
+    </a>
     <div id="top"></div>
 
     <Header />
-
     <main
+      id="main-content"
       class="mx-auto my-12 px-6 pt-8 pb-12 rounded-lg max-w-3xl text-lg container"
     >
       <slot />

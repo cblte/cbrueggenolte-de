@@ -71,7 +71,7 @@ body {
   position: absolute;
   top: 0.5rem;
   right: 0.5rem;
-  background-color: var(--color-stone-600);
+  background-color: var(--color-sky-600);
   border: none;
   padding: 0.25rem;
   border-radius: 0.25rem;
@@ -83,13 +83,13 @@ body {
 }
 
 #blogcontent .copy-button:hover {
-  background-color: var(--color-stone-500);
+  background-color: var(--color-sky-500);
 }
 
 #blogcontent pre {
   position: relative;
   padding: 1rem;
-  background-color: var(--color-stone-700);
+  background-color: var(--color-stone-500);
   color: var(--color-stone-50);
 }
 

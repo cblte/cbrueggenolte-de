@@ -37,7 +37,7 @@ const { Content } = await render(post);
 <Layout title={post.data.title} postdata={post.data}>
   <article
     id="blogcontent"
-    class="bg-stone-50 shadow-lg mb-16 prose-h2:mb-4 prose-h3:mb-4 p-8 border border-stone-200 rounded-2xl max-w-3xl prose-p:text-lg/8 prose prose-stone"
+    class="bg-stone-100 shadow-lg mb-16 prose-h2:mb-4 prose-h3:mb-4 p-8 border border-stone-200 rounded-2xl prose-p:text-lg/8 prose prose-stone"
   >
     <header class="mb-4">
       <h1 class="text-center text-balance">
@@ -47,7 +47,7 @@ const { Content } = await render(post);
         <PostMetaData post={post} />
       </div>
     </header>
-    <div id="content" class="px-16">
+    <div id="content" class="px-2">
       <Content />
     </div>
     <footer class="flex mt-12 p-4">
@@ -85,6 +85,8 @@ const { Content } = await render(post);
       const button = document.createElement('button');
       button.innerText = 'Copy';
       button.className = 'copy-button';
+      button.setAttribute('aria-label', 'Copy code to clipboard');
+      button.setAttribute('title', 'Copy code to clipboard');
       pre.appendChild(button);
 
       button.addEventListener('click', () => {
@@ -93,7 +95,11 @@ const { Content } = await render(post);
           const code = codeElem.innerText;
           navigator.clipboard.writeText(code).then(() => {
             button.innerText = 'Copied!';
-            setTimeout(() => (button.innerText = 'Copy'), 2000);
+            button.setAttribute('aria-label', 'Code copied to clipboard');
+            setTimeout(() => {
+              button.innerText = 'Copy';
+              button.setAttribute('aria-label', 'Copy code to clipboard');
+            }, 2000);
           });
         }
       });

@@ -44,8 +44,14 @@ const isActivePage = (menuHref: string) => {
     </a>
   </div>
   <!-- Navigation: centered on mobile, right on md+ -->
-  <nav class="flex justify-center md:justify-end w-full md:w-auto">
-    <ul class="flex md:flex-row flex-col items-center gap-2 md:gap-4 text-xl">
+  <nav
+    class="flex justify-center md:justify-end w-full md:w-auto"
+    aria-label="Main navigation"
+  >
+    <ul
+      class="flex md:flex-row flex-col items-center gap-2 md:gap-4 text-xl"
+      role="list"
+    >
       {
         headerMenu.map((item, index) => (
           <li class="inline-block text-lg lg:text-xl text-left">

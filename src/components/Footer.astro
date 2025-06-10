@@ -9,9 +9,10 @@ const activePage = normalizeUrl(Astro.url.pathname);
 
 <footer class="bg-stone-200 py-12 border-stone-300 w-full">
   <div class="mx-auto max-w-4xl">
-    <nav class="mt-6">
+    <nav class="mt-6" aria-label="Footer navigation">
       <ul
         class="flex md:flex-row flex-col justify-center items-center gap-2 md:gap-6"
+        role="list"
       >
         {
           footerMenu.map((item) => (
