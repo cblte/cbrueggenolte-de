@@ -6,10 +6,12 @@ modDate: 2025-06-10
 tags: [meta-blog]
 ---
 
+![](./2025-06-10-cover.jpg)
+
 Den Blog habe ich heute überarbeitet
 und das ganze dunkle Design komplett verworfen.
-Stattdessen ist jetzt alles hell – einfach,
-weil es besser lesbar ist.
+Stattdessen ist jetzt alles hell mit blauen Akzenten –
+einfach, weil es besser lesbar ist.
 Es hat eine Weile gedauert,
 bis ich mich entschieden habe,
 das so umzubauen,
