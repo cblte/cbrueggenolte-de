@@ -45,15 +45,6 @@ const { frontmatter, headings } = Astro.props;
 </Layout>
 
 <script>
-  // Function to update scroll margin based on TOC height
-  function updateScrollMargin() {
-    const tocHeight = tocElement ? tocElement.offsetHeight : 0;
-    const headings = document.querySelectorAll("h2, h3");
-    headings.forEach((heading) => {
-      (heading as HTMLElement).style.scrollMarginTop = `${tocHeight + 24}px`; // adding 16px padding
-    });
-  }
-
   // Add observer for TOC stickiness
   const tocElement = document.getElementById("toc");
 
@@ -69,16 +60,29 @@ const { frontmatter, headings } = Astro.props;
     // Update on window resize
     window.addEventListener("resize", updateScrollMargin);
   }
+
+  // Function to update scroll margin based on TOC height
+  function updateScrollMargin() {
+    const tocHeight = tocElement ? tocElement.offsetHeight : 0;
+    const headings = document.querySelectorAll("h2, h3");
+    headings.forEach((heading) => {
+      (heading as HTMLElement).style.scrollMarginTop = `${tocHeight + 24}px`; // adding 16px padding
+    });
+  }
 </script>
 
 <style is:global>
-  .is-sticky ul {
-
+  .is-sticky {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   }
 
+  .is-sticky ul {
+    border-top: 1px solid var(--color-stone-300);
+    padding-top: 0.5rem;
+  }
   h2,
   h3 {
-    scroll-margin-top: calc(toc);
+    scroll-margin-top: calc(toc); /* Fixed height for TOC + padding */
   }
 
   .coverImage {
