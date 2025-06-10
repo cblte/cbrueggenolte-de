@@ -88,11 +88,14 @@ const { Content } = await render(post);
       pre.appendChild(button);
 
       button.addEventListener('click', () => {
-        const code = pre.querySelector('code').innerText;
-        navigator.clipboard.writeText(code).then(() => {
-          button.innerText = 'Copied!';
-          setTimeout(() => (button.innerText = 'Copy'), 2000);
-        });
+        const codeElem = pre.querySelector('code');
+        if (codeElem) {
+          const code = codeElem.innerText;
+          navigator.clipboard.writeText(code).then(() => {
+            button.innerText = 'Copied!';
+            setTimeout(() => (button.innerText = 'Copy'), 2000);
+          });
+        }
       });
     });
   });

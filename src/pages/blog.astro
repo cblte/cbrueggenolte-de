@@ -21,11 +21,11 @@ let sortedPosts = posts.sort(
   <section id="blogPosts">
     <h1 class="mb-2 text-4xl">Blog-Beiträge ({posts.length})</h1>
 
-    <ul class="mt-8 list-none px-6 py-4 rounded-2xl">
+    <ul class="mt-2 px-6 py-4 rounded-2xl list-none">
       {
         sortedPosts.map((post) => (
-          <li class="flex flex-row justify-between mb-2 rounded-xl p-4">
-            <div class="flex flex-col ">
+          <li class="flex flex-row justify-between mb-2">
+            <div class="flex flex-col">
               <h2 class="text-left">
                 <a
                   href={`/blog/${createSlug(post.data.title)}/`}
@@ -40,9 +40,9 @@ let sortedPosts = posts.sort(
                 )}
               </h2>
               {post.data.tags && (
-                <div class="flex flex-wrap gap-2 mt-1">
+                <div class="flex justify-start gap-2">
                   {post.data.tags.map((tag) => (
-                    <span class="text-xs px-2 py-1 rounded">{tag}</span>
+                    <span class="text-sm">{tag}</span>
                   ))}
                 </div>
               )}
