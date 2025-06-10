@@ -8,7 +8,7 @@ const activePage = normalizeUrl(Astro.url.pathname);
 ---
 
 <header
-  class="flex md:flex-row flex-col md:justify-between items-center md:items-center gap-4 mx-auto mt-16 mb-8 px-6 max-w-5xl"
+  class="flex md:flex-row flex-col md:justify-between items-center md:items-center gap-4 mx-auto mt-16 mb-8 px-6 max-w-4xl"
 >
   <!-- Logo: centered on mobile, left on md+ -->
   <div
@@ -41,7 +41,7 @@ const activePage = normalizeUrl(Astro.url.pathname);
     <ul class="flex md:flex-row flex-col items-center gap-2 md:gap-4 text-xl">
       {
         headerMenu.map((item, index) => (
-          <li class="inline-block">
+          <li class="inline-block text-lg lg:text-xl">
             <a
               href={item.href}
               target="_self"
