@@ -50,20 +50,20 @@ const { Content } = await render(post);
     </div>
 
     <footer class="flex mt-12 p-4">
-      <div class="flex-1">
+      <div class="flex-1 text-left">
         {
-          prevPost && (
-            <a href={`/blog/${createSlug(prevPost.data.title)}/`} class="hover:underline">
-              &larr; {prevPost.data.title}
+          nextPost && (
+            <a href={`/blog/${createSlug(nextPost.data.title)}/`} class="hover:underline">
+              &larr; {nextPost.data.title}
             </a>
           )
         }
       </div>
       <div class="flex-1 text-right">
         {
-          nextPost && (
-            <a href={`/blog/${createSlug(nextPost.data.title)}/`} class="hover:underline">
-              {nextPost.data.title} &rarr;
+          prevPost && (
+            <a href={`/blog/${createSlug(prevPost.data.title)}/`} class="hover:underline">
+              {prevPost.data.title} &rarr;
             </a>
           )
         }
