@@ -48,6 +48,7 @@ const { Content } = await render(post);
     <div id="content" class="">
       <Content />
     </div>
+
     <footer class="flex mt-12 p-4">
       <div class="flex-1">
         {
@@ -68,6 +69,7 @@ const { Content } = await render(post);
         }
       </div>
     </footer>
+    <EmailLink user="mail" domain="cbrueggenolte.de" title={post.data.title} />
   </article>
 </Layout>
 

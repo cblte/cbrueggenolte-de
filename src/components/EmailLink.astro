@@ -1,26 +1,31 @@
 ---
-// props: title (string), user (string), domain (string)
 const { title, user, domain } = Astro.props;
 ---
 
-<p class="mt-10">
-  Du hast Fragen oder Gedanken zum Beitrag <strong>{title}</strong>?
-  <a id="mailLink" data-u={user} data-d={domain} data-t={title} href="#">Schreib mir gern eine E-Mail</a> – ich freu mich
-  drauf!
-</p>
+<div class="flex justify-center items-center gap-2 mt-10">
+  <button
+    id="mailLink"
+    type="button"
+    data-u={user}
+    data-d={domain}
+    data-t={title}
+    class="bg-sky-700 hover:bg-sky-600 shadow-md hover:shadow-lg px-4 py-2 rounded font-medium text-stone-100 transition cursor-pointer">
+    📧 Antworte mir via E-Mail
+  </button>
+</div>
 
 <script>
-  document.addEventListener('DOMContentLoaded', (e) => {
-    const mailLink = document.getElementById('mailLink') as HTMLAnchorElement;
-
+  document.addEventListener('DOMContentLoaded', () => {
+    const mailLink = document.getElementById('mailLink');
     if (mailLink) {
-      const userEncoded = mailLink.dataset.u;
-      const domainEncoded = mailLink.dataset.d;
-      const titleEncoded = mailLink.dataset.t;
-
-      const subject = encodeURIComponent('Blogpost: ' + titleEncoded);
-
-      mailLink.href = `mailto:${userEncoded}@${domainEncoded}?subject=${subject}`;
+      mailLink.addEventListener('click', () => {
+        const userEncoded = mailLink.dataset.u;
+        const domainEncoded = mailLink.dataset.d;
+        const titleEncoded = mailLink.dataset.t;
+        const subject = encodeURIComponent('Blogpost: ' + titleEncoded);
+        const mailto = `mailto:${userEncoded}@${domainEncoded}?subject=${subject}`;
+        window.location.href = mailto;
+      });
     }
   });
 </script>
