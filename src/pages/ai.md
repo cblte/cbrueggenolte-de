@@ -2,7 +2,7 @@
 layout: "@layouts/MDPage.astro"
 title: Wie ich generative KI in meinem Blog und Alltag verwende
 date: 2025-04-02
-cover: "./ai-cover.jpg"
+cover: "/images/ai-cover.jpg"
 coverAlt: "Dieses Bild wurde von ChatGPT erstellt."
 ---
 
