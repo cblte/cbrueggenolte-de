@@ -1,5 +1,4 @@
 ---
-import { Image } from 'astro:assets';
 import { createSlug, formatDate } from '@utils/utils';
 
 const { posts } = Astro.props;
@@ -28,7 +27,7 @@ const { posts } = Astro.props;
             </h2>
             {post.data.tags && (
               <div class="flex gap-1 mt-1">
-                {post.data.tags.map((tag) => (
+                {post.data.tags.map((tag: string) => (
                   <span class="px-0.5 text-stone-500 text-sm">{tag.trim()}</span>
                 ))}
               </div>

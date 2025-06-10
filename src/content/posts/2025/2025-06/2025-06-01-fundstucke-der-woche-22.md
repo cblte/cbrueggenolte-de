@@ -1,5 +1,5 @@
 ---
-title: "Sonntag, 01. Juni 2025"
+title: "Fundstücke der Woche 22"
 description: "Neue Hörbücher, Musik, Filme und ein paar Gedanken zur perfekten Stunde am Tag."
 pubDate: 2025-06-01
 modDate: 2025-06-01

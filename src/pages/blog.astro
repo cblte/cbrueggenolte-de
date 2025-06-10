@@ -1,8 +1,6 @@
 ---
 import { getCollection } from 'astro:content';
 import Layout from '@layouts/Layout.astro';
-import { createSlug } from '@utils/utils';
-import { formatDate } from '@utils/utils';
 import BlogList from '@components/BlogList.astro';
 
 let posts = await getCollection('posts');
