@@ -19,36 +19,42 @@ let sortedPosts = posts.sort(
 
 <Layout title="Blog">
   <section id="blogPosts">
-    <h1 class="mb-2 text-4xl">Blog-Beiträge ({posts.length})</h1>
+    <h1 class="mb-2 text-stone-800 text-4xl">Blog-Beiträge ({posts.length})</h1>
 
-    <ul class="mt-2 px-6 py-4 rounded-2xl list-none">
+    <ul
+      class="bg-stone-100 shadow-md mt-8 px-6 py-4 border border-stone-300 rounded-2xl list-none"
+    >
       {
         sortedPosts.map((post) => (
-          <li class="flex flex-row justify-between mb-2">
+          <li class="flex flex-row justify-between bg-stone-50 hover:bg-stone-100 mb-4 p-4 border border-stone-200 rounded-xl transition-colors">
             <div class="flex flex-col">
               <h2 class="text-left">
                 <a
                   href={`/blog/${createSlug(post.data.title)}/`}
-                  class="flex items-center hover:fill-black underline hover:underline"
+                  class="flex items-center text-red-600 hover:text-red-700 underline hover:underline"
                 >
                   {post.data.title}
                 </a>
                 {post.data?.draft ? (
-                  <span class="ml-2 px-2 py-1 rounded text-xs">DRAFT</span>
+                  <span class="bg-yellow-200 ml-2 px-2 py-1 border border-yellow-300 rounded text-yellow-800 text-xs">
+                    DRAFT
+                  </span>
                 ) : (
                   ''
                 )}
               </h2>
               {post.data.tags && (
-                <div class="flex justify-start gap-2">
+                <div class="flex justify-start gap-2 mt-2">
                   {post.data.tags.map((tag) => (
-                    <span class="text-sm">{tag}</span>
+                    <span class="bg-stone-200 px-2 py-1 border border-stone-300 rounded text-stone-700 text-sm">
+                      {tag}
+                    </span>
                   ))}
                 </div>
               )}
             </div>
 
-            <span>
+            <span class="text-stone-600 text-sm">
               <time datetime={post.data.pubDate.toISOString()}>
                 {formatDate(post.data.pubDate.toString())}
               </time>

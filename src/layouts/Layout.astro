@@ -33,8 +33,7 @@ const { title, postdata } = Astro.props;
     <title>{title} | cbrueggenolte.de</title>
     <ClientRouter />
     <HeaderScript />
-  </head>
-  <body class="font-sans">
+  </head>  <body class="font-sans">
     <div id="top"></div>
     
     <Header />
@@ -49,11 +48,14 @@ const { title, postdata } = Astro.props;
 
 <style is:global>
   main a {
-    text-decoration: underline;
+    color: var(--color-red-600); /* red-600 */
+    text-decoration: none;
     font-weight: var(--font-weight-normal);
     transition-duration: 300ms;
+
   }
   main a:hover {
+    color: var(--color-red-700); /* red-700 */
     background-color: transparent;
     text-decoration: underline;
   }

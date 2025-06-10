@@ -1,13 +1,23 @@
 ---
-import Layout from "@layouts/Layout.astro";
+import Layout from '@layouts/Layout.astro';
 
-const title = "404 - Page not found";
+const title = '404 - Page not found';
 ---
 
 <Layout title="404 - Page not found">
-  <section id="404-not-found" class="prose">
-    <h1 class="">Error 404 - Page not found</h1>
-    <p>The requested URL was not found on this server.</p>
-    <p>Please select something from the menu above.</p>
+  <section
+    id="404-not-found"
+    class="bg-stone-50 shadow-lg p-8 border border-stone-200 rounded-lg text-center prose prose-stone"
+  >
+    <h1 class="text-stone-800">Error 404 - Page not found</h1>
+    <p class="text-stone-700">
+      The requested URL was not found on this server.
+    </p>
+    <p class="text-stone-700">
+      Please select something from the <a
+        href="/"
+        class="text-red-600 hover:text-red-700">menu above</a
+      >.
+    </p>
   </section>
 </Layout>
