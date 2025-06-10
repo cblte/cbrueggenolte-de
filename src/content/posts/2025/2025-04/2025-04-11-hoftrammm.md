@@ -1,16 +1,17 @@
 ---
-title: "Freitag, 11. April 2025"
+title: "Hoftrammm Tramrestaurant"
 description: "Eine kulinarische Reise mit der Hoftrammm!"
 pubDate: 2025-04-11
-modDate: 2025-04-12
-tags: [journal]
-cover: "./2025-04-11-cover.jpg"
-covaerAlt: "Ticket to taste in the the Hoftrammm Tramrestaurant"
+modDate: 2025-06-10
+tags: [privates]
 ---
 
 Gemeinsam mit Freunden hatten wir einen wunderbaren Abend im [Hoftrammm Tramrestaurant](https://hoftrammm.nl).
 Eine einzigartige Erfahrung, die den Charme einer Straßenbahn
 mit der Eleganz eines Fine Dining-Erlebnisses verband.
+
+![Hoftrammm Tramrestaurant](./2025-04-11-cover.jpg)
+
 Das Restaurant bietet eine gemütliche Atmosphäre
 und es werden köstliche Gerichte serviert,
 die direkt an Bord der fahrenden Straßenbahn zubereitet werden,
@@ -54,5 +55,4 @@ Ein Brownie mit Erdbeercreme, Joghurt-Erdbeer-Bavarois und einer glasierten Erdb
 
 ---
 
-_Eigentlich schreibe ich diesen Beitrag am Samstag,
-da ich nach diesem langen und wunderbaren Tag mit so gutem Essen einfach nicht mehr dazu gekommen bin._
+Guten Appetit!

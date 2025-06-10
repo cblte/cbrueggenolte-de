@@ -2,12 +2,11 @@
 title: "Fundstücke der Woche 13"
 description: "Meine wöchentliche Sammlung von Links und Gedanken abseits der Tagebucheinträge."
 pubDate: 2025-04-13
-modDate: 2025-04-13
-cover: "./fundstuecke-der-woche.jpg"
-coverAlt: "Die Fundstücke der Woche 13"
-tags: [fundstuecke, open-source, künstliche-intelligenz, drohnen, krieg, opendesk, bundeswehr]
-draft: false
+modDate: 2025-06-10
+tags: [fundstuecke]
 ---
+
+![Fundstücke der Woche 13](https://www.marcus-povey.co.uk/fundstuecke-der-woche-13/)
 
 [youtube](https://www.youtube.com/watch?v=m2VqaNKstGc)
 Die Erschaffer des Model Context Protocol sprechen darüber, wie alle auf den MCP-Zug aufspringen. Dazu gibts bei [punkpeye/awesome-mcp-servers](https://github.com/punkpeye/awesome-mcp-servers) und [appcypher/awesome-mcp-servers](https://github.com/appcypher/awesome-mcp-servers) noch mehr Links.

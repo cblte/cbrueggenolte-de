@@ -1,8 +1,8 @@
 ---
-title: "Donnerstag, 17. April 2025"
+title: "Frohe Ostern!"
 description: "Frohe Ostern."
 pubDate: 2025-04-17
-modDate: 2025-04-17
+modDate: 2025-06-10
 tags: [journal]
 cover: "./2025-04-17-cover.jpg"
 coverAlt: "Frohe Ostern"
