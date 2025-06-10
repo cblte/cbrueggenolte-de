@@ -1,44 +1,116 @@
 ---
-import "../styles/global.css";
-import Footer from "@components/Footer.astro";
-import Header from "@components/Header.astro";
-import HeaderScript from "@components/HeaderScript.astro";
-import { ClientRouter } from 'astro:transitions'
+import '../styles/global.css';
+import Footer from '@components/Footer.astro';
+import Header from '@components/Header.astro';
+import HeaderScript from '@components/HeaderScript.astro';
+import { ClientRouter } from 'astro:transitions';
 
-import { createSlug } from "@utils/utils";
+import { createSlug } from '@utils/utils';
 
 const { title, postdata } = Astro.props;
+
+// Site configuration
+const SITE_URL = 'https://cbrueggenolte.de';
+const SITE_TITLE = 'cbrueggenolte.de';
+const SITE_DESCRIPTION =
+  'Persönliche Website von Carsten Brüggenolte - Gedanken, Erfahrungen und digitale Entdeckungen';
+
+// Generate proper canonical URL
+const currentPath = Astro.url.pathname;
+const canonicalURL = new URL(currentPath, SITE_URL).href;
+
+// Generate page title
+const pageTitle = title ? `${title} | ${SITE_TITLE}` : SITE_TITLE;
+
+// Meta description priority: postdata.description > page-specific > default
+const metaDescription = postdata?.description || SITE_DESCRIPTION;
 ---
 
 <html lang="de">
   <head>
     <meta charset="utf-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="viewport" content="width=device-width" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="generator" content={Astro.generator} />
-    {
-      postdata?.description && (
-        <meta name="description" content=`${postdata.description}` />
-      )
-    }
+
+    <title>{pageTitle}</title>
+    <meta name="description" content={metaDescription} />
     <meta name="robots" content="index, follow" />
+    <link rel="canonical" href={canonicalURL} />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content={canonicalURL} />
+    <meta property="og:title" content={pageTitle} />
+    <meta property="og:description" content={metaDescription} />
+    <meta property="og:site_name" content={SITE_TITLE} />
+    <meta property="og:locale" content="de_DE" />
     {
-      title && (
-        <link
-          rel="canonical"
-          href={`https://cbrueggenolte.de/${createSlug(title)}`}
+      postdata?.cover && (
+        <meta
+          property="og:image"
+          content={new URL(postdata.cover, SITE_URL).href}
         />
       )
     }
-    <title>{title} | cbrueggenolte.de</title>
+
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content={canonicalURL} />
+    <meta property="twitter:title" content={pageTitle} />
+    <meta property="twitter:description" content={metaDescription} />
+    {
+      postdata?.cover && (
+        <meta
+          property="twitter:image"
+          content={new URL(postdata.cover, SITE_URL).href}
+        />
+      )
+    }
+
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+
+    <link
+      rel="preload"
+      href="/fonts/rubik-regular.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="/fonts/rubik-medium.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+
+    <meta http-equiv="X-Content-Type-Options" content="nosniff" />
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "cbrueggenolte.de",
+        "description": "Persönliche Website von Carsten Brüggenolte",
+        "url": "https://cbrueggenolte.de",
+        "author": {
+          "@type": "Person",
+          "name": "Carsten Brüggenolte",
+          "url": "https://cbrueggenolte.de/about/"
+        },
+        "inLanguage": "de-DE"
+      }
+    </script>
     <ClientRouter />
-    <HeaderScript />
-  </head>  <body class="font-sans">
+  </head>
+  <body class="font-sans">
     <div id="top"></div>
-    
+
     <Header />
-    
-    <main class="mx-auto my-12 px-6 pt-8 pb-12 rounded-lg max-w-3xl text-lg container">
+
+    <main
+      class="mx-auto my-12 px-6 pt-8 pb-12 rounded-lg max-w-3xl text-lg container"
+    >
       <slot />
     </main>
 
@@ -48,16 +120,24 @@ const { title, postdata } = Astro.props;
 
 <style is:global>
   main a {
-    color: var(--color-sky-600); /* red-600 */
+    color: var(--color-sky-600); /* sky-600 for links */
     text-decoration: none;
     font-weight: var(--font-weight-normal);
-    transition-duration: 300ms;
-
+    transition:
+      color 300ms ease,
+      text-decoration 300ms ease;
   }
+
   main a:hover {
-    color: var(--color-sky-700); /* red-700 */
+    color: var(--color-sky-700); /* sky-700 on hover */
     background-color: transparent;
     text-decoration: underline;
   }
-</style>
 
+  /* Focus styles for accessibility */
+  main a:focus {
+    outline: 2px solid var(--color-sky-500);
+    outline-offset: 2px;
+    border-radius: 2px;
+  }
+</style>
