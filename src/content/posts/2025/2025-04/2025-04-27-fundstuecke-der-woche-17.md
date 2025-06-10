@@ -3,7 +3,7 @@ title: "Fundstücke der Woche KW17"
 description: "Ein Überblick über spannende Technik- und Software-Updates, Datenschutzentwicklungen, gesellschaftspolitische Ereignisse und Trends in der KI-Welt der Kalenderwoche 17."
 pubDate: 2025-04-27
 modDate: 2025-04-27
-tags: [fundstuecke, technik, software, datenschutz, künstliche intelligenz, gesellschaft, politik, weekly update, zukunftstrends]
+tags: [fundstuecke]
 cover: "./fundstuecke-der-woche.jpg"
 coverAlt: "Fundstücke der Woche KW17"
 ---
