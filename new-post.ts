@@ -88,6 +88,7 @@ tags: []
 
   // Create file if it does not exists.
   try {
+    await fs.mkdir(path.dirname(filePath), { recursive: true });
     await fs.stat(filePath);
     console.log(pc.yellow(`? Post already exists: ${filePath}`));
   } catch (err: any) {
