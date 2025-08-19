@@ -48,7 +48,10 @@ interface BlogPostOptions {
   editor?: string | null;
 }
 
-async function createBlogPost(title: string, editor: string | null = null): Promise<void> {
+async function createBlogPost(
+  title: string,
+  editor: string | null = null
+): Promise<void> {
   // get the path for the current year and create it if it doesn't exist
   const dirPath: string = path.join('./src/content/posts', `${year}`);
   await fs.mkdir(dirPath, { recursive: true });
@@ -75,7 +78,13 @@ tags: []
 ---`;
 
   const months: string = String(month).padStart(2, '0');
-  const filePath: string = path.join(dirPath, `${year}-${months}`, `${today}-${slug}.md`);
+  const filePath: string = path.join(
+    dirPath,
+    `${year}-${months}`,
+    `${today}-${slug}.md`
+  );
+  // make sure the directory for the file exists
+  await fs.mkdir(path.dirname(filePath), { recursive: true });
 
   // Create file if it does not exists.
   try {
