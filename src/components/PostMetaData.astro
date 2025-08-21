@@ -14,7 +14,9 @@ const { post } = Astro.props;
     <div
       class="inline"
       set:html={post.data.tags?.length > 0
-        ? post.data.tags.map((tag: string) => `<a href="/tags/${tag}/">${tag}</a>`).join(', ')
+        ? post.data.tags
+            .map((tag: string) => `<a href="/tags/${tag}/">${tag.charAt(0).toUpperCase() + tag.slice(1)}</a>`)
+            .join(', ')
         : 'No tags'}
     />
   </div>
