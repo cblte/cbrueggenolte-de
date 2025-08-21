@@ -6,11 +6,9 @@
 
 import { exec } from 'child_process';
 import fs from 'fs/promises';
-import path from 'path';
 import inquirer from 'inquirer';
+import path from 'path';
 import pc from 'picocolors';
-import { exit } from 'process';
-import { file } from 'astro/loaders';
 
 // Get YYYY-MM-DD format
 const today: string = new Date().toISOString().split('T')[0];
@@ -39,34 +37,19 @@ process.on('uncaughtException', (error) => {
   }
 });
 
-/**
- * Creates a new markdown blogpost with frontmatter in this years folder.
- * @param {string} title
- */
+// Define the interface for blog post options
 interface BlogPostOptions {
   title: string;
   editor?: string | null;
 }
 
-async function createBlogPost(
-  title: string,
-  editor: string | null = null
-): Promise<void> {
+async function createBlogPost(title: string, editor: string | null = null): Promise<void> {
   // get the path for the current year and create it if it doesn't exist
   const dirPath: string = path.join('./src/content/posts', `${year}`);
   await fs.mkdir(dirPath, { recursive: true });
 
   // Create the slug from the passed title
-  let slug: string = title
-    .toLowerCase()
-    .replace(/ /g, '-')
-    .replace(/[^a-z0-9-]/g, '') // Remove all non-alphanumeric characters except hyphens
-    .replace(/--+/g, '-') // Remove multiple hyphens
-    .replace(/^-+|-+$/g, '') // Remove leading and trailing hyphens
-    .replace(/ä/g, 'ae')
-    .replace(/ö/g, 'oe')
-    .replace(/ü/g, 'ue')
-    .replace(/ß/g, 'ss');
+  const slug: string = germanSlugify(title);
 
   // create the frontmatter
   const frontmatter: string = `---
@@ -75,14 +58,11 @@ description: ""
 pubDate: ${today}
 modDate: ${today}
 tags: []
+draft: true
 ---`;
 
   const months: string = String(month).padStart(2, '0');
-  const filePath: string = path.join(
-    dirPath,
-    `${year}-${months}`,
-    `${today}-${slug}.md`
-  );
+  const filePath: string = path.join(dirPath, `${year}-${months}`, `${today}-${slug}.md`);
   // make sure the directory for the file exists
   await fs.mkdir(path.dirname(filePath), { recursive: true });
 
@@ -116,11 +96,24 @@ tags: []
   }
 } // end of function createBlogPost
 
+// Function to slugify the title for German language
+function germanSlugify(input: string): string {
+  return input
+    .normalize('NFC') // ensure composed characters (ä, ö, ü)
+    .trim()
+    .toLowerCase()
+    .replace(/ä/g, 'ae')
+    .replace(/ö/g, 'oe')
+    .replace(/ü/g, 'ue')
+    .replace(/ß/g, 'ss')
+    .replace(/[^a-z0-9]+/g, '-') // turn any run of non-alnum into hyphen
+    .replace(/^-+|-+$/g, ''); // trim leading/trailing hyphens
+}
+
 let title: string = '';
 let editor: string = '';
 
-// Check if title was provided as command line argument
-
+// Main function to prompt user for input and create the blog post
 (async () => {
   try {
     const answers = await inquirer.prompt([
