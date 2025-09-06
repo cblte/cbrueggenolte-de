@@ -1,8 +1,8 @@
 ---
 title: "List of Awesome Free Software"
 description: ""
-pubDate: 2025-08-19
-modDate: 2025-08-19
+pubDate: 2025-09-06
+modDate: 2025-09-06
 tags: []
 draft: true
 ---
@@ -21,3 +21,5 @@ die viel in Tech- oder Open-Source-Communities unterwegs sind,
 aber hoffentlich findet hier jeder hier etwas Neues.
 So, ohne weitere Verzögerung, hier sind einige wirklich coole Apps,
 die ich regelmäßig in meinem Alltag nutze!
+
+AltStore - Sideloading App unter iOS und iPadOS
