@@ -95,6 +95,7 @@ dass sie jederzeit über alle Browser und Geräte zugänglich sind.
 - [Bambu spool tool. For filament refills](https://forum.bambulab.com/t/bambu-spool-tool-for-filament-refills/109294)
 - [AMS compatble spool list](https://docs.google.com/spreadsheets/d/1LGVjAbGjvIjvOFQsDi8lSK9-vy7GfGhgVP41sNffh6I/edit?gid=1679778390#gid=1679778390)
 - [Reddit Thread about AMS compatible spools](https://old.reddit.com/r/BambuLab/comments/14r8plp/best_filament_spools_for_ams/)
+- [Formware Online STL Repair — repair STL files for 3D printing](https://www.formware.co/onlinestlrepair)
 
 ## Listening
 
