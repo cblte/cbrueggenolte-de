@@ -77,6 +77,8 @@ Einige Punkte werden im Vexkalation-Baum (grün) gesetzt.
 
 ### Early Game (Level 1-16)
 
+![Skill Blinzelschlag](./borderlands4-skill-blinzelschlag.jpg)
+
 - **Augment**: **Blinzelschlag** (Blink Strike) – Ideal für schnelle Kills bei Gegnern unter 50 % HP.
   Spart Munition und hält das Tempo hoch.
 - **Strategie**: Fokussiere dich auf **Grabesunterhalt** und **Gejaule und Gebell**,
@@ -84,6 +86,8 @@ Einige Punkte werden im Vexkalation-Baum (grün) gesetzt.
   um Aggro zu ziehen, während du mit SMGs Schaden austeilst.
 
 ### Mid-Game (Level 17+)
+
+![Skill Hexus Nexus](./borderlands4-skill-hexus-nexus.jpg)
 
 - **Augment-Switch**: Ersetze **Blinzelschlag** mit **Hexus Nexus** (nach Level 16). Trouble wird zum Tank und zieht Aggro, während du freie Schussbahn hast.
 - **Capstone**: Arbeite auf **Entfesselt** im Here Comes Trouble-Baum hin. Dieser Skill markiert Gegner, die mehr Waffenschaden von dir nehmen. Stirbt ein markierter Gegner, erhältst du Gesundheitsregeneration und Schadensboni, die während **Phase Phamiliar** verdoppelt werden.
@@ -104,6 +108,8 @@ Einige Punkte werden im Vexkalation-Baum (grün) gesetzt.
 - **Legendary-Tipp**: Farm die **Onslaught SMG** (Maliwan), eine Hoch-DPS-Waffe, die mit **Infusion** glänzt. (General SMG Pool oder **Idolator Sol**)
 
 ### Rep-Kits
+
+![AF 1000](./borderlands4-rep-kit-af-1000.png)
 
 - **AF-1000 Rep-Kit**: Starke Schilde und Buffs, ideal für Mid- bis Late-Game.
 - **Pacemaker Rep-Kit**: Perfekt für konsistente Heilung und Sustain.
