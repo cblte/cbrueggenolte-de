@@ -43,44 +43,18 @@ const metaDescription = postdata?.description || SITE_DESCRIPTION;
     <meta property="og:description" content={metaDescription} />
     <meta property="og:site_name" content={SITE_TITLE} />
     <meta property="og:locale" content="de_DE" />
-    {
-      postdata?.cover && (
-        <meta
-          property="og:image"
-          content={new URL(postdata.cover, SITE_URL).href}
-        />
-      )
-    }
+    {postdata?.cover && <meta property="og:image" content={new URL(postdata.cover, SITE_URL).href} />}
 
     <meta property="twitter:card" content="summary_large_image" />
     <meta property="twitter:url" content={canonicalURL} />
     <meta property="twitter:title" content={pageTitle} />
     <meta property="twitter:description" content={metaDescription} />
-    {
-      postdata?.cover && (
-        <meta
-          property="twitter:image"
-          content={new URL(postdata.cover, SITE_URL).href}
-        />
-      )
-    }
+    {postdata?.cover && <meta property="twitter:image" content={new URL(postdata.cover, SITE_URL).href} />}
 
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 
-    <link
-      rel="preload"
-      href="/fonts/rubik-regular.woff2"
-      as="font"
-      type="font/woff2"
-      crossorigin
-    />
-    <link
-      rel="preload"
-      href="/fonts/rubik-medium.woff2"
-      as="font"
-      type="font/woff2"
-      crossorigin
-    />
+    <link rel="preload" href="/fonts/rubik-regular.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="/fonts/rubik-medium.woff2" as="font" type="font/woff2" crossorigin />
 
     <meta http-equiv="X-Content-Type-Options" content="nosniff" />
     <meta name="referrer" content="strict-origin-when-cross-origin" />
@@ -107,17 +81,13 @@ const metaDescription = postdata?.description || SITE_DESCRIPTION;
     <!-- Skip to content link for accessibility -->
     <a
       href="#main-content"
-      class="sr-only focus:not-sr-only focus:top-4 focus:left-4 focus:z-50 focus:absolute focus:bg-sky-600 focus:shadow-lg focus:px-4 focus:py-2 focus:rounded focus:outline-none focus:ring-2 focus:ring-sky-400 focus:text-white"
-    >
+      class="sr-only focus:not-sr-only focus:top-4 focus:left-4 focus:z-50 focus:absolute focus:bg-sky-600 focus:shadow-lg focus:px-4 focus:py-2 focus:rounded focus:outline-none focus:ring-2 focus:ring-sky-400 focus:text-white">
       Skip to main content
     </a>
     <div id="top"></div>
 
     <Header />
-    <main
-      id="main-content"
-      class="mx-auto my-12 px-6 pt-8 pb-12 rounded-lg max-w-3xl text-lg container"
-    >
+    <main id="main-content" class="mx-auto my-12 px-6 pt-8 pb-12 rounded-lg max-w-4xl text-lg container">
       <slot />
     </main>
 
