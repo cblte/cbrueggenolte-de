@@ -1,10 +1,10 @@
 ---
-title: "Liste der großartigen kostenlosen Software"
+title: "Liste großartiger kostenloser Software"
 description: ""
-pubDate: 2025-09-06
-modDate: 2025-09-06
-tags: []
-draft: true
+pubDate: 2025-10-07
+modDate: 2025-10-07
+tags: [Software, Open Source, Tools, Apps, Empfehlungen]
+draft: false
 ---
 
 Gute und freie Software zu finden, ist nicht immer einfach. Alles ist heutzutage so werbefinanziert, dass der
@@ -16,47 +16,42 @@ eine Liste für alle zu erstellen. Viele dieser Anwendungen sind vielleicht viel
 Open-Source-Communities unterwegs sind, aber hoffentlich findet hier jeder etwas Neues. So, ohne weitere
 Verzögerung, hier sind einige wirklich coole Apps, die ich regelmäßig in meinem Alltag nutze!
 
----
-
 ### DuckDuckGo Browser
 
-Der **DuckDuckGo Browser** ist ein auf Datenschutz fokussierter Browser, der deine Online-Aktivitäten schützt,
-indem er keine persönlichen Daten sammelt. Er blockiert Tracker, verhindert zielgerichtete Werbung und sorgt
-dafür, dass deine Privatsphäre beim Surfen gewahrt bleibt. Mit einer benutzerfreundlichen Oberfläche und einem
-integrierten „Privacy Grade“-System, das Websites auf ihren Datenschutz bewertet, ist dieser Browser ideal,
-wenn dir deine Privatsphäre wichtig ist.
+Der **[DuckDuckGo Browser](https://duckduckgo.com)** ist ein auf Datenschutz fokussierter Browser,
+der deine Online-Aktivitäten schützt,
+indem er keine persönlichen Daten sammelt.
+Er blockiert Tracker, verhindert zielgerichtete Werbung
+und sorgt dafür, dass deine Privatsphäre beim Surfen gewahrt bleibt.
+Mit einer benutzerfreundlichen Oberfläche und einem integrierten „Privacy Grade“-System,
+das Websites auf ihren Datenschutz bewertet,
+ist dieser Browser ideal, wenn dir deine Privatsphäre wichtig ist.
 
----
+Es gibt einige Kontroversen um DuckDuckGo,
 
 ### Mullvad Browser
 
-Der **Mullvad Browser** ist ein Open-Source-Browser, der speziell entwickelt wurde, um anonymes Surfen zu
-ermöglichen, wenn du mit einem Mullvad VPN verbunden bist. Er minimiert die Erfassung von persönlichen Daten
-und schützt vor Online-Tracking, indem er Verbindungen verschleiert und die Verwendung von
-Fingerprinting-Techniken verhindert. Dieser Browser ist ideal für alle, die auf höchstmögliche Anonymität beim
-Surfen angewiesen sind.
-
----
+Der **[Mullvad Browser](https://mullvad.net/de/browser)** ist ein Open-Source-Browser,
+entwickelt, um möglichst anonymes Surfen zu ermöglichen – besonders in Kombination mit dem **Mullvad VPN**.
+Er reduziert die Erfassung persönlicher Daten, schützt vor Online-Tracking
+und erschwert das Auslesen von Fingerprints durch gezielte Verschleierungstechniken.
+Damit ist er die richtige Wahl für alle, die besonderen Wert auf **Datenschutz und Anonymität** beim Surfen legen.
 
 ### Espanso (Mac Only)
 
-**Espanso** ist eine leistungsstarke, Open-Source-Software für Textersetzungen auf macOS. Sie ermöglicht es dir,
+**[Espanso](https://espanso.org/docs/install/mac)** ist eine leistungsstarke, Open-Source-Software für Textersetzungen auf macOS. Sie ermöglicht es dir,
 Textabkürzungen zu definieren, die dann automatisch durch längere Phrasen oder häufig verwendete
 Textbausteine ersetzt werden. So kannst du deine Produktivität steigern, indem du wiederholte
 Schreibaufgaben automatisierst. Espanso ist sehr anpassbar und lässt sich mit zahlreichen Erweiterungen und
 Skripten erweitern, um deinen spezifischen Bedürfnissen gerecht zu werden.
 
----
-
 ### Miniflux 2
 
-Miniflux 2 ist ein schlanker, selbst gehosteter RSS-Reader, der Lesbarkeit, Geschwindigkeit und Privatsphäre
+[Miniflux 2](https://miniflux.app) ist ein schlanker, selbst gehosteter RSS-Reader, der Lesbarkeit, Geschwindigkeit und Privatsphäre
 priorisiert. Er verzichtet auf unnötige Features und konzentriert sich darauf, Feeds sauber und werbefrei
 darzustellen. Mit der Funktion, Artikel zu extrahieren, kannst du Feeds in ihrer vollen Tiefe lesen, statt nur
 kurze Vorschauen zu erhalten. Die minimalistische Oberfläche und die hohe Geschwindigkeit machen das Surfen
 durch zahlreiche Artikel zu einem angenehmen Erlebnis.
-
----
 
 ### ShareX (Windows Only)
 
@@ -65,55 +60,43 @@ darunter das automatische Hochladen von Bildern auf Dutzende von Domains und das
 von Bildern, die zu groß sind. Du kannst auch während des Screenshots zeichnen und den Screenshot bearbeiten.
 Das macht es äußerst nützlich, um sofort etwas zu markieren, es zu screenshotten und schnell online einzufügen.
 
----
-
 ### Audiomass
 
-Audiomass ist ein einfach zu bedienender, webbasierter Audio-Editor. Er eignet sich hervorragend für schnelle
+[Audiomass](https://audiomass.co) ist ein einfach zu bedienender, webbasierter Audio-Editor. Er eignet sich hervorragend für schnelle
 Bearbeitungen wie das Entfernen von Stille, das Aufteilen von Audiodateien, das Anwenden von Filtern und das
 Exportieren im MP3- oder WAV-Format. Als Game-Entwickler, der viele Soundeffekte bearbeitet, aber niemals ein
 „richtiges“ Audio-Bearbeitungsprogramm lernen möchte, ist Audiomass ein unverzichtbares Tool, weil es so
 einfach und intuitiv zu bedienen ist.
 
----
-
 ### Photopea
 
-Photopea ist ein kostenloser Photoshop-Klon, der direkt in deinem Browser läuft. Es ist eine erstaunlich
+[Photopea](https://www.photopea.com) ist ein kostenloser Photoshop-Klon, der direkt in deinem Browser läuft. Es ist eine erstaunlich
 funktionsreiche Alternative zu Photoshop, und für viele Anforderungen völlig ausreichend. Es läuft auch auf
 Linux und bietet alles, was man von einem professionellen Bildeditor erwarten würde. Der einzige Nachteil: Bei
 hochauflösenden Bildern (ab 4K) kann es etwas laggen, aber das dürfte sich in Zukunft mit der Unterstützung von
 WebGPU verbessern.
 
----
-
 ### Excalidraw
 
-Excalidraw ist ein Open-Source-Whiteboard für den Browser. Es ist simpel, aber genau das, was du brauchst, um
+[Excalidraw](https://excalidraw.com) ist ein Open-Source-Whiteboard für den Browser. Es ist simpel, aber genau das, was du brauchst, um
 mit anderen zusammenzuarbeiten, Flussdiagramme zu erstellen und deine Gedanken visuell zu ordnen. Es erfordert
 keine Anmeldung und bietet eine sehr übersichtliche Benutzeroberfläche, die das Erstellen von Diagrammen und
 Zeichnungen sehr intuitiv macht.
 
----
-
 ### Fish Shell
 
-Die fish Shell ist eine moderne, benutzerfreundliche Terminal-Shell, die die Arbeit mit der Kommandozeile
+Die [fish Shell](https://fishshell.com) ist eine moderne, benutzerfreundliche Terminal-Shell, die die Arbeit mit der Kommandozeile
 deutlich angenehmer macht. Sie bietet exzellente Autovervollständigung, hilfreiche Fehlermeldungen und nutzt
 ansprechende Farben, um wichtige Informationen klar voneinander zu trennen. Die plattformübergreifende
 Unterstützung für Windows, macOS und Linux macht sie besonders praktisch, wenn du regelmäßig zwischen
 verschiedenen Betriebssystemen wechselst.
 
----
-
 ### Rclone
 
-Rclone ist ein Kommandozeilen-Tool, mit dem du problemlos Dateien zwischen deinem Computer und Online-Diensten
+[Rclone](https://rclone.org) ist ein Kommandozeilen-Tool, mit dem du problemlos Dateien zwischen deinem Computer und Online-Diensten
 synchronisieren kannst. Die anfängliche Einrichtung kann etwas tricky sein, aber einmal verbunden, läuft es
 unglaublich gut. Ich nutze es, um meine Joplin-Notizen zu sichern und Dateien zwischen meinen Windows- und
 Linux-Computern zu synchronisieren.
-
----
 
 ### **Weitere Empfehlungen**
 
