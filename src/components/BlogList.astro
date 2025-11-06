@@ -8,10 +8,10 @@ const { posts } = Astro.props;
   {
     posts.map((post) => (
       <li class="relative mb-4">
-        <span class="-left-6 absolute font-medium text-sky-500 transition-all duration-200 blog-arrow">»</span>
         <div class="flex justify-between items-start">
           <div class="flex-1">
             <h2 class="text-left">
+              <span class="-left-6 absolute font-medium text-sky-500 transition-all duration-200 blog-arrow">»</span>{' '}
               <a
                 href={`/blog/${createSlug(post.data.title)}/`}
                 class="text-sky-600 hover:text-sky-700 underline hover:underline">

@@ -21,7 +21,9 @@ const filteredPosts = posts.filter((post) => post.data.tags?.includes(tag));
 ---
 
 <Layout title={`Posts mit dem Tag "${tag}"`}>
-  <section id={`tag_${tag}`} class="prose">
+  <section
+    id={`tag_${tag}`}
+    class="bg-stone-100 shadow-lg mx-auto mb-16 prose-h2:mb-4 prose-h3:mb-4 p-8 border border-stone-200 rounded-2xl max-w-none prose-p:text-lg/8 prose prose-stone">
     <h1>Posts mit dem Tag #{tag}</h1>
     {filteredPosts.length > 0 ? <BlogList posts={filteredPosts} /> : <p>Keine Posts mit diesem Tag gefunden.</p>}
   </section>
