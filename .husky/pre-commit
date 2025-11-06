@@ -1,5 +1,3 @@
-#!/usr/bin/env sh
-. "$(dirname "$0")/_/husky.sh"
 echo "Ensuring lockfile uses public registry..."
 npm run lock:clean
 git add package-lock.json
