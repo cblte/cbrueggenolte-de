@@ -1,11 +1,11 @@
-import rss from "@astrojs/rss";
-import { getCollection } from "astro:content";
-import { createSlug } from "@utils/utils.ts";
+import rss from '@astrojs/rss';
+import { getCollection } from 'astro:content';
+import { createSlug } from '@utils/utils.ts';
 
 export async function GET(context) {
-  const posts = await getCollection("posts");
+  const posts = await getCollection('posts');
   return rss({
-    title: "Carstens Blog",
+    title: 'Carstens Blog',
     description:
       "Stay updated with Carsten's personal website, where technology, creativity, and curiosity converge.Explore a collection of thoughts, notes, and projects that inspire and inform.Join the journey of discovery and share in the digital garden of ideas!",
     site: context.site,
