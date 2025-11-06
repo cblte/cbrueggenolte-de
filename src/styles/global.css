@@ -2,16 +2,6 @@
 @plugin '@tailwindcss/typography';
 @config './tailwind.config.js';
 
-/* Simple stone theme colors */
-body {
-  background-color: var(--color-stone-50); /* stone-50 */
-  color: var(--color-stone-700); /* stone-700 */
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-font-smoothing: antialiased;
-  font-family: 'Rubik', sans-serif;
-}
-
-
 /* Rubik Font Face Declarations - Essential weights only */
 @font-face {
   font-family: 'Rubik';
@@ -43,6 +33,15 @@ body {
   font-weight: 500;
   font-style: italic;
   font-display: swap;
+}
+
+/* Simple stone theme colors */
+body {
+  background-color: var(--color-stone-50); /* stone-50 */
+  color: var(--color-stone-700); /* stone-700 */
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-family: 'Noto Sans Mono', monospace;
 }
 
 #blogcontent #content img {

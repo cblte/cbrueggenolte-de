@@ -32,16 +32,16 @@ module.exports = {
               fontWeight: '400',
             },
             h1: {
-              fontWeight: '500',
+              fontWeight: '600',
               color: 'var(--color-stone-800)',
             },
             h2: {
-              fontWeight: '500', // medium instead of bold
+              fontWeight: '600', // medium instead of bold
               color: 'var(--color-stone-800)',
               fontSize: '1.25rem',
             },
             h3: {
-              fontWeight: '500', // medium instead of bold
+              fontWeight: '600', // medium instead of bold
               color: 'var(--color-stone-800)',
             },
           },

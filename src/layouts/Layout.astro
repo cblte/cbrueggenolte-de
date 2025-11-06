@@ -1,4 +1,6 @@
 ---
+import '@fontsource/noto-sans-mono/latin.css'; // Specify weight
+
 import '../styles/global.css';
 import Footer from '@components/Footer.astro';
 import Header from '@components/Header.astro';
@@ -53,9 +55,6 @@ const metaDescription = postdata?.description || SITE_DESCRIPTION;
 
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 
-    <link rel="preload" href="/fonts/rubik-regular.woff2" as="font" type="font/woff2" crossorigin />
-    <link rel="preload" href="/fonts/rubik-medium.woff2" as="font" type="font/woff2" crossorigin />
-
     <meta http-equiv="X-Content-Type-Options" content="nosniff" />
     <meta name="referrer" content="strict-origin-when-cross-origin" />
 
@@ -87,7 +86,7 @@ const metaDescription = postdata?.description || SITE_DESCRIPTION;
     <div id="top"></div>
 
     <Header />
-    <main id="main-content" class="mx-auto my-12 px-6 pt-8 pb-12 rounded-lg max-w-4xl text-lg container">
+    <main id="main-content" class="mx-auto my-12 px-6 pt-8 pb-12 rounded-lg max-w-5xl text-lg container">
       <slot />
     </main>
 

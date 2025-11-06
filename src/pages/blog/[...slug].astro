@@ -34,7 +34,7 @@ const { Content } = await render(post);
 <Layout title={post.data.title} postdata={post.data}>
   <article
     id="blogcontent"
-    class="bg-stone-100 shadow-lg mx-auto mb-16 prose-h2:mb-4 prose-h3:mb-4 p-8 border border-stone-200 rounded-2xl max-w-3xl prose-p:text-lg/8 prose prose-stone">
+    class="bg-stone-100 shadow-lg mx-auto mb-16 prose-h2:mb-4 prose-h3:mb-4 p-8 border border-stone-200 rounded-2xl max-w-5xl prose-p:text-lg/8 prose prose-stone">
     <header class="mb-4">
       <div class="-left-2 absolute border-sky-600 border-l-2"></div>
       <h1 class="mb-1 text-balance">
@@ -45,7 +45,7 @@ const { Content } = await render(post);
       </div>
     </header>
 
-    <div id="content" class="">
+    <div id="content" class="mx-auto">
       <Content />
     </div>
 
