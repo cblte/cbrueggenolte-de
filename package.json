@@ -10,6 +10,12 @@
     "preview": "astro preview",
     "astro": "astro"
   },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm lock:clean && git add package-lock.json",
+      "pre-push": "npm test"
+    }
+  },
   "dependencies": {
     "@astrojs/rss": "^4.0.11",
     "@astrojs/sitemap": "^3.3.0",
@@ -25,6 +31,7 @@
   },
   "devDependencies": {
     "@tailwindcss/typography": "^0.5.16",
+    "husky": "^9.1.7",
     "ts-node": "^10.9.2"
   }
 }
