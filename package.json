@@ -3,6 +3,8 @@
   "type": "module",
   "version": "25.4.3",
   "scripts": {
+    "prepare": "husky install",
+    "lock:clean": "npm config set registry https://registry.npmjs.org/ && npm install --package-lock-only --ignore-scripts",
     "dev": "astro dev",
     "build": "astro build",
     "preview": "astro preview",

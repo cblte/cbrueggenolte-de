@@ -1,0 +1,4 @@
+#!/usr/bin/env fish
+echo "Ensuring lockfile uses public registry..."
+npm run lock:clean
+git add package-lock.json
