@@ -4,12 +4,12 @@ name: Deploy Astro site to Custom Server
 on:
   # Runs on pushes targeting the default branch
   push:
-    branches: ["main"]
+    branches: [ "main" ]
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 
-# Sets permissions of the GITHUB_TOKEN
+    # Sets permissions of the GITHUB_TOKEN
 permissions:
   contents: read
 
@@ -20,6 +20,7 @@ concurrency:
 
 env:
   BUILD_PATH: "." # default value when not using subfolders
+  NPM_REGISTRY_URL: https://registry.npmjs.org/
 
 jobs:
   build-and-deploy:
@@ -28,76 +29,76 @@ jobs:
     environment:
       name: production
       url: ${{ vars.DEPLOYMENT_URL || '' }}
-    
+
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-      
-      - name: Setup Node
-        uses: actions/setup-node@v4
-        with:
-          node-version: "20"
-          cache: 'npm'
-      
-      - name: Install dependencies
-        run: npm ci
-        working-directory: ${{ env.BUILD_PATH }}
-      
-      - name: Build with Astro
-        run: npm run build
-        working-directory: ${{ env.BUILD_PATH }}
-      
-      - name: Verify required secrets
-        run: |
-          echo "Running pre-flight checks for deployment..."
-          
-          if [ -z "${{ secrets.SSH_PRIVATE_KEY }}" ]; then
-            echo "::error::SSH_PRIVATE_KEY is empty or not set in the production environment"
-            echo "Please go to Settings > Environments > production > Add secret"
-            exit 1
-          fi
-          
-          if [ -z "${{ secrets.REMOTE_HOST }}" ]; then
-            echo "::error::REMOTE_HOST is empty or not set in the production environment"
-            echo "Please go to Settings > Environments > production > Add secret"
-            exit 1
-          fi
-          
-          if [ -z "${{ secrets.REMOTE_USER }}" ]; then
-            echo "::error::REMOTE_USER is empty or not set in the production environment" 
-            echo "Please go to Settings > Environments > production > Add secret"
-            exit 1
-          fi
-          
-          if [ -z "${{ secrets.REMOTE_PATH }}" ]; then
-            echo "::error::REMOTE_PATH is empty or not set in the production environment"
-            echo "Please go to Settings > Environments > production > Add secret"
-            exit 1
-          fi
-          
-          echo "✅ All required secrets are properly set"
-      
-      - name: Setup SSH
-        run: |
-          # Create SSH directory
-          mkdir -p ~/.ssh
-          
-          # Save private key to file
-          echo "${{ secrets.SSH_PRIVATE_KEY }}" > ~/.ssh/deploy_key
-          chmod 600 ~/.ssh/deploy_key
-          
-          # Add host to known hosts to prevent prompts
-          echo "${{ secrets.REMOTE_HOST }} $(ssh-keyscan -t rsa ${{ secrets.REMOTE_HOST }} 2>/dev/null | cut -d ' ' -f 2-)" >> ~/.ssh/known_hosts
-      
-      - name: Deploy with rsync
-        run: |
-          # Print debug info (with secrets masked)
-          echo "Deploying to ${{ secrets.REMOTE_HOST }}:${{ secrets.REMOTE_PATH }}"
-          echo "Using port: ${{ secrets.REMOTE_PORT || '22' }}"
-          
-          # Use rsync to deploy
-          rsync -avz --delete -e "ssh -i ~/.ssh/deploy_key -p ${{ secrets.REMOTE_PORT || '22' }}" \
-            ${{ env.BUILD_PATH }}/dist/ \
-            ${{ secrets.REMOTE_USER }}@${{ secrets.REMOTE_HOST }}:${{ secrets.REMOTE_PATH }}
-          
-          echo "🚀 Deployment completed successfully!"
+    - name: Checkout
+      uses: actions/checkout@v4
+
+    - name: Setup Node
+      uses: actions/setup-node@v4
+      with:
+        node-version: "20"
+        cache: 'npm'
+
+    - name: Install dependencies
+      run: npm ci
+      working-directory: ${{ env.BUILD_PATH }}
+
+    - name: Build with Astro
+      run: npm run build
+      working-directory: ${{ env.BUILD_PATH }}
+
+    - name: Verify required secrets
+      run: |
+        echo "Running pre-flight checks for deployment..."
+
+        if [ -z "${{ secrets.SSH_PRIVATE_KEY }}" ]; then
+          echo "::error::SSH_PRIVATE_KEY is empty or not set in the production environment"
+          echo "Please go to Settings > Environments > production > Add secret"
+          exit 1
+        fi
+
+        if [ -z "${{ secrets.REMOTE_HOST }}" ]; then
+          echo "::error::REMOTE_HOST is empty or not set in the production environment"
+          echo "Please go to Settings > Environments > production > Add secret"
+          exit 1
+        fi
+
+        if [ -z "${{ secrets.REMOTE_USER }}" ]; then
+          echo "::error::REMOTE_USER is empty or not set in the production environment"
+          echo "Please go to Settings > Environments > production > Add secret"
+          exit 1
+        fi
+
+        if [ -z "${{ secrets.REMOTE_PATH }}" ]; then
+          echo "::error::REMOTE_PATH is empty or not set in the production environment"
+          echo "Please go to Settings > Environments > production > Add secret"
+          exit 1
+        fi
+
+        echo "✅ All required secrets are properly set"
+
+    - name: Setup SSH
+      run: |
+        # Create SSH directory
+        mkdir -p ~/.ssh
+
+        # Save private key to file
+        echo "${{ secrets.SSH_PRIVATE_KEY }}" > ~/.ssh/deploy_key
+        chmod 600 ~/.ssh/deploy_key
+
+        # Add host to known hosts to prevent prompts
+        echo "${{ secrets.REMOTE_HOST }} $(ssh-keyscan -t rsa ${{ secrets.REMOTE_HOST }} 2>/dev/null | cut -d ' ' -f 2-)" >> ~/.ssh/known_hosts
+
+    - name: Deploy with rsync
+      run: |
+        # Print debug info (with secrets masked)
+        echo "Deploying to ${{ secrets.REMOTE_HOST }}:${{ secrets.REMOTE_PATH }}"
+        echo "Using port: ${{ secrets.REMOTE_PORT || '22' }}"
+
+        # Use rsync to deploy
+        rsync -avz --delete -e "ssh -i ~/.ssh/deploy_key -p ${{ secrets.REMOTE_PORT || '22' }}" \
+          ${{ env.BUILD_PATH }}/dist/ \
+          ${{ secrets.REMOTE_USER }}@${{ secrets.REMOTE_HOST }}:${{ secrets.REMOTE_PATH }}
+
+        echo "🚀 Deployment completed successfully!"
