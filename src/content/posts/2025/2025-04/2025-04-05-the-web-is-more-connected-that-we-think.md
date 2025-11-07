@@ -3,7 +3,7 @@ title: "Das Web ist stärker verbunden, als wir denken"
 description: "Wenn man online seinen Interessen folgt, begibt man sich manchmal auf eine unerwartete Reise – und wird daran erinnert, wie klein und wunderschön vernetzt sich das Web anfühlen kann."
 pubDate: 2025-04-05
 modDate: 2025-04-05
-tags: [internet, blogging, personal]
+tags: [Journal, Suchmaschine, Netzwerk, Alltag]
 ---
 
 Heute habe ich den [People & Blocks Newsletter](https://peopleandblocks.com/) abonniert,

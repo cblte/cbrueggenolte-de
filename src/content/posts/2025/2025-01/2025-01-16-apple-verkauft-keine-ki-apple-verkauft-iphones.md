@@ -3,7 +3,7 @@ title: "Apple verkauft keine KI, Apple verkauft iPhones"
 pubDate: 2025-01-16
 modDate: 2025-01-16
 description: "Apple integriert KI systematisch in sein Ökosystem mit Fokus auf sichere, nahtlose und langfristige Innovationen für das persönliche und berufliche Leben."
-tags: [journal]
+tags: [Journal, Künstlicheintelligenz, Lifeos, Ökosystem]
 draft: false
 ---
 

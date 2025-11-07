@@ -3,7 +3,7 @@ title: Sources Behind my Political Reflections
 description: "Dieser Begleitbeitrag liefert Referenzen und Quellen, die meine Überlegungen und Aussagen auf meiner Politik-Seite unterstützen und bietet tiefere Einblicke und faktischen Kontext."
 pubDate: 2025-03-09
 modDate: 2025-04-13
-tags: ["politics", "trump", "elections", "noafd"]
+tags: [Politics, International, Elections, Germany]
 cover: "./politics-cover.jpg"
 coverAlt: "Politik Cover"
 ---

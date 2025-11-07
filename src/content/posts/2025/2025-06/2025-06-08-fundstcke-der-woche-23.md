@@ -3,7 +3,7 @@ title: "Fundstücke der Woche 23"
 description: ""
 pubDate: 2025-06-08
 modDate: 2025-06-08
-tags: [fundstücke, nintendo, switch2, musik]
+tags: [Journal, Fundstücke, Switch-2, Programmier, Gewohnheiten]
 cover: "./fundstuecke-23.jpg"
 coverAlt: "Fundstücke der Woche 23"
 ---

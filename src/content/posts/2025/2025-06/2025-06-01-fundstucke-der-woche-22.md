@@ -3,7 +3,7 @@ title: "Fundstücke der Woche 22"
 description: "Neue Hörbücher, Musik, Filme und ein paar Gedanken zur perfekten Stunde am Tag."
 pubDate: 2025-06-01
 modDate: 2025-06-01
-tags: [fundstuecke, musik, hoerbuch, spiele, journal]
+tags: [Journal, Perry-Rhodan, Litrpg, Fantasy-Life]
 cover: "./fundstuecke-der-woche.jpg"
 coverAlt: "Sonneaufgang mit einem Kalenderblatt vom 1 Juni 2025"
 ---

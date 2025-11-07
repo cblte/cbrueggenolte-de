@@ -3,7 +3,7 @@ title: "Fundstücke der Woche 21"
 description: "Neue Woche, neues Format, alte Aufreger: Musik, Add-ons, Panzer und Cookie-Banner."
 pubDate: 2025-05-25
 modDate: 2025-05-25
-tags: [fundstuecke, musik, links, journal]
+tags: [Journal, Fundstuecke, Sci-Fi, Docker, Privacy]
 cover: "./fundstuecke-der-woche.jpg"
 coverAlt: "Die Fundstücke der Woche 21"
 draft: false

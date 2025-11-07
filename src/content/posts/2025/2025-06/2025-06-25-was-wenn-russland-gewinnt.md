@@ -3,7 +3,7 @@ title: "Was wenn Russland gewinnt?"
 description: "Was wenn es dieses mal nicht gut ausgeht? Was wenn Russland gewinnt?"
 pubDate: 2025-06-25
 modDate: 2025-06-25
-tags: [Meinung, Politik]
+tags: [Politik, Russland, Frieden, Alltag]
 ---
 
 Der [NATO-Gipfel in Den Haag](https://www.nato.int/cps/en/natohq/events_236298.htm) hat begonnen – und das, was ich bisher davon mitbekommen habe, ist [beeindruckend](https://www.nato.int/cps/en/natohq/news_236641.htm). Ja, es kostet Geld. Und ja, wir werden in Zukunft mehr für Verteidigung ausgeben. Mehr ausgeben müssen. Das ist keine schöne Nachricht, aber eine notwendige Realität.

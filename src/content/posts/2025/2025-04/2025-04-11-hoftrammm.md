@@ -3,7 +3,7 @@ title: "Hoftrammm Tramrestaurant"
 description: "Eine kulinarische Reise mit der Hoftrammm!"
 pubDate: 2025-04-11
 modDate: 2025-06-10
-tags: [privates]
+tags: [Journal, Tram, Restaurant, Dining]
 ---
 
 Gemeinsam mit Freunden hatten wir einen wunderbaren Abend im [Hoftrammm Tramrestaurant](https://hoftrammm.nl).

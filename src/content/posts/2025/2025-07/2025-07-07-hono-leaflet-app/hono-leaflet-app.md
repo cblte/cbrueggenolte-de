@@ -3,7 +3,7 @@ title: "Minimalistische Offline-Leaflet-Karte mit Node.js & Hono"
 description: "Anleitung für eine minimalistische, vollständig offline nutzbare Leaflet-Karte mit Node.js & Hono – inklusive GeoJSON, POIs und Ländergrenzen."
 pubDate: 2025-07-07
 updated: 2025-07-21
-tags: ["Leaflet", "Hono", "Node.js"]
+tags: [Programmieren, Leaflet, Minimalistic, Offline, Geography]
 ---
 
 Für ein Projekt benötigte ich eine einfache, offlinefähige [Leaflet](https://leafletjs.com/)-Karte, die nur Ländergrenzen und dynamisch injizierte Punkte anzeigt. Hier ist eine Schritt-für-Schritt-Anleitung, wie du so etwas mit Node.js und [Hono](https://hono.dev) umsetzen kannst.

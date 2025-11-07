@@ -3,7 +3,7 @@ title: "Ramen machen"
 description: "Ramen machen mit traditionellen japanischen Zutaten."
 pubDate: 2025-04-12
 modDate: 2025-06-10
-tags: [privates]
+tags: [Journal, Asia, Fahrrad, Brühe]
 ---
 
 Heute früh waren wir im Asia-Supermarkt.

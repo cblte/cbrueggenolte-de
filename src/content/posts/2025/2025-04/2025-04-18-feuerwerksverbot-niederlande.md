@@ -3,7 +3,7 @@ title: "Feuerwerksverbot kommt in den Niederlanden"
 description: "Ein ruhiger und entspannter Tag"
 pubDate: 2025-04-18
 modDate: 2025-06-10
-tags: [privates]
+tags: [Journal, Feuerwerksverbot, Niederlande, Politik]
 ---
 
 Heute am Karfreitag ist es richtig friedlich hier –

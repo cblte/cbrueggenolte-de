@@ -3,7 +3,7 @@ title: "Fantasy Life i - Online Multiplayer Probleme wegen falscher Uhrzeit"
 description: "Probleme mit dem Online Multiplayer beheben"
 pubDate: 2025-07-05
 modDate: 2025-07-21
-tags: [Gaming, FantasyLifei]
+tags: [Gaming, Switch, Online, Uhrzeit]
 ---
 
 Ich habe ja schon ein paar mal über Fantasy Life i geschrieben, und seit dem Update auf 1.4.0 mit dem Switch 2 Editions Update haben wir Probleme mit dem Online-Multiplayer. Eine Verbindung im Modus "Lokal" funktionierte weiterhin allerdings tadellos. Daher dachten wir, dass es entweder am Update oder an der neuen Version des Switch 2 Editions Updates liegt. Doch lagen wir falsch.

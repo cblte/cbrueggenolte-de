@@ -3,7 +3,7 @@ title: "Screenshots und Videos von einer Switch auf den Mac übertragen"
 description: "Wie man Medieninhalte von der Nintendo Switch auf macOS überträgt und dabei typische Verbindungsprobleme umgeht."
 pubDate: 2025-05-27
 modDate: 2025-05-29
-tags: [nintendo-switch, macos, tutorial]
+tags: [Tutorial, Switch, Mac, Transfer]
 draft: false
 ---
 

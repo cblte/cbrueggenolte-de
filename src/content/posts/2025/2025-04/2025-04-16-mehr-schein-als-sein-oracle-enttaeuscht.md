@@ -3,7 +3,7 @@ title: "Mehr Schein als Sein? Warum Oracle oft enttäuscht"
 description: ""
 pubDate: 2025-04-16
 modDate: 2025-05-10
-tags: [journal]
+tags: [Journal, Sicherheit, Lizenzpolitik, Marketing]
 ---
 
 In einer aktuellen Folge des Podcasts Security Now! (Episode 1021 vom 15. April 2025)

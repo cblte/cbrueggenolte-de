@@ -3,12 +3,12 @@ title: "Tailwind CSS v4 IntelliSense für `.eta`-Dateien in VS Code aktivieren"
 description: "Wie man IntelliSense für Tailwind CSS v4 in `.eta`-Dateien in VS Code aktiviert"
 pubDate: 2025-07-24
 modDate: 2025-07-24
-tags: [VSCode, TailwindCSS]
+tags: [Programmieren, Tailwind, Etagen, Intellisense]
 ---
 
 Mit der Veröffentlichung von **Tailwind CSS v4** hat sich einiges geändert – unter anderem die Art, wie Konfiguration und Styles gehandhabt werden. Wenn du `.eta`-Dateien ([eta](https://eta.js.org/)-Templates) verwendest, bekommst du möglicherweise **keine IntelliSense-Unterstützung** in VS Code. Hier zeige ich dir, wie du das behebst.
 
-## Voraussetzungen:
+## Voraussetzungen
 
 - **VS Code** installiert
 - **Tailwind CSS v4** korrekt eingerichtet

@@ -3,11 +3,8 @@ title: "Bun, Hono, TailwindCSS, JSX: Eine tolle Kombination!"
 description: "In diesem Beitrag zeige ich, wie ich Bun, Hono und TailwindCSS kombiniert habe, um die Grundlage für meinen Filament Manager zu legen – inkl. Dev-Workflow, Template-Setup und erster stylisher Startseite."
 pubDate: 2025-05-01
 modDate: 2025-05-02
-tags: [bun, hono, tailwindcss, webdev, typescript]
+tags: [Programmieren, Tailwind, Bun, Hono]
 ---
-
-
-## Inhaltsverzeichnis
 
 ## Einleitung
 

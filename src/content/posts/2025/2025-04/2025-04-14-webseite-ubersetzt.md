@@ -3,7 +3,7 @@ title: "Webseite übersetzt"
 description: "Habe mich nun doch dazu entschlossen, auf Deutsch zu schreiben."
 pubDate: 2025-04-14
 modDate: 2025-06-10
-tags: [meta-blog]
+tags: [Blog, Übersetzung, Webseite, Deutsch]
 ---
 
 Gestern habe ich den ganzen Tag damit verbracht,

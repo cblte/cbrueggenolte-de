@@ -3,7 +3,7 @@ title: "KI: Der Tod des Internet (arte)"
 description: "Eine Dokumentation über die Auswirkungen von KI-generierten Inhalten auf das Internet."
 pubDate: 2025-10-15
 modDate: 2025-10-15
-tags: [KI, Link, Meinung, Tech]
+tags: [Meinung, Müll, Internet, Alltag]
 draft: false
 ---
 

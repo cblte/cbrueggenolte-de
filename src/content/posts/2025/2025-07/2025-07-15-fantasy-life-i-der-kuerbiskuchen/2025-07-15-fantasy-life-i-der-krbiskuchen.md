@@ -3,7 +3,7 @@ title: "Fantasy Life i - Wie man Rezepte von seinen Ulklingen bekommt"
 description: "Die Suche nach dem Kürbiskuchen hat endlich ein Ende."
 pubDate: 2025-07-15
 modDate: 2025-07-15
-tags: [Gaming, FantasyLifeI]
+tags: [Gaming, Rezepte, Ulklinge, Fantasy]
 ---
 
 In Fantasy Life i gibt es bestimmte Rezepte, die ausschließlich von bestimmten Charakteren – den sogenannten Ulklingen – vergeben werden. Der Kürbiskuchen ist eines davon.

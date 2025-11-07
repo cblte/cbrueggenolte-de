@@ -3,7 +3,7 @@ title: "Donnerstag, 24. April 2025"
 description: "ChatGPT, SonarQube Sonar Tools und Datenübersichten aus JSON mit JavaScript"
 pubDate: 2025-04-24
 modDate: 2025-04-24
-tags: [journal, chatgpt, sonarqube, javascript, tailwindcss]
+tags: [Journal, Chatgpt, Sonarqube, Javascript]
 ---
 
 **Wetter:** Den Haag:️ 🌦 Nieselregen, 🌡️ +12 °C (+10 °C), 🌬️↓19 km/h

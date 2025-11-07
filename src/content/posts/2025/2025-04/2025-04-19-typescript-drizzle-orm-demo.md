@@ -3,7 +3,7 @@ title: "TypeScript Drizzle-ORM Demo"
 description: "Ein entspannter Tag mit 3D-Druckprojekten und ersten Erfolgen beim Arbeiten mit Drizzle ORM für TypeScript."
 pubDate: 2025-04-19
 modDate: 2025-06-10
-tags: [web-development]
+tags: [Programmierung, Orm, Datenbank, Typscript]
 ---
 
 Heute war ein entspannter Samstag. Ich habe mich wieder ans Bootcamp-Skript gesetzt und mich diesmal mit **Drizzle ORM** für TypeScript beschäftigt – ein echtes Vergnügen, damit Datenbankabfragen zu erstellen.

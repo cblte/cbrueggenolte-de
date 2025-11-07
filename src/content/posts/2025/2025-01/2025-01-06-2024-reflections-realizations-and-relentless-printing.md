@@ -3,7 +3,7 @@ title: "2024 Überlegungen, Erkenntnisse und unermüdliches Drucken"
 pubDate: 2025-01-06
 modDate: 2025-04-20
 description: "2024: Ein Jahr voller Projekte, Erkenntnisse und Verbindungen. Geprägt von 3D-Druck, starkem Kaffee, Homelab-Basteleien und wertvollen Momenten mit Familie und Freunden."
-tags: [journal, yealy-review, reflections]
+tags: [Journal, 3d-Druck, Notizsysteme, Home-Lab]
 draft: false
 ---
 

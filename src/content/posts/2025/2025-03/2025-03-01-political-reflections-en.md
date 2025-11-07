@@ -3,7 +3,7 @@ title: Sources Behind my Political Reflections (English)
 description: "This companion post provides references and sources supporting my reflections and claims shared on my Politics page, offering deeper insights and factual context."
 pubDate: 2025-03-09
 modDate: 2025-03-31
-tags: ["politics", "trump", "elections", "noafd"]
+tags: [Politics, International, Elections, Germany]
 ---
 
 This companion post provides references

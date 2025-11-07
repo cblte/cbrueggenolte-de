@@ -1,7 +1,7 @@
 ---
 title: "Borderlands 4 – Vex Leveling Guide"
 description: "Ein kompletter Build-Guide von Level 1 bis 50 – mit den Phasen-Phamiliar Trouble"
-tags: [Borderlands4, Vex, Guide, Leveling]
+tags: [Gaming, Borderlands4, Phasephamiliar, Sirene]
 pubDate: 2025-10-07
 draft: false
 ---

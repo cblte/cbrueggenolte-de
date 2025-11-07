@@ -3,7 +3,7 @@ title: "Mein Microblog – Von der Idee zur stabilen App"
 description: "Wie aus ein paar Experimenten mit Bun, Deno und Hono eine schlanke, sichere und gut betreibbare Microblog-Plattform wurde."
 pubDate: 2025-09-06
 modDate: 2025-09-06
-tags: [microblog, javascript, hono, eta, lowdb, typescript, tailwind]
+tags: [Programmieren, Blogging, Microblogging, Minimalism]
 ---
 
 Die letzten Wochen habe ich mich intensiv mit meinem eigenen Microblog beschäftigt. Was als kleines Experiment begann,

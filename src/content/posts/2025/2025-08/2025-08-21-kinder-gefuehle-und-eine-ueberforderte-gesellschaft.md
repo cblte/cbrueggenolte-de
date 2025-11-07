@@ -3,7 +3,7 @@ title: "Kinder, Gefühle und eine überforderte Gesellschaft"
 description: "ber eine Psychologie-Umfrage, Metaanalysen und die Frage, warum Kinder heute Unterstützung im Umgang mit Gefühlen so dringend brauchen."
 pubDate: 2025-08-21
 modDate: 2025-08-21
-tags: [psychologie, kinder, gesellschaft, umfrage, gefuehle]
+tags: [Meinung, Psychologie, Kinderpsychologie, Gefühlsarbeit, Socialmedia]
 draft: false
 ---
 

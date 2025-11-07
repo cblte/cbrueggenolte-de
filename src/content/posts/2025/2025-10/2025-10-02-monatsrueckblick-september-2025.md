@@ -3,7 +3,7 @@ title: "Monatsrückblick September 2025"
 description: ""
 pubDate: 2025-10-02
 modDate: 2025-10-02
-tags: [Monatsrückblick]
+tags: [Journal, Monatsrückblick, Sommerfest, Tontaubenschießen, Erste-Hilfe]
 draft: false
 ---
 

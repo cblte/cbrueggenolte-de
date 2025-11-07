@@ -3,7 +3,7 @@ title: "Fundstücke der Woche 13"
 description: "Meine wöchentliche Sammlung von Links und Gedanken abseits der Tagebucheinträge."
 pubDate: 2025-04-13
 modDate: 2025-06-10
-tags: [fundstuecke]
+tags: [Journal, Fundstuecke, Mcp, Ki-Crawler, Open-Source]
 ---
 
 ![Fundstücke der Woche 13](https://www.marcus-povey.co.uk/fundstuecke-der-woche-13/)

@@ -3,7 +3,7 @@ title: "Liste großartiger kostenloser Software"
 description: ""
 pubDate: 2025-10-07
 modDate: 2025-10-07
-tags: [Software, Open Source, Tools, Apps, Empfehlungen]
+tags: [Software, Browser, Datenschutz, Alltag]
 draft: false
 ---
 

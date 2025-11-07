@@ -3,7 +3,7 @@ title: "Blog aufgeräumt, neues Design und ein bisschen Klarheit"
 description: ""
 pubDate: 2025-06-10
 modDate: 2025-06-10
-tags: [meta-blog]
+tags: [Blog, Design, Aufgeräumt, Klarheit]
 ---
 
 ![](./2025-06-10-cover.jpg)

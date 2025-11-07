@@ -3,7 +3,7 @@ title: "LG webOS 2025 – Ein Erfahrungsbericht zwischen Wahnsinn und Wow"
 description: "Ein Erfahrungsbericht über die Einrichtung des LG OLED55C55LA mit webOS 2025 – zwischen fragwürdiger Nutzererfahrung und beeindruckender Bildqualität."
 pubDate: 2025-10-08
 modDate: 2025-10-08
-tags: [technik, fernseher, lg, webos, airplay, oled]
+tags: [Technik, Oled, Webos, Smart-Tv]
 draft: false
 ---
 
