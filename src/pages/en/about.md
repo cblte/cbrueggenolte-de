@@ -24,7 +24,7 @@ date: 2025-03-31
   border-radius: 20%;
   border: 1px solid var(--color-zinc-200);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  width: 300px;
+  width: 200px;
   height: auto;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }

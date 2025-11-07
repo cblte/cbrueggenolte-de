@@ -24,7 +24,7 @@ date: 2025-03-31
   border-radius: 20%;
   border: 1px solid var(--color-zinc-200);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  width: 300px;
+  width: 200px;
   height: auto;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -35,21 +35,6 @@ date: 2025-03-31
   border-color: #8a8a8a;
 }
 
-/* Add media query for smaller screens */
-@media (max-width: 768px) {
-  .profile-content {
-    float: none;
-    margin: 0 auto;
-    text-align: center;
-  }
-
-  .rounded-image {
-    display: block;
-    margin: 20px auto ;
-    width: 80%; /* Adjust width for smaller screens */
-    max-width: 300px; /* Ensure it doesn't exceed original size */
-  }
-}
 </style>
 
 Willkommen auf der Über-mich-Seite.
