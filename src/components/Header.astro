@@ -14,15 +14,14 @@ const isActivePage = (menuHref: string) => {
 };
 ---
 
-<header
-  class="flex md:flex-row flex-col md:justify-between items-center md:items-center gap-4 mx-auto mt-16 mb-8 px-6 max-w-4xl">
+<header class="flex flex-col justify-between items-center gap-4 mx-auto mt-8 mb-4 px-6">
   <!-- Logo: centered on mobile, left on md+ -->
-  <div class="flex flex-shrink-0 justify-center md:justify-start w-full md:w-auto uppercase">
-    <a href="/" target="_self" class="flex items-center gap-4 text-lg lg:text-2xl">
+  <div class="flex flex-shrink-0 justify-center w-full uppercase">
+    <a href="/" target="_self" class="flex items-center gap-4 text-lg">
       <div class="w-12 lg:w-16 h-12 lg:h-16">
         <img
           src="/images/about-me-aipg.jpg"
-          alt="A AI generate picture of Carsten Brüggenolte"
+          alt="An AI generated picture of myself"
           width="1024"
           height="1024"
           loading="lazy"
@@ -37,11 +36,11 @@ const isActivePage = (menuHref: string) => {
     </a>
   </div>
   <!-- Navigation: centered on mobile, right on md+ -->
-  <nav class="flex justify-center md:justify-end w-full md:w-auto" aria-label="Main navigation">
-    <ul class="flex md:flex-row flex-col items-center gap-2 md:gap-4 text-xl" role="list">
+  <nav class="flex justify-center w-full" aria-label="Main navigation">
+    <ul class="flex flex-row items-center gap-2 text-xl" role="list">
       {
         headerMenu.map((item, index) => (
-          <li class="text-lg lg:text-xl text-left">
+          <li class="text-lg text-left">
             <a
               href={item.href}
               target="_self"

@@ -50,6 +50,7 @@ export default defineConfig({
       remarkAdmonitionCompatible,
       [remarkToc, { heading: 'Inhaltsverzeichnis', maxDepth: 3 }],
     ],
+    rehypePlugins: [],
   },
 
   trailingSlash: 'always',

@@ -7,31 +7,29 @@ const normalizeUrl = (url: string) => (url.endsWith('/') ? url : url + '/');
 const activePage = normalizeUrl(Astro.url.pathname);
 ---
 
-<footer class="bg-stone-200 py-12 border-stone-300 w-full">
-  <div class="mx-auto max-w-4xl">
-    <nav class="mt-6" aria-label="Footer navigation">
-      <ul class="flex md:flex-row flex-col justify-center items-center gap-2 md:gap-6" role="list">
-        {
-          footerMenu.map((item) => (
-            <li class="inline-block">
-              {' '}
-              <a
-                href={item.href}
-                target="_self"
-                class={` hover:underline hover:text-sky-700 inline-block py-0 px-2 -mr-1`}>
-                {item.name}
-              </a>
-            </li>
-          ))
-        }
-      </ul>
-    </nav>
-    <p class="pt-4 text-stone-600 text-center">&copy; 2025 cbrueggenolte.de. All rights reserved.</p>
-    <p class="pt-2 text-stone-600 text-center">
-      Made with <a href="https://astro.build" class="text-sky-600 hover:text-sky-700 hover:underline">Astro</a>
-      and hosted on <a href="https://uberspace.de" class="text-sky-600 hover:text-sky-700 hover:underline">Asteroids</a>
-    </p>
-  </div>
+<footer class="mb-16 w-full">
+  <nav class="mt-2" aria-label="Footer navigation">
+    <ul class="flex flex-row justify-center items-center gap-2" role="list">
+      {
+        footerMenu.map((item) => (
+          <li class="inline-block">
+            {' '}
+            <a
+              href={item.href}
+              target="_self"
+              class={` hover:underline hover:text-sky-700 inline-block py-0 px-2 -mr-1`}>
+              {item.name}
+            </a>
+          </li>
+        ))
+      }
+    </ul>
+  </nav>
+  <p class="pt-2 text-stone-600 text-center">&copy; 2025 cbrueggenolte.de. All rights reserved.</p>
+  <p class="pt-2 text-stone-600 text-center">
+    Made with <a href="https://astro.build" class="text-sky-600 hover:text-sky-700 hover:underline">Astro</a>
+    and hosted on <a href="https://uberspace.de" class="text-sky-600 hover:text-sky-700 hover:underline">Asteroids</a>
+  </p>
 </footer>
 
 <style>
