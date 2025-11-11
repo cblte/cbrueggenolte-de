@@ -23,10 +23,10 @@ module.exports = {
             '--tw-prose-th-borders': 'inherit',
             '--tw-prose-td-borders': 'inherit',
             strong: {
-              fontWeight: '500',
+              fontWeight: '600',
             },
             b: {
-              fontWeight: '500',
+              fontWeight: '600',
             },
             blockquote: {
               fontWeight: '400',
