@@ -4,12 +4,11 @@ import { formatDate } from '@utils/utils';
 const { post } = Astro.props;
 ---
 
-<div class="flex text-md text-stone-500">
+<div class="flex flex-col items-center w-full text-md text-stone-500">
   <div class="">
     {formatDate(post.data.pubDate)}
   </div>
-  &mdash;
-  <div class="inline">
+  <div class="">
     Tags: {' '}
     <div
       class="inline"
