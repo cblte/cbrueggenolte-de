@@ -34,6 +34,7 @@ module.exports = {
             h1: {
               fontWeight: '600',
               color: 'var(--color-stone-800)',
+              fontSize: '1.5rem',
             },
             h2: {
               fontWeight: '600', // medium instead of bold
@@ -43,6 +44,7 @@ module.exports = {
             h3: {
               fontWeight: '600', // medium instead of bold
               color: 'var(--color-stone-800)',
+              fontSize: '1.1rem',
             },
           },
         },
