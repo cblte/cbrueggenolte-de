@@ -5,7 +5,6 @@ import '@fontsource/roboto-mono/600.css';
 import '../styles/global.css';
 import Footer from '@components/Footer.astro';
 import Header from '@components/Header.astro';
-import HeaderScript from '@components/HeaderScript.astro';
 import { ClientRouter } from 'astro:transitions';
 
 import { createSlug } from '@utils/utils';
@@ -55,26 +54,11 @@ const metaDescription = postdata?.description || SITE_DESCRIPTION;
     {postdata?.cover && <meta property="twitter:image" content={new URL(postdata.cover, SITE_URL).href} />}
 
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="shortcut icon" href="/favicon.ico" />
 
     <meta http-equiv="X-Content-Type-Options" content="nosniff" />
     <meta name="referrer" content="strict-origin-when-cross-origin" />
 
-    <!-- Structured Data -->
-    <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@type": "WebSite",
-        "name": "cbrueggenolte.de",
-        "description": "Persönliche Website von Carsten Brüggenolte",
-        "url": "https://cbrueggenolte.de",
-        "author": {
-          "@type": "Person",
-          "name": "Carsten Brüggenolte",
-          "url": "https://cbrueggenolte.de/about/"
-        },
-        "inLanguage": "de-DE"
-      }
-    </script>
     <ClientRouter />
   </head>
   <body class="mx-auto max-w-3xl">
@@ -92,6 +76,13 @@ const metaDescription = postdata?.description || SITE_DESCRIPTION;
     </main>
 
     <Footer />
+    <script src="/scripts/disablejs.js" defer></script>
+    <div id="disablejs" onclick="closeDisablejsInfo()"></div>
+    <script>
+      document.addEventListener('DOMContentLoaded', function (event) {
+        favicons();
+      });
+    </script>
   </body>
 </html>
 
@@ -116,5 +107,47 @@ const metaDescription = postdata?.description || SITE_DESCRIPTION;
     outline: 2px solid var(--color-sky-500);
     outline-offset: 2px;
     border-radius: 2px;
+  }
+
+  #disablejs {
+    -moz-overflow-scrolling: touch;
+    -ms-overflow-scrolling: touch;
+    -webkit-overflow-scrolling: touch;
+    background-color: rgba(0, 0, 0, 0.8);
+    bottom: 0;
+    color: white;
+    cursor: pointer;
+    display: none;
+    font-size: 0.75em;
+    height: 100%;
+    left: 0;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    padding: 1em;
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+  }
+
+  #disablejs a {
+    text-decoration: underline;
+  }
+
+  #disablejs a:hover {
+    background-color: whitesmoke;
+    color: black;
+  }
+
+  #disablejs p {
+    margin: 2em auto;
+    font-size: 1.2em;
+    line-height: 1.5em;
+  }
+
+  #disablejs strong {
+    background-color: white;
+    color: black;
   }
 </style>
