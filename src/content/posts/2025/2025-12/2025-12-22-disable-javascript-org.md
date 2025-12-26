@@ -3,8 +3,8 @@ title: "disable-javascript.org"
 description: ""
 pubDate: 2025-12-22
 modDate: 2025-12-22
-tags: []
-draft: true
+tags: [Blog, Technology, Web]
+draft: false
 ---
 
 I recently came across **disable-javascript.org** via Marius’ website:
